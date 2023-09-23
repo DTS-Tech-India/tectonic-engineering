@@ -515,13 +515,14 @@
   </section>
 
   <!-- ====== Footer Section Start -->
-  <footer class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6 border-t-[1px]">
+  <footer class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6 w-full">
     <div class="container mx-auto border-b-[1px] border-gray-400">
       <div class="mx-4 flex flex-wrap">
         <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
           <div class="mb-10 w-full">
             <a href="#" class="mb-6 inline-block max-w-[160px]">
-              <h1 class="text-3xl font-bold" style="font-family: 'Libre Baskerville', serif;">Tectonic Engineering</h1>
+              <h1 class="text-3xl font-bold" style="font-family: 'Libre Baskerville', serif;">Tectonic Engineering
+              </h1>
               <!-- <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg" alt="logo" class="max-w-full" /> -->
             </a>
             <p class="text-body-color mb-7 text-base">
@@ -564,7 +565,7 @@
         </div>
         <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
           <div class="mb-10 w-full">
-            <h4 class="text-dark mb-9 text-lg font-semibold">Company</h4>
+            <h4 class="text-dark mb-9 text-lg font-semibold">Explore</h4>
             <ul>
               <li>
                 <a href="/" class="text-body-color hover:text-[#87acec] mb-1 inline-block text-base leading-loose">
@@ -595,12 +596,13 @@
         <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
           <div class="mb-10 w-full">
             <h4 class="text-dark mb-9 text-lg font-semibold">Reach to us</h4>
-            B-131 Shastri Nagar, New Delhi-35
-            <a href="mailto:someone@example.com">
-              <div class="flex items-center	hover:text-[#9cd3f1] cursor-pointer"><ion-icon name="mail-unread"
-                  style="font-size: 2rem;margin-right: 5px;"></ion-icon>tectonicengineering@gmail.com</div>
+            <div class="phone my-2"><i class="fa-solid fa-phone"></i> +91 9632584710</div>
+            <a href="mailto:someone@example.com" class="my-2">
+              <div class="flex items-center	hover:text-[#9cd3f1] cursor-cursor-pointer"><i class="fa-regular fa-envelope me-2 text-xl"></i>tectonicengineering@gmail.com</div>
             </a>
-
+            <div class="address flex items-center my-2">
+              <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>B-131 Shastri Nagar, New Delhi-110035
+              </div>
           </div>
         </div>
       </div>
@@ -635,14 +637,12 @@
         </svg>
       </span>
       <div class="text-center lg:pt-6">
-
-        <p class="text-body-color text-base">&copy; Tectonic Engineering 2023 | All rights reserved </p>
-
-
+        <p class="overflow-x-hidden">&copy; Tectonic Engineering 2023 | All Rights Reserved </p>
       </div>
     </div>
 
   </footer>
+
   <!-- ====== Footer Section End -->
   <script>
     const navLinks = document.querySelector('.nav-links')
