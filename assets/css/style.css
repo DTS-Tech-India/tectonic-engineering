@@ -2,3 +2,15 @@
 ion-icon {
     font-size: 5rem;
   }
+
+.hero-flex {
+  
+  @media(min-width:1300px) {
+    
+    padding: 0 5%; 
+  }
+}
+
+.hero-image {
+  max-width: max-content;
+}
