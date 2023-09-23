@@ -17,18 +17,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Tectonic Engineering</title>
 </head>
 
 <body class="font-[Poppins] bg-gradient-to-t from-[#ffffff] to-[#2EAF7E]">
-  <header class="bg-[#C1F6EC] h-16">
+  <header class="bg-[#C1F6EC] py-4">
     <nav class="flex justify-between items-center w-[92%]  mx-auto">
       <div>
-        <!-- <img class="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="..."> -->
-        <h1 class="text-xl font-bold my-3">TE</h1>
+        <img class="w-12 cursor-pointer" src="./assets/images/Tectonic-logo.png" alt="Tectonic logo">
       </div>
       <div
         class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5 bg-white lg:bg-transparent">
@@ -216,8 +215,7 @@
               What do we do
             </span>
             <h2 class="text-dark mb-8 text-3xl font-bold sm:text-4xl">
-              Make your customers happy by giving services.
-      <span class="text-container text-4xl ">We <span id="text" class="text-white"></span></span>
+              <span class="text-container text-4xl ">We <span id="text" class="text-white"></span></span>
 
             </h2>
             <p class="text-body-color mb-8 text-base">
@@ -252,8 +250,9 @@
       <span class="text-container text-4xl ">We <span id="text" class="text-white"></span></span>
 
     </div>
-    <div  class="mt-4 text-center font-medium text-gray-100">
-    <p>We offer a broad spectrum of structural engineering services from project<br> inception to project completion. </p>
+    <div class="mt-4 text-center font-medium text-gray-100">
+      <p>We offer a broad spectrum of structural engineering services from project<br> inception to project completion.
+      </p>
 
     </div>
 
@@ -505,13 +504,13 @@
   </section>
 
   <!-- ====== Footer Section Start -->
-  <footer class="relative z-10 bg-white pt-20 pb-10 lg:ps-20 lg:pt-[120px] lg:pb-20">
-    <div class="container mx-auto">
+  <footer class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6">
+    <div class="container mx-auto border-b-[1px] border-gray-400">
       <div class="mx-4 flex flex-wrap">
         <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
           <div class="mb-10 w-full">
             <a href="javascript:void(0)" class="mb-6 inline-block max-w-[160px]">
-              <h1 class="text-2xl font-bold">Tectonic Engineering</h1>
+              <h1 class="text-3xl font-bold" style="font-family: 'Libre Baskerville', serif;">Tectonic Engineering</h1>
               <!-- <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg" alt="logo" class="max-w-full" /> -->
             </a>
             <p class="text-body-color mb-7 text-base">
@@ -549,7 +548,6 @@
                   </svg>
                 </a>
               </div>
-              <p class="text-body-color text-base">&copy; 2023 Tectonic Engineering</p>
             </div>
           </div>
         </div>
@@ -625,10 +623,16 @@
           </defs>
         </svg>
       </span>
+      <div class="text-center lg:pt-6">
+
+        <p class="text-body-color text-base">&copy; Tectonic Engineering 2023 | All rights reserved </p>
+
+
+      </div>
     </div>
+
   </footer>
   <!-- ====== Footer Section End -->
-
   <script>
     const navLinks = document.querySelector('.nav-links')
     function onToggleMenu(e) {
