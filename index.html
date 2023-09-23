@@ -1,10 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Tectonic Engineering is a highly professional Engineering Consultancy firm.">
+  <meta name="keywords" content="Engineering">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +18,7 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,6 +26,7 @@
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
+  
   <title>Tectonic Engineering</title>
 </head>
 
@@ -74,7 +80,7 @@
         </div>
         <div class="flex items-center gap-6">
           <a href="contact.html"><button
-              class="bg-[#2EAF7E] text-white px-5 py-2 rounded-full hover:bg-[#449642] ms-2">Contact <span
+              class="bg-[#1D8348] text-white px-5 py-2 rounded-full hover:bg-[#449642] ms-2">Contact <span
                 class="hidden lg:inline-block">Us</span></button></a>
           <i class="fa-solid fa-bars text-3xl cursor-pointer md:hidden" onclick="onToggleMenu(this)" name="menu"></i>
         </div>
@@ -84,8 +90,8 @@
 
 
     <!-- Starts Hero section -->
-    <section class="bg-gradient-to-r to-cyan-500 from-blue-300 darkk:bg-gray-900 lg:h-screen">
-      <div class="grid max-w-screen lg:gap-8 xl:gap-0 lg:py-28 lg:grid-cols-12 lg:h-screen hero-flex items-center">
+    <section class="bg-gradient-to-r to-cyan-500 from-blue-300 darkk:bg-gray-900 h-screen">
+      <div class="grid max-w-screen lg:gap-8 xl:gap-0 lg:py-28 lg:grid-cols-12 lg:h-screen hero-flex items-center lg:p-36">
         <div class="mr-auto place-self-center lg:col-span-7">
           <h1
             class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-6xl darkk:text-white">
@@ -361,8 +367,8 @@
     <section x-data="
         {
           showCards: 'all',
-          activeClasses: 'bg-primary text-[#9cd3f1]',
-          inactiveClasses: 'text-body-color hover:bg-primary hover:text-orange-500',
+          activeClasses: 'bg-primary text-[#449642]',
+          inactiveClasses: 'text-body-color hover:bg-primary hover:text-white',
         }
       " class="pt-2 lg:pt-[120px] lg:pb-[90px]">
       <div class="container mx-auto">
@@ -423,124 +429,116 @@
         </div>
         <div class="mx-4 flex flex-wrap">
           <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3">
-            <div class="relative p-12">
-              <div class="overflow-hidden rounded-lg">
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            <div class="relative m-12 bg-white rounded-lg">
+              <div class="overflow-hidden rounded-b-lg">
                 <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-01.jpg"
                   alt="portfolio" class="w-full" />
               </div>
-              <div
-                class="relative z-10 mx-0 -mt-20 lg:mx-14 bg-opacity-80 rounded-lg bg-white py-3 px-3 text-center shadow-lg">
-                <span class="text-primary mb-2 block text-sm font-semibold">
-                  Branding
-                </span>
-                <h3 class="text-dark mb-4 text-xl font-bold">Branding Design</h3>
+              <div class="realtive p-4 text-left ">
+                <p>
+                  Branding Lorem ipsum, dolor sit amet consectetur adipisicing elit. est eveniet eligendi enim. Iure fugit exercitationem sequi praesentium labore facilis similique, architecto quidem aperiam.
+                </p>
                 <a href="#"
-                  class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-white">
+                  class="text-body-color hover:bg-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-[#2EAF7E]">
                   View Details
                 </a>
               </div>
             </div>
           </div>
           <div :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3">
-            <div class="relative p-12">
-              <div class="overflow-hidden rounded-lg">
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            <div class="relative m-12 bg-white rounded-lg">
+              <div class="overflow-hidden rounded-b-lg">
                 <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-02.jpg"
                   alt="portfolio" class="w-full" />
               </div>
               <div
-                class="relative z-10 mx-0 -mt-20 lg:mx-14 bg-opacity-80 rounded-lg bg-white py-3 px-3 text-center shadow-lg">
-                <span class="text-primary mb-2 block text-sm font-semibold">
-                  Marketing
-                </span>
-                <h3 class="text-dark mb-4 text-xl font-bold">
-                  Best Marketing tips
-                </h3>
+                class="realtive p-4 text-left">
+                Branding Lorem ipsum, dolor sit amet consectetur adipisicing elit. est eveniet eligendi enim. Iure fugit exercitationem sequi praesentium labore facilis similique, architecto quidem aperiam.
+
                 <a href="#"
-                  class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-white">
+                  class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-[#2EAF7E]">
                   View Details
                 </a>
               </div>
             </div>
           </div>
           <div :class="showCards == 'all' || showCards == 'development' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3">
-            <div class="relative p-12">
-              <div class="overflow-hidden rounded-lg">
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            <div class="relative m-12 bg-white rounded-lg">
+              <div class="overflow-hidden">
                 <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-03.jpg"
                   alt="portfolio" class="w-full" />
               </div>
               <div
-                class="relative z-10 mx-0 -mt-20 lg:mx-14 bg-opacity-80 rounded-lg bg-white py-3 px-3 text-center shadow-lg">
-                <span class="text-primary mb-2 block text-sm font-semibold">
-                  Development
-                </span>
-                <h3 class="text-dark mb-4 text-xl font-bold">Web Design Trend</h3>
+                class="realtive p-4 text-left">
+                <p>
+                Branding Lorem ipsum, dolor sit amet consectetur adipisicing elit. est eveniet eligendi enim. Iure fugit exercitationem sequi praesentium labore facilis similique, architecto quidem aperiam.
+                Development 
+                </p>
                 <a href="#"
-                  class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-white">
+                  class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-[#2EAF7E]">
                   View Details
                 </a>
               </div>
             </div>
           </div>
           <div :class="showCards == 'all' || showCards == 'design' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3">
-            <div class="relative p-12">
-              <div class="overflow-hidden rounded-lg">
-                <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-04.jpg"
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            <div class="relative m-12 bg-white rounded-lg">
+              <div class="overflow-hidden">
+                <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-03.jpg"
                   alt="portfolio" class="w-full" />
               </div>
               <div
-                class="relative z-10 mx-0 -mt-20 lg:mx-14 bg-opacity-80 rounded-lg bg-white py-3 px-3 text-center shadow-lg">
-                <span class="text-primary mb-2 block text-sm font-semibold">
-                  Design
-                </span>
-                <h3 class="text-dark mb-4 text-xl font-bold">
-                  Business Card Design
-                </h3>
+                class="realtive p-4 text-left">
+                <p>
+                Branding Lorem ipsum, dolor sit amet consectetur adipisicing elit. est eveniet eligendi enim. Iure fugit exercitationem sequi praesentium labore facilis similique, architecto quidem aperiam.
+                Development 
+                </p>
                 <a href="#"
-                  class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-white">
+                  class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-[#2EAF7E]">
                   View Details
                 </a>
               </div>
             </div>
           </div>
           <div :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3">
-            <div class="relative p-12">
-              <div class="overflow-hidden rounded-lg">
-                <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-05.jpg"
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            <div class="relative m-12 bg-white rounded-lg">
+              <div class="overflow-hidden">
+                <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-03.jpg"
                   alt="portfolio" class="w-full" />
               </div>
               <div
-                class="relative z-10 mx-0 -mt-20 lg:mx-14 bg-opacity-80 rounded-lg bg-white py-3 px-3 text-center shadow-lg">
-                <span class="text-primary mb-2 block text-sm font-semibold">
-                  Marketing
-                </span>
-                <h3 class="text-dark mb-4 text-xl font-bold">Digital marketing</h3>
+                class="realtive p-4 text-left">
+                <p>
+                Branding Lorem ipsum, dolor sit amet consectetur adipisicing elit. est eveniet eligendi enim. Iure fugit exercitationem sequi praesentium labore facilis similique, architecto quidem aperiam.
+                Development 
+                </p>
                 <a href="#"
-                  class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-white">
+                  class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-[#2EAF7E]">
                   View Details
                 </a>
               </div>
             </div>
           </div>
           <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3">
-            <div class="relative p-12">
-              <div class="overflow-hidden rounded-lg">
-                <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-06.jpg"
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            <div class="relative m-12 bg-white rounded-lg">
+              <div class="overflow-hidden">
+                <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-03.jpg"
                   alt="portfolio" class="w-full" />
               </div>
               <div
-                class="relative z-10 mx-0 -mt-20 lg:mx-14 bg-opacity-80 rounded-lg bg-white py-3 px-3 text-center shadow-lg">
-                <span class="text-primary mb-2 block text-sm font-semibold">
-                  Branding
-                </span>
-                <h3 class="text-dark mb-4 text-xl font-bold">Creative Agency</h3>
+                class="realtive p-4 text-left">
+                <p>
+                Branding Lorem ipsum, dolor sit amet consectetur adipisicing elit. est eveniet eligendi enim. Iure fugit exercitationem sequi praesentium labore facilis similique, architecto quidem aperiam.
+                Development 
+                </p>
                 <a href="#"
-                  class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-white">
+                  class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-[#2EAF7E]">
                   View Details
                 </a>
               </div>
@@ -606,7 +604,7 @@
           </div>
           <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
             <div class="mb-10 w-full">
-              <h4 class="text-dark mb-9 text-lg font-semibold">Company</h4>
+              <h3 class="text-dark mb-9 text-lg font-semibold">Explore</h3>
               <ul>
                 <li>
                   <a href="/" class="text-body-color hover:text-[#87acec] mb-1 inline-block text-base leading-loose">
@@ -637,14 +635,13 @@
           <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
             <div class="mb-10 w-full">
               <h4 class="text-dark mb-9 text-lg font-semibold">Reach to us</h4>
-              <div class="address">
-              B-131 Shastri Nagar, New Delhi-35
-              </div>
-              <div class="phone"><i class="fa-solid fa-phone"></i> +91 9632584710</div>
-              <a href="mailto:someone@example.com">
-                <div class="flex items-center	hover:text-[#9cd3f1] cursor-pointer"><i class="fa-regular fa-envelope me-1 text-xl"></i>tectonicengineering@gmail.com</div>
+              <div class="phone lg:my-1"><i class="fa-solid fa-phone"></i> +91 9632584710</div>
+              <a href="mailto:someone@example.com" class="lg:my-1">
+                <div class="flex items-center	hover:text-[#9cd3f1] cursor-cursor-pointer"><i class="fa-regular fa-envelope me-1 text-xl"></i>tectonicengineering@gmail.com</div>
               </a>
-
+              <div class="address flex items-center lg:my-1">
+                <i class="fa-solid fa-location-arrow me-1" style="font-size: 1.4rem;"></i>B-131 Shastri Nagar, New Delhi-110035
+                </div>
             </div>
           </div>
         </div>
@@ -680,7 +677,7 @@
         </span>
         <div class="text-center lg:pt-6">
 
-          <p class="text-body-color text-base">&copy; Tectonic Engineering 2023 | All rights reserved </p>
+          <p class="text-body-color text-base">&copy; Tectonic Engineering 2023 | All Rights Reserved </p>
 
 
         </div>

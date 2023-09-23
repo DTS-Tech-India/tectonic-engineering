@@ -10,9 +10,10 @@ ion-icon {
 
 .hero-flex {
   
-  @media(min-width:1300px) {
+  @media(max-width:1300px) {
     
-    padding: 0 10%; 
+    padding:10% 5%; 
+    /* margin: 30% 30%; */
   }
 }
 
