@@ -8,14 +8,16 @@ ion-icon {
     font-size: 5rem;
   }
 
-.hero-flex {
-  
-  @media(max-width:1300px) {
+
     
-    padding:10% 5%; 
-    /* margin: 30% 30%; */
+  @media(max-width:1300px) {
+    .hero-flex {
+      padding:40% 0; 
+
+    }
   }
-}
+
+
 
 .hero-image {
   max-height: max-content;
