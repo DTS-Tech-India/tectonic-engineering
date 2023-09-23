@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          },
+          plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+        }
+      </script>
+    <title>Tectonic Engineering</title>
+</head>
+
+<body class="font-[Poppins] bg-gradient-to-t from-[#ffffff] to-[#9cd3f1]">
+    <header class="bg-[#C1F6EC] h-16">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+          <div>
+            <!-- <img class="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="..."> -->
+            <h1 class="text-xl font-bold my-3">TE</h1>
+          </div>
+          <div
+            class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5 ">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
+              <li>
+                <a class="hover:text-blue-500 font-semibold" href="/">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-blue-500 font-semibold" href="about.html">About Us</a>
+              </li>
+              <li>
+                <a class="hover:text-blue-500 font-semibold" href="projects.html">Projects</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center gap-6">
+            <a href="contact.html"><button class="bg-[#2EAF7E] text-white px-5 py-2 rounded-full hover:bg-[#449642] ms-2">Contact <span
+              class="hidden lg:inline-block">Us</span></button></a>
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+          </div>
+      </header>
+
+    <!-- ====== Contact Form Section Start -->
+
+<div class=" bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
+      <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
+      <p class="mt-2 text-lg leading-8 text-gray-600">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
+    </div>
+    <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+      <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+        <div>
+          <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+          <div class="mt-2.5">
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div>
+          <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+          <div class="mt-2.5">
+            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+          <div class="mt-2.5">
+            <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+          <div class="mt-2.5">
+            <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
+          <div class="relative mt-2.5">
+            <div class="absolute inset-y-0 left-0 flex items-center">
+              <label for="country" class="sr-only">Country</label>
+              <select id="country" name="country" class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+                <option selected>IN</option>
+                <option >US</option>
+                <option>CA</option>
+                <option>EU</option>
+              </select>
+            </div>
+            <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+          <div class="mt-2.5">
+            <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+          </div>
+        </div>
+        <div class="flex gap-x-4 sm:col-span-2">
+          <div class="flex h-6 items-center ">
+            <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
+            <input type="checkbox" name="" id="" class="">
+          </div>
+          <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
+            Subscribe to our newsletter
+          </label>
+        </div>
+      </div>
+      <div class="mt-10">
+        <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+      </div>
+    </form>
+  </div>
+  
+
+    <!-- ====== Contact Form Section Ends -->
+
+
+
+    <!-- ====== Footer Section Start -->
+    <footer class="relative z-10 bg-white pt-20 pb-10 lg:ps-20 lg:pt-[120px] lg:pb-20">
+        <div class="container mx-auto">
+            <div class="mx-4 flex flex-wrap">
+                <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
+                    <div class="mb-10 w-full">
+                        <a href="javascript:void(0)" class="mb-6 inline-block max-w-[160px]">
+                            <h1 class="text-2xl font-bold">Tectonic Engineering</h1>
+                            <!-- <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg" alt="logo" class="max-w-full" /> -->
+                        </a>
+                        <p class="text-body-color mb-7 text-base">
+
+                        </p>
+                        <div class="mb-10 w-full">
+                            <!-- <h4 class="text-dark mb-9 text-lg font-semibold">Follow Us On</h4> -->
+                            <div class="mb-6 flex items-center">
+                                <a href="javascript:void(0)"
+                                    class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-[#C4C4C4] sm:mr-4 lg:mr-3 xl:mr-4">
+                                    <svg width="8" height="16" viewBox="0 0 8 16" class="fill-current">
+                                        <path
+                                            d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z" />
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-[#C4C4C4] sm:mr-4 lg:mr-3 xl:mr-4">
+                                    <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                                        <path
+                                            d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z" />
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-[#C4C4C4] sm:mr-4 lg:mr-3 xl:mr-4">
+                                    <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                                        <path
+                                            d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z" />
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-[#C4C4C4] sm:mr-4 lg:mr-3 xl:mr-4">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" class="fill-current">
+                                        <path
+                                            d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="text-body-color text-base">&copy; 2023 Tectonic Engineering</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
+                    <div class="mb-10 w-full">
+                        <h4 class="text-dark mb-9 text-lg font-semibold">Company</h4>
+                        <ul>
+                            <li>
+                                <a href="/"
+                                    class="text-body-color hover:text-[#87acec] mb-1 inline-block text-base leading-loose">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/about.html"
+                                    class="text-body-color hover:text-[#87acec] mb-1 inline-block text-base leading-loose">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="projects.html"
+                                    class="text-body-color hover:text-[#87acec] mb-1 inline-block text-base leading-loose">
+                                    Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="text-body-color hover:text-[#87acec] mb-1 inline-block text-base leading-loose">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
+                    <div class="mb-10 w-full">
+                        <h4 class="text-dark mb-9 text-lg font-semibold">Reach to us</h4>
+                        B-131 Shastri Nagar, New Delhi-35
+                        <a href="mailto:someone@example.com">
+                            <div class="flex items-center	hover:text-[#9cd3f1] cursor-pointer"><ion-icon
+                                    name="mail-unread"
+                                    style="font-size: 2rem;margin-right: 5px;"></ion-icon>tectonicengineering@gmail.com
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span class="absolute left-0 bottom-0 z-[-1]">
+                <svg width="217" height="229" viewBox="0 0 217 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z"
+                        fill="url(#paint0_linear_1179_5)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_1179_5" x1="76.5" y1="281" x2="76.5" y2="1.22829e-05"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#3056D3" stop-opacity="0.08" />
+                            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </span>
+            <span class="absolute top-10 right-10 z-[-1]">
+                <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
+                        fill="url(#paint0_linear_1179_4)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_1179_4" x1="-1.63917e-06" y1="37.5" x2="75" y2="37.5"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#13C296" stop-opacity="0.31" />
+                            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </span>
+        </div>
+    </footer>
+    <!-- ====== Footer Section End -->
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+
+</html>

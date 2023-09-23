@@ -1,0 +1,641 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Tectonic Engineering</title>
+</head>
+
+<body class="font-[Poppins] bg-gradient-to-t from-[#ffffff] to-[#2EAF7E]">
+  <header class="bg-[#C1F6EC] h-16">
+    <nav class="flex justify-between items-center w-[92%]  mx-auto">
+      <div>
+        <!-- <img class="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="..."> -->
+        <h1 class="text-xl font-bold my-3">TE</h1>
+      </div>
+      <div
+        class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5 ">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
+          <li>
+            <a class="hover:text-blue-500 font-semibold" href="/">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-blue-500 font-semibold" href="about.html">About Us</a>
+          </li>
+          <li>
+            <a class="hover:text-blue-500 font-semibold" href="projects.html">Projects</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="contact.html"><button
+            class="bg-[#2EAF7E] text-white px-5 py-2 rounded-full hover:bg-[#449642] ms-2">Contact <span
+              class="hidden lg:inline-block">Us</span></button></a>
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+      </div>
+  </header>
+
+
+  <!-- ====== About Section Start -->
+  <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+    <div class="container mx-auto">
+      <div class="mx-4 flex flex-wrap items-center justify-between">
+        <div class="w-full px-4 lg:w-6/12">
+          <div class="-mx-3 flex items-center sm:-mx-4">
+            <div class="w-full px-3 sm:px-4 xl:w-1/2">
+              <div class="py-3 sm:py-4 h-50">
+                <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-1.jpg" alt=""
+                  class="w-full rounded-2xl" />
+              </div>
+              <div class="py-3 sm:py-4 h-90">
+                <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-2.jpg" alt=""
+                  class="w-full rounded-2xl" />
+              </div>
+            </div>
+            <div class="w-full px-3 sm:px-4 xl:w-1/2 h-90">
+              <div class="relative z-10 my-4">
+                <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-3.jpg" alt=""
+                  class="w-full rounded-2xl" />
+                <span class="absolute -right-7 -bottom-7 z-[-1]">
+                  <svg width="134" height="106" viewBox="0 0 134 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="1.66667" cy="104" r="1.66667" transform="rotate(-90 1.66667 104)" fill="#3056D3" />
+                    <circle cx="16.3333" cy="104" r="1.66667" transform="rotate(-90 16.3333 104)" fill="#3056D3" />
+                    <circle cx="31" cy="104" r="1.66667" transform="rotate(-90 31 104)" fill="#3056D3" />
+                    <circle cx="45.6667" cy="104" r="1.66667" transform="rotate(-90 45.6667 104)" fill="#3056D3" />
+                    <circle cx="60.3334" cy="104" r="1.66667" transform="rotate(-90 60.3334 104)" fill="#3056D3" />
+                    <circle cx="88.6667" cy="104" r="1.66667" transform="rotate(-90 88.6667 104)" fill="#3056D3" />
+                    <circle cx="117.667" cy="104" r="1.66667" transform="rotate(-90 117.667 104)" fill="#3056D3" />
+                    <circle cx="74.6667" cy="104" r="1.66667" transform="rotate(-90 74.6667 104)" fill="#3056D3" />
+                    <circle cx="103" cy="104" r="1.66667" transform="rotate(-90 103 104)" fill="#3056D3" />
+                    <circle cx="132" cy="104" r="1.66667" transform="rotate(-90 132 104)" fill="#3056D3" />
+                    <circle cx="1.66667" cy="89.3333" r="1.66667" transform="rotate(-90 1.66667 89.3333)"
+                      fill="#3056D3" />
+                    <circle cx="16.3333" cy="89.3333" r="1.66667" transform="rotate(-90 16.3333 89.3333)"
+                      fill="#3056D3" />
+                    <circle cx="31" cy="89.3333" r="1.66667" transform="rotate(-90 31 89.3333)" fill="#3056D3" />
+                    <circle cx="45.6667" cy="89.3333" r="1.66667" transform="rotate(-90 45.6667 89.3333)"
+                      fill="#3056D3" />
+                    <circle cx="60.3333" cy="89.3338" r="1.66667" transform="rotate(-90 60.3333 89.3338)"
+                      fill="#3056D3" />
+                    <circle cx="88.6667" cy="89.3338" r="1.66667" transform="rotate(-90 88.6667 89.3338)"
+                      fill="#3056D3" />
+                    <circle cx="117.667" cy="89.3338" r="1.66667" transform="rotate(-90 117.667 89.3338)"
+                      fill="#3056D3" />
+                    <circle cx="74.6667" cy="89.3338" r="1.66667" transform="rotate(-90 74.6667 89.3338)"
+                      fill="#3056D3" />
+                    <circle cx="103" cy="89.3338" r="1.66667" transform="rotate(-90 103 89.3338)" fill="#3056D3" />
+                    <circle cx="132" cy="89.3338" r="1.66667" transform="rotate(-90 132 89.3338)" fill="#3056D3" />
+                    <circle cx="1.66667" cy="74.6673" r="1.66667" transform="rotate(-90 1.66667 74.6673)"
+                      fill="#3056D3" />
+                    <circle cx="1.66667" cy="31.0003" r="1.66667" transform="rotate(-90 1.66667 31.0003)"
+                      fill="#3056D3" />
+                    <circle cx="16.3333" cy="74.6668" r="1.66667" transform="rotate(-90 16.3333 74.6668)"
+                      fill="#3056D3" />
+                    <circle cx="16.3333" cy="31.0003" r="1.66667" transform="rotate(-90 16.3333 31.0003)"
+                      fill="#3056D3" />
+                    <circle cx="31" cy="74.6668" r="1.66667" transform="rotate(-90 31 74.6668)" fill="#3056D3" />
+                    <circle cx="31" cy="31.0003" r="1.66667" transform="rotate(-90 31 31.0003)" fill="#3056D3" />
+                    <circle cx="45.6667" cy="74.6668" r="1.66667" transform="rotate(-90 45.6667 74.6668)"
+                      fill="#3056D3" />
+                    <circle cx="45.6667" cy="31.0003" r="1.66667" transform="rotate(-90 45.6667 31.0003)"
+                      fill="#3056D3" />
+                    <circle cx="60.3333" cy="74.6668" r="1.66667" transform="rotate(-90 60.3333 74.6668)"
+                      fill="#3056D3" />
+                    <circle cx="60.3333" cy="30.9998" r="1.66667" transform="rotate(-90 60.3333 30.9998)"
+                      fill="#3056D3" />
+                    <circle cx="88.6667" cy="74.6668" r="1.66667" transform="rotate(-90 88.6667 74.6668)"
+                      fill="#3056D3" />
+                    <circle cx="88.6667" cy="30.9998" r="1.66667" transform="rotate(-90 88.6667 30.9998)"
+                      fill="#3056D3" />
+                    <circle cx="117.667" cy="74.6668" r="1.66667" transform="rotate(-90 117.667 74.6668)"
+                      fill="#3056D3" />
+                    <circle cx="117.667" cy="30.9998" r="1.66667" transform="rotate(-90 117.667 30.9998)"
+                      fill="#3056D3" />
+                    <circle cx="74.6667" cy="74.6668" r="1.66667" transform="rotate(-90 74.6667 74.6668)"
+                      fill="#3056D3" />
+                    <circle cx="74.6667" cy="30.9998" r="1.66667" transform="rotate(-90 74.6667 30.9998)"
+                      fill="#3056D3" />
+                    <circle cx="103" cy="74.6668" r="1.66667" transform="rotate(-90 103 74.6668)" fill="#3056D3" />
+                    <circle cx="103" cy="30.9998" r="1.66667" transform="rotate(-90 103 30.9998)" fill="#3056D3" />
+                    <circle cx="132" cy="74.6668" r="1.66667" transform="rotate(-90 132 74.6668)" fill="#3056D3" />
+                    <circle cx="132" cy="30.9998" r="1.66667" transform="rotate(-90 132 30.9998)" fill="#3056D3" />
+                    <circle cx="1.66667" cy="60.0003" r="1.66667" transform="rotate(-90 1.66667 60.0003)"
+                      fill="#3056D3" />
+                    <circle cx="1.66667" cy="16.3333" r="1.66667" transform="rotate(-90 1.66667 16.3333)"
+                      fill="#3056D3" />
+                    <circle cx="16.3333" cy="60.0003" r="1.66667" transform="rotate(-90 16.3333 60.0003)"
+                      fill="#3056D3" />
+                    <circle cx="16.3333" cy="16.3333" r="1.66667" transform="rotate(-90 16.3333 16.3333)"
+                      fill="#3056D3" />
+                    <circle cx="31" cy="60.0003" r="1.66667" transform="rotate(-90 31 60.0003)" fill="#3056D3" />
+                    <circle cx="31" cy="16.3333" r="1.66667" transform="rotate(-90 31 16.3333)" fill="#3056D3" />
+                    <circle cx="45.6667" cy="60.0003" r="1.66667" transform="rotate(-90 45.6667 60.0003)"
+                      fill="#3056D3" />
+                    <circle cx="45.6667" cy="16.3333" r="1.66667" transform="rotate(-90 45.6667 16.3333)"
+                      fill="#3056D3" />
+                    <circle cx="60.3333" cy="60.0003" r="1.66667" transform="rotate(-90 60.3333 60.0003)"
+                      fill="#3056D3" />
+                    <circle cx="60.3333" cy="16.3333" r="1.66667" transform="rotate(-90 60.3333 16.3333)"
+                      fill="#3056D3" />
+                    <circle cx="88.6667" cy="60.0003" r="1.66667" transform="rotate(-90 88.6667 60.0003)"
+                      fill="#3056D3" />
+                    <circle cx="88.6667" cy="16.3333" r="1.66667" transform="rotate(-90 88.6667 16.3333)"
+                      fill="#3056D3" />
+                    <circle cx="117.667" cy="60.0003" r="1.66667" transform="rotate(-90 117.667 60.0003)"
+                      fill="#3056D3" />
+                    <circle cx="117.667" cy="16.3333" r="1.66667" transform="rotate(-90 117.667 16.3333)"
+                      fill="#3056D3" />
+                    <circle cx="74.6667" cy="60.0003" r="1.66667" transform="rotate(-90 74.6667 60.0003)"
+                      fill="#3056D3" />
+                    <circle cx="74.6667" cy="16.3333" r="1.66667" transform="rotate(-90 74.6667 16.3333)"
+                      fill="#3056D3" />
+                    <circle cx="103" cy="60.0003" r="1.66667" transform="rotate(-90 103 60.0003)" fill="#3056D3" />
+                    <circle cx="103" cy="16.3333" r="1.66667" transform="rotate(-90 103 16.3333)" fill="#3056D3" />
+                    <circle cx="132" cy="60.0003" r="1.66667" transform="rotate(-90 132 60.0003)" fill="#3056D3" />
+                    <circle cx="132" cy="16.3333" r="1.66667" transform="rotate(-90 132 16.3333)" fill="#3056D3" />
+                    <circle cx="1.66667" cy="45.3333" r="1.66667" transform="rotate(-90 1.66667 45.3333)"
+                      fill="#3056D3" />
+                    <circle cx="1.66667" cy="1.66683" r="1.66667" transform="rotate(-90 1.66667 1.66683)"
+                      fill="#3056D3" />
+                    <circle cx="16.3333" cy="45.3333" r="1.66667" transform="rotate(-90 16.3333 45.3333)"
+                      fill="#3056D3" />
+                    <circle cx="16.3333" cy="1.66683" r="1.66667" transform="rotate(-90 16.3333 1.66683)"
+                      fill="#3056D3" />
+                    <circle cx="31" cy="45.3333" r="1.66667" transform="rotate(-90 31 45.3333)" fill="#3056D3" />
+                    <circle cx="31" cy="1.66683" r="1.66667" transform="rotate(-90 31 1.66683)" fill="#3056D3" />
+                    <circle cx="45.6667" cy="45.3333" r="1.66667" transform="rotate(-90 45.6667 45.3333)"
+                      fill="#3056D3" />
+                    <circle cx="45.6667" cy="1.66683" r="1.66667" transform="rotate(-90 45.6667 1.66683)"
+                      fill="#3056D3" />
+                    <circle cx="60.3333" cy="45.3338" r="1.66667" transform="rotate(-90 60.3333 45.3338)"
+                      fill="#3056D3" />
+                    <circle cx="60.3333" cy="1.66683" r="1.66667" transform="rotate(-90 60.3333 1.66683)"
+                      fill="#3056D3" />
+                    <circle cx="88.6667" cy="45.3338" r="1.66667" transform="rotate(-90 88.6667 45.3338)"
+                      fill="#3056D3" />
+                    <circle cx="88.6667" cy="1.66683" r="1.66667" transform="rotate(-90 88.6667 1.66683)"
+                      fill="#3056D3" />
+                    <circle cx="117.667" cy="45.3338" r="1.66667" transform="rotate(-90 117.667 45.3338)"
+                      fill="#3056D3" />
+                    <circle cx="117.667" cy="1.66683" r="1.66667" transform="rotate(-90 117.667 1.66683)"
+                      fill="#3056D3" />
+                    <circle cx="74.6667" cy="45.3338" r="1.66667" transform="rotate(-90 74.6667 45.3338)"
+                      fill="#3056D3" />
+                    <circle cx="74.6667" cy="1.66683" r="1.66667" transform="rotate(-90 74.6667 1.66683)"
+                      fill="#3056D3" />
+                    <circle cx="103" cy="45.3338" r="1.66667" transform="rotate(-90 103 45.3338)" fill="#3056D3" />
+                    <circle cx="103" cy="1.66683" r="1.66667" transform="rotate(-90 103 1.66683)" fill="#3056D3" />
+                    <circle cx="132" cy="45.3338" r="1.66667" transform="rotate(-90 132 45.3338)" fill="#3056D3" />
+                    <circle cx="132" cy="1.66683" r="1.66667" transform="rotate(-90 132 1.66683)" fill="#3056D3" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+          <div class="mt-10 lg:mt-0">
+            <span class="text-primary mb-2 block text-lg font-semibold">
+              What do we do
+            </span>
+            <h2 class="text-dark mb-8 text-3xl font-bold sm:text-4xl">
+              Make your customers happy by giving services.
+            </h2>
+            <p class="text-body-color mb-8 text-base">
+              Tectonic Engineering is a highly professional Engineering Consultancy firm. Founded in 2015 as a humble
+              practice, started by first generation professionals, ‘TE’ has proudly delivered across INDIA and has since
+              transformed into a multidisciplinary firm, known for its creative, innovative analysis & design approach.
+              The organisation renders services in Structural Design & Detailing, Estimation & Costing, MEP & Fire
+              Service, Solar System, & BIM applications. Focussed on sustainable designs.
+
+            </p>
+            <p class="text-body-color mb-12 text-base">
+              ‘TE’ has been providing
+              services for many projects including government and private clients, Public Works Departments, Development
+              Authorities, and Public Sector Undertakings of the State & Central Governments in India. Our skilled team
+              ensure high quality service for our partners,
+            </p>
+            <a href="/contact.html"
+              class="bg-primary inline-flex border-2 items-center justify-center rounded-lg py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== About Section End -->
+
+  <!-- ====== xxxxx Section End -->
+  <div class="flex flex-col justify-center my-5">
+    <hr>
+    <div class="animated-text text-center mt-5">
+      <span class="text-container text-4xl ">We <span id="text" class="text-white"></span></span>
+
+    </div>
+    <div  class="mt-4 text-center font-medium text-gray-100">
+    <p>We offer a broad spectrum of structural engineering services from project<br> inception to project completion. </p>
+
+    </div>
+
+  </div>
+  <!-- ====== xxxxx Section End -->
+
+
+  <!-- ====== Team Section Starts -->
+  <section class="bg-white darkk:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+      <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 darkk:text-white">Our Team</h2>
+        <p class="font-light text-gray-500 lg:mb-16 sm:text-xl darkk:text-gray-400">Explore the whole collection of
+          open-source web components and elements built with the utility classes from Tailwind</p>
+      </div>
+      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+        <div class="items-center bg-gray-50 rounded-lg shadow sm:flex darkk:bg-gray-800 darkk:border-gray-700">
+          <a href="#">
+            <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar">
+          </a>
+          <div class="p-5">
+            <h3 class="text-xl font-bold tracking-tight text-gray-900 darkk:text-white">
+              <a href="#">Bonnie Green</a>
+            </h3>
+            <span class="text-gray-500 darkk:text-gray-400">CEO & Web Developer</span>
+            <p class="mt-3 mb-4 font-light text-gray-500 darkk:text-gray-400">Bonnie drives the technical strategy of
+              the flowbite platform and brand.</p>
+            <ul class="flex space-x-4 sm:mt-0">
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="items-center bg-gray-50 rounded-lg shadow sm:flex darkk:bg-gray-800 darkk:border-gray-700">
+          <a href="#">
+            <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Avatar">
+          </a>
+          <div class="p-5">
+            <h3 class="text-xl font-bold tracking-tight text-gray-900 darkk:text-white">
+              <a href="#">Jese Leos</a>
+            </h3>
+            <span class="text-gray-500 darkk:text-gray-400">CTO</span>
+            <p class="mt-3 mb-4 font-light text-gray-500 darkk:text-gray-400">Jese drives the technical strategy of the
+              flowbite platform and brand.</p>
+            <ul class="flex space-x-4 sm:mt-0">
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="items-center bg-gray-50 rounded-lg shadow sm:flex darkk:bg-gray-800 darkk:border-gray-700">
+          <a href="#">
+            <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+              alt="Michael Avatar">
+          </a>
+          <div class="p-5">
+            <h3 class="text-xl font-bold tracking-tight text-gray-900 darkk:text-white">
+              <a href="#">Michael Gough</a>
+            </h3>
+            <span class="text-gray-500 darkk:text-gray-400">Senior Front-end Developer</span>
+            <p class="mt-3 mb-4 font-light text-gray-500 darkk:text-gray-400">Michael drives the technical strategy of
+              the flowbite platform and brand.</p>
+            <ul class="flex space-x-4 sm:mt-0">
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="items-center bg-gray-50 rounded-lg shadow sm:flex darkk:bg-gray-800 darkk:border-gray-700">
+          <a href="#">
+            <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png" alt="Sofia Avatar">
+          </a>
+          <div class="p-5">
+            <h3 class="text-xl font-bold tracking-tight text-gray-900 darkk:text-white">
+              <a href="#">Lana Byrd</a>
+            </h3>
+            <span class="text-gray-500 darkk:text-gray-400">Marketing & Sale</span>
+            <p class="mt-3 mb-4 font-light text-gray-500 darkk:text-gray-400">Lana drives the technical strategy of the
+              flowbite platform and brand.</p>
+            <ul class="flex space-x-4 sm:mt-0">
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-500 hover:text-gray-900 darkk:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Team Section Ends -->
+
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="max-w-screen-md">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Let's find more that
+          brings us together.</h2>
+        <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Ullam magni, delectus soluta commodi officia nihil! Eligendi reiciendis aspernatur, aliquid
+          ducimus nostrum repellat odio cumque rerum. Iure, facere provident! Non, illo.</p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+          <a href="contact.html"
+            class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+            Get started
+            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer Section Start -->
+  <footer class="relative z-10 bg-white pt-20 pb-10 lg:ps-20 lg:pt-[120px] lg:pb-20">
+    <div class="container mx-auto">
+      <div class="mx-4 flex flex-wrap">
+        <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
+          <div class="mb-10 w-full">
+            <a href="javascript:void(0)" class="mb-6 inline-block max-w-[160px]">
+              <h1 class="text-2xl font-bold">Tectonic Engineering</h1>
+              <!-- <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg" alt="logo" class="max-w-full" /> -->
+            </a>
+            <p class="text-body-color mb-7 text-base">
+
+            </p>
+            <div class="mb-10 w-full">
+              <!-- <h4 class="text-dark mb-9 text-lg font-semibold">Follow Us On</h4> -->
+              <div class="mb-6 flex items-center">
+                <a href="javascript:void(0)"
+                  class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-[#C4C4C4] sm:mr-4 lg:mr-3 xl:mr-4">
+                  <svg width="8" height="16" viewBox="0 0 8 16" class="fill-current">
+                    <path
+                      d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z" />
+                  </svg>
+                </a>
+                <a href="javascript:void(0)"
+                  class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-[#C4C4C4] sm:mr-4 lg:mr-3 xl:mr-4">
+                  <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                    <path
+                      d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z" />
+                  </svg>
+                </a>
+                <a href="javascript:void(0)"
+                  class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-[#C4C4C4] sm:mr-4 lg:mr-3 xl:mr-4">
+                  <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                    <path
+                      d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z" />
+                  </svg>
+                </a>
+                <a href="javascript:void(0)"
+                  class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-[#C4C4C4] sm:mr-4 lg:mr-3 xl:mr-4">
+                  <svg width="14" height="14" viewBox="0 0 14 14" class="fill-current">
+                    <path
+                      d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" />
+                  </svg>
+                </a>
+              </div>
+              <p class="text-body-color text-base">&copy; 2023 Tectonic Engineering</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
+          <div class="mb-10 w-full">
+            <h4 class="text-dark mb-9 text-lg font-semibold">Company</h4>
+            <ul>
+              <li>
+                <a href="/" class="text-body-color hover:text-[#87acec] mb-1 inline-block text-base leading-loose">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about.html"
+                  class="text-body-color hover:text-[#87acec] mb-1 inline-block text-base leading-loose">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="projects.html"
+                  class="text-body-color hover:text-[#87acec] mb-1 inline-block text-base leading-loose">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="contact.html"
+                  class="text-body-color hover:text-[#87acec] mb-1 inline-block text-base leading-loose">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
+          <div class="mb-10 w-full">
+            <h4 class="text-dark mb-9 text-lg font-semibold">Reach to us</h4>
+            B-131 Shastri Nagar, New Delhi-35
+            <a href="mailto:someone@example.com">
+              <div class="flex items-center	hover:text-[#9cd3f1] cursor-pointer"><ion-icon name="mail-unread"
+                  style="font-size: 2rem;margin-right: 5px;"></ion-icon>tectonicengineering@gmail.com</div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="absolute left-0 bottom-0 z-[-1]">
+        <svg width="217" height="229" viewBox="0 0 217 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z"
+            fill="url(#paint0_linear_1179_5)" />
+          <defs>
+            <linearGradient id="paint0_linear_1179_5" x1="76.5" y1="281" x2="76.5" y2="1.22829e-05"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3056D3" stop-opacity="0.08" />
+              <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="absolute top-10 right-10 z-[-1]">
+        <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
+            fill="url(#paint0_linear_1179_4)" />
+          <defs>
+            <linearGradient id="paint0_linear_1179_4" x1="-1.63917e-06" y1="37.5" x2="75" y2="37.5"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#13C296" stop-opacity="0.31" />
+              <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+    </div>
+  </footer>
+  <!-- ====== Footer Section End -->
+
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e) {
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[9%]')
+    }
+  </script>
+  <script src="./assets/JS/scripts.js"></script>
+
+</body>
+
+</html>
