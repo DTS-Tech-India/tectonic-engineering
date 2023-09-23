@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  overflow: hidden;
+}
+
 ion-icon {
     font-size: 5rem;
   }
@@ -36,22 +41,22 @@ ion-icon {
   animation-delay: .1s;
 }
 .loader-container span:nth-child(2){
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 .loader-container span:nth-child(3){
-  animation-delay: .5s;
+  animation-delay: .3s;
 }
 .loader-container span:nth-child(4){
-  animation-delay: .7s;
+  animation-delay: .4s;
 }
 .loader-container span:nth-child(5){
-  animation-delay: .9s;
+  animation-delay: .5s;
 }
 .loader-container span:nth-child(6){
-  animation-delay: 1s;
+  animation-delay: .6s;
 }
 .loader-container span:nth-child(7){
-  animation-delay: 1.2s;
+  animation-delay: 0.7s;
 }
 @keyframes loading {
   50%{
@@ -79,5 +84,7 @@ ion-icon {
   font-size: 1.6rem;
   font-weight: 500;  
 }
+
+
 
 }
