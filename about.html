@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="assets/css/style.css">
@@ -24,6 +26,21 @@
 </head>
 
 <body class="font-[Poppins] bg-gradient-to-t from-[#ffffff] to-[#2EAF7E]">
+  
+  <div id="loader">
+    <img src="./assets/images/loader.svg" alt="" srcset="">
+  </div>
+
+  <script>
+    $(window).on("load", function(){
+      $("#loader").fadeOut("slow");
+      setTimeout(function(){
+          $("main").css("display","inline");
+        }, 1000);
+    }
+      );
+  </script>
+<main class="hidden">
   <header class="bg-[#C1F6EC] py-4">
     <nav class="flex justify-between items-center w-[92%]  mx-auto">
       <div>
@@ -242,23 +259,6 @@
     </div>
   </section>
   <!-- ====== About Section End -->
-
-  <!-- ====== xxxxx Section End -->
-  <div class="flex flex-col justify-center my-5">
-    <hr>
-    <div class="animated-text text-center mt-5">
-      <span class="text-container text-4xl ">We <span id="text" class="text-white"></span></span>
-
-    </div>
-    <div class="mt-4 text-center font-medium text-gray-100">
-      <p>We offer a broad spectrum of structural engineering services from project<br> inception to project completion.
-      </p>
-
-    </div>
-
-  </div>
-  <!-- ====== xxxxx Section End -->
-
 
   <!-- ====== Team Section Starts -->
   <section class="bg-white darkk:bg-gray-900">
@@ -642,6 +642,7 @@
   </script>
   <script src="./assets/JS/scripts.js"></script>
 
+</main>
 </body>
 
 </html>
