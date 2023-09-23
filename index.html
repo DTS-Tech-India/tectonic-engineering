@@ -25,18 +25,30 @@
 
 <body class="font-[Poppins] bg-[#3FD0C6]">
   <div id="loader">
-    <img src="./assets/images/loader.svg" alt="" srcset="">
+    <div class="loader-container">
+      <span>L</span>
+      <span>O</span>
+      <span>A</span>
+      <span>D</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+    </div>
   </div>
 
   <script>
     $(window).on("load", function(){
-      $("#loader").fadeOut("slow");
       setTimeout(function(){
+        $("#loader").fadeOut("900")
           $("main").css("display","inline");
-        }, 1200);
+        }, 1500);
     }
       );
   </script>
+
+
+
+
 <main class="hidden">
   
 
@@ -89,7 +101,7 @@
           </svg>
         </a>
         <a href="/contact.html"
-          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 darkk:text-white darkk:border-gray-700 darkk:hover:bg-gray-700 darkk:focus:ring-gray-800">
+          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border bg-white lg:border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 darkk:text-white darkk:border-gray-700 darkk:hover:bg-gray-700 darkk:focus:ring-gray-800">
           Speak to Sales
         </a>
       </div>
