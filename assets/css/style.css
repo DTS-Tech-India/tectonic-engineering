@@ -28,10 +28,18 @@ ion-icon {
 #loader {
   transition: all 0.5s linear;
   position: absolute;
-  top: 45%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+@media(max-width:768px){
+  #loader {
+    top: 50%;
+    left: 50%;
+    transform: translate(3%, -50%);
+  }
+}
 
 
 .loader-container span{
