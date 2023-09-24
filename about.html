@@ -52,13 +52,16 @@
   </script>
 
 <main>
-  <header class="bg-[#C1F6EC] py-4">
-    <nav class="flex justify-between items-center w-[92%]  mx-auto">
-      <div>
+  <header class="bg-[#C1F6EC]">
+    <nav class="flex justify-between items-center w-[92%] mx-auto py-2 lg:pe-32">
+      <div class="flex justify-between w-full lg:w-fit">
+        <div class="flex items-center gap-6">
+          <i class="fa-solid fa-bars text-3xl cursor-pointer md:hidden z-10" onclick="onToggleMenu(this)" name="menu"></i>
+        </div>
         <img class="w-12 cursor-pointer" src="./assets/images/Tectonic-logo.png" alt="Tectonic logo">
       </div>
       <div
-        class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5 bg-white lg:bg-transparent">
+        class="nav-links duration-500 md:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto  w-full flex items-center px-5 bg-white lg:bg-transparent top-[7%] border-lg z-30">
         <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
           <li>
             <a class="hover:text-blue-500 font-semibold" href="./">Home</a>
@@ -69,13 +72,12 @@
           <li>
             <a class="hover:text-blue-500 font-semibold" href="projects.html">Projects</a>
           </li>
+          <a href="contact.html" class="lg:absolute right-10"><button
+            class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">Contact <i class="ms-2 fa-solid fa-paper-plane"></i></button></a>
         </ul>
+
       </div>
-      <div class="flex items-center gap-6">
-        <a href="contact.html"><button class="bg-[#2EAF7E] text-white px-5 py-2 rounded-full hover:bg-[#449642] ms-2">Contact <span
-          class="hidden lg:inline-block">Us</span></button></a>
-        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
-      </div>
+
   </header>
 
 
@@ -648,7 +650,7 @@
     const navLinks = document.querySelector('.nav-links')
     function onToggleMenu(e) {
       e.name = e.name === 'menu' ? 'close' : 'menu'
-      navLinks.classList.toggle('top-[9%]')
+      navLinks.classList.toggle('left-[0%]')
     }
   </script>
   <script src="./assets/JS/scripts.js"></script>
