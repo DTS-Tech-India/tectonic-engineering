@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="description" content="Tectonic Engineering is a highly professional Engineering Consultancy firm.">
   <meta name="keywords" content="Engineering">
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,15 +18,16 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
   <link rel="stylesheet" href="assets/css/style.css">
-  
+
   <title>Tectonic Engineering</title>
 </head>
 
@@ -44,15 +45,15 @@
   </div>
 
   <script>
-    document.onreadystatechange = function() {
+    document.onreadystatechange = function () {
       if (document.readyState !== "complete") {
-        $("#loader").css("display","inline");
-        $("main").css("display","none");
-    } else {
-      $("main").css("display","inline");
-      $("#loader").css("display","none");
-    }
-};
+        $("#loader").css("display", "inline");
+        $("main").css("display", "none");
+      } else {
+        $("main").css("display", "inline");
+        $("#loader").css("display", "none");
+      }
+    };
   </script>
 
 
@@ -63,7 +64,8 @@
       <nav class="flex justify-between items-center w-[92%] mx-auto py-2 lg:pe-32">
         <div class="flex justify-between w-full lg:w-fit">
           <div class="flex items-center gap-6">
-            <i class="fa-solid fa-bars text-3xl cursor-pointer md:hidden z-10" onclick="onToggleMenu(this)" name="menu"></i>
+            <i class="fa-solid fa-bars text-3xl cursor-pointer md:hidden z-10" onclick="onToggleMenu(this)"
+              name="menu"></i>
           </div>
           <img class="w-12 cursor-pointer" src="./assets/images/Tectonic-logo.png" alt="Tectonic logo">
         </div>
@@ -71,16 +73,17 @@
           class="nav-links duration-500 md:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto  w-full flex items-center px-5 bg-white lg:bg-transparent top-[7%] border-lg">
           <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
             <li>
-              <a class="hover:text-blue-500 font-semibold" href="./">Home</a>
+              <a class="hover:text-blue-500 font-medium" href="./">Home</a>
             </li>
             <li>
-              <a class="hover:text-blue-500 font-semibold" href="about.html">About Us</a>
+              <a class="hover:text-blue-500 font-medium" href="about.html">About Us</a>
             </li>
             <li>
-              <a class="hover:text-blue-500 font-semibold" href="projects.html">Projects</a>
+              <a class="hover:text-blue-500 font-medium" href="projects.html">Projects</a>
             </li>
             <a href="contact.html" class="lg:absolute right-10"><button
-              class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">Contact <i class="ms-2 fa-solid fa-paper-plane"></i></button></a>
+                class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">Contact
+                <i class="ms-2 fa-solid fa-paper-plane"></i></button></a>
           </ul>
 
         </div>
@@ -92,8 +95,9 @@
 
     <!-- Starts Hero section -->
     <section class="bg-gradient-to-r to-cyan-500 from-blue-300 darkk:bg-gray-900 h-screen">
-      <div class="grid max-w-screen lg:gap-8 xl:gap-0 lg:py-28 lg:grid-cols-12 lg:h-screen hero-flex items-center lg:p-36">
-        <div class="mr-auto place-self-center lg:col-span-7">
+      <div
+        class="grid max-w-screen lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:h-screen hero-flex items-center lg:px-36">
+        <div class="mr-auto place-self-center lg:col-span-7 hero-text">
           <h1
             class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-6xl darkk:text-white pt-20">
             Transforming ideas into structural realities</h1>
@@ -101,24 +105,25 @@
             Transforming blueprints into reality, Tectonic Engineering shapes a sustainable tomorrow through innovative
             design and meticulous execution. </p>
 
-              <div class="flex lg:inline-block flex-col">
+          <div class="flex lg:inline-block flex-col">
 
-                <span class="my-2 ring-1 lg:ring-0 rounded-lg">
-                  <a href="about.html"
-                  class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg bg-primary-700 hover:bg-primary-800  focus:ring-primary-300 darkk:focus:ring-primary-900">
-                  Get started
-                  <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </a>
-                </span>
-              <a href="/contact.html"
-                class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border bg-white lg:border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 darkk:text-white darkk:border-gray-700 darkk:hover:bg-gray-700 darkk:focus:ring-gray-800">
-                Speak to Sales
+            <span class="my-2 ring-1 lg:ring-0 rounded-lg">
+              <a href="about.html"
+                class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg bg-primary-700 hover:ring-2">
+                Get started
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
               </a>
-              </div>
+            </span>
+            <a href="/contact.html"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border bg-white lg:border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 hover:ring-2 darkk:text-white darkk:border-gray-700 darkk:hover:bg-gray-700 darkk:focus:ring-gray-800">
+              Speak to Sales
+            </a>
+          </div>
 
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex hero-image">
@@ -134,31 +139,32 @@
         <h2
           class="mb-8 lg:mb-16 text-5xl font-bold tracking-tight leading-tight text-center text-gray-900 darkk:text-white md:text-4xl">
           Our Clients</h2>
-        <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 darkk:text-gray-400  lg:mx-20">
-          <a href="#" class="flex justify-center items-center">
+        <div
+          class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 darkk:text-gray-400  lg:mx-20">
+          <a href="#" class="flex justify-center items-center client-logo-1">
             <img src="./assets/images/apollo.png" alt="" class="w-2/3">
           </a>
-          <a href="" class="flex justify-center items-center">
-          <img src="./assets/images/BHEl.png" alt="" class="w-2/3">
+          <a href="" class="flex justify-center items-center client-logo">
+            <img src="./assets/images/BHEl.png" alt="" class="w-2/3">
           </a>
           </a>
-          <a href="#" class="flex justify-center items-center">
+          <a href="#" class="flex justify-center items-center client-logo">
             <img src="./assets/images/IOCL.png" alt="" class="w-2/3">
           </a>
-          <a href="#" class="flex justify-center items-center">
+          <a href="#" class="flex justify-center items-center client-logo">
             <img src="./assets/images/L&T.png" alt="" class="w-2/3">
           </a>
-          <a href="#" class="flex justify-center items-center">
+          <a href="#" class="flex justify-center items-center client-logo">
             <img src="./assets/images//PGCI.png" alt="" class="w-2/3">
           </a>
-          <a href="#" class="flex justify-center items-center">
+          <a href="#" class="flex justify-center items-center client-logo">
             <img src="./assets/images/SPLENDOR.png" alt="" class="w-2/3">
           </a>
-          <a href="#" class="flex justify-center items-center">
+          <a href="#" class="flex justify-center items-center client-logo">
             <img src="./assets/images/NHAI.png" alt="" class="w-2/3">
           </a>
-          
-          <a href="#" class="flex justify-center items-center">
+
+          <a href="#" class="flex justify-center items-center client-logo">
             <img src="./assets/images/nosi.png" alt="" class="w-2/3">
           </a>
 
@@ -340,108 +346,96 @@
         <div class="mx-4 flex flex-wrap">
           <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
             class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
-              <a href="projects.html">
-                <div class="relative m-12 bg-white rounded-xl">
-                  <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/proftfolio-img.jpg"
-                      alt="portfolio" class="w-full" />
-                  </div>
-                  <div
-                    class="relative p-4 text-center">
-                    <h4 class="text-xl font-semibold">
-                      Web Development
-                    </h4>
-                  </div>
+            <a href="projects.html">
+              <div class="relative m-12 bg-white rounded-xl">
+                <div class="overflow-hidden rounded-t-lg">
+                  <img src="./assets/images/proftfolio-img.jpg" alt="portfolio" class="w-full" />
                 </div>
-              </a>
+                <div class="relative p-4 text-center">
+                  <h4 class="text-xl font-semibold">
+                    Web Development
+                  </h4>
+                </div>
+              </div>
+            </a>
           </div>
           <div :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
             class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
-          <a href="projects.html">
+            <a href="projects.html">
 
-            <div class="relative m-12 bg-white rounded-xl">
-              <div class="overflow-hidden rounded-t-lg">
-                <img src="./assets/images/proftfolio-img.jpg"
-                  alt="portfolio" class="w-full" />
+              <div class="relative m-12 bg-white rounded-xl">
+                <div class="overflow-hidden rounded-t-lg">
+                  <img src="./assets/images/proftfolio-img.jpg" alt="portfolio" class="w-full" />
+                </div>
+                <div class="relative p-4 text-center">
+                  <h4 class="text-xl font-semibold">
+                    Web Development
+                  </h4>
+                </div>
               </div>
-              <div
-                class="relative p-4 text-center">
-                <h4 class="text-xl font-semibold">
-                  Web Development
-                </h4>
-              </div>
-            </div>
-          </a>
+            </a>
           </div>
           <div :class="showCards == 'all' || showCards == 'development' ? 'block' : 'hidden' "
             class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
-          <a href="projects.html">
+            <a href="projects.html">
 
-            <div class="relative m-12 bg-white rounded-xl">
-              <div class="overflow-hidden rounded-t-lg">
-                <img src="./assets/images/proftfolio-img.jpg"
-                  alt="portfolio" class="w-full" />
+              <div class="relative m-12 bg-white rounded-xl">
+                <div class="overflow-hidden rounded-t-lg">
+                  <img src="./assets/images/proftfolio-img.jpg" alt="portfolio" class="w-full" />
+                </div>
+                <div class="relative p-4 text-center">
+                  <h4 class="text-xl font-semibold">
+                    Web Development
+                  </h4>
+                </div>
               </div>
-              <div
-                class="relative p-4 text-center">
-                <h4 class="text-xl font-semibold">
-                  Web Development
-                </h4>
-              </div>
-            </div>
 
-          </a>
+            </a>
           </div>
           <div :class="showCards == 'all' || showCards == 'design' ? 'block' : 'hidden' "
             class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
-          <a href="projects.html">
-            <div class="relative m-12 bg-white rounded-xl">
-              <div class="overflow-hidden rounded-t-lg">
-                <img src="./assets/images/proftfolio-img.jpg"
-                  alt="portfolio" class="w-full" />
+            <a href="projects.html">
+              <div class="relative m-12 bg-white rounded-xl">
+                <div class="overflow-hidden rounded-t-lg">
+                  <img src="./assets/images/proftfolio-img.jpg" alt="portfolio" class="w-full" />
+                </div>
+                <div class="relative p-4 text-center">
+                  <h4 class="text-xl font-semibold">
+                    Web Development
+                  </h4>
+                </div>
               </div>
-              <div
-                class="relative p-4 text-center">
-                <h4 class="text-xl font-semibold">
-                  Web Development
-                </h4>
-              </div>
-            </div>
-          </a>
+            </a>
           </div>
           <div :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
             class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
-          <a href="projects.html">
-            <div class="relative m-12 bg-white rounded-xl">
-              <div class="overflow-hidden rounded-t-lg">
-                <img src="./assets/images/proftfolio-img.jpg"
-                  alt="portfolio" class="w-full" />
+            <a href="projects.html">
+              <div class="relative m-12 bg-white rounded-xl">
+                <div class="overflow-hidden rounded-t-lg">
+                  <img src="./assets/images/proftfolio-img.jpg" alt="portfolio" class="w-full" />
+                </div>
+                <div class="relative p-4 text-center">
+                  <h4 class="text-xl font-semibold">
+                    Web Development
+                  </h4>
+                </div>
               </div>
-              <div
-                class="relative p-4 text-center">
-                <h4 class="text-xl font-semibold">
-                  Web Development
-                </h4>
-              </div>
-            </div>
-          </a>
+            </a>
           </div>
           <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
             class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
-          <a href="projects.html">
-            <div class="relative m-12 bg-white rounded-xl">
-              <div class="overflow-hidden rounded-t-lg">
-                <img src="./assets/images/proftfolio-img.jpg"
-                  alt="portfolio" class="w-full" />
+            <a href="projects.html">
+              <div class="relative m-12 bg-white rounded-xl">
+                <div class="overflow-hidden rounded-t-lg">
+                  <img src="./assets/images/proftfolio-img.jpg" alt="portfolio" class="w-full" />
+                </div>
+                <div class="relative p-4 text-center">
+                  <h4 class="text-xl font-semibold">
+                    Web Development
+                  </h4>
+                </div>
               </div>
-              <div
-                class="relative p-4 text-center">
-                <h4 class="text-xl font-semibold">
-                  Web Development
-                </h4>
-              </div>
-            </div>
-          </a>
+            </a>
           </div>
         </div>
       </div>
@@ -536,11 +530,13 @@
               <h4 class="text-dark mb-9 text-lg font-semibold">Reach to us</h4>
               <div class="phone my-2"><i class="fa-solid fa-phone"></i> +91 9632584710</div>
               <a href="mailto:someone@example.com" class="my-2">
-                <div class="flex items-center	hover:text-[#9cd3f1] cursor-cursor-pointer"><i class="fa-regular fa-envelope me-2 text-xl"></i>tectonicengineering@gmail.com</div>
+                <div class="flex items-center	hover:text-[#9cd3f1] cursor-cursor-pointer"><i
+                    class="fa-regular fa-envelope me-2 text-xl"></i>tectonicengineering@gmail.com</div>
               </a>
               <div class="address flex items-center my-2">
-                <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>B-131 Shastri Nagar, New Delhi-110035
-                </div>
+                <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>B-131 Shastri Nagar, New
+                Delhi-110035
+              </div>
             </div>
           </div>
         </div>
@@ -594,6 +590,7 @@
       navLinks.classList.toggle('left-[0%]')
     }
   </script>
+
 </body>
 
 </html>
