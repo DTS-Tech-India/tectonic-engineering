@@ -24,7 +24,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -97,7 +97,7 @@
     <section class="bg-gradient-to-r to-cyan-500 from-blue-300 darkk:bg-gray-900 h-screen">
       <div
         class="grid max-w-screen lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:h-screen hero-flex items-center lg:px-36">
-        <div class="mr-auto place-self-center lg:col-span-7 hero-text">
+        <div class="mr-auto place-self-center lg:col-span-7 hero-text" data-aos="fade-right" data-aos-duration="1000">
           <h1
             class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-6xl darkk:text-white pt-20">
             Transforming ideas into structural realities</h1>
@@ -126,7 +126,7 @@
           </div>
 
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex hero-image">
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex hero-image" data-aos="fade-left" data-aos-duration="1000">
           <img src="./assets/images/hero image.png" alt="mockup" class="drop-shadow-2xl shadow-black">
         </div>
       </div>
@@ -137,34 +137,35 @@
     <section class="bg-white darkk:bg-gray-900">
       <div class="py-8 lg:py-16 w-screen px-4">
         <h2
+        data-aos="fade-down"
           class="mb-8 lg:mb-16 text-5xl font-bold tracking-tight leading-tight text-center text-gray-900 darkk:text-white md:text-4xl">
           Our Clients</h2>
         <div
           class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 darkk:text-gray-400  lg:mx-20">
-          <a href="#" class="flex justify-center items-center client-logo-1">
+          <a href="#" class="flex justify-center items-center client-logo " data-aos="fade-left">
             <img src="./assets/images/apollo.png" alt="" class="w-2/3">
           </a>
-          <a href="" class="flex justify-center items-center client-logo">
+          <a href="" class="flex justify-center items-center client-logo" data-aos="fade-left">
             <img src="./assets/images/BHEl.png" alt="" class="w-2/3">
           </a>
           </a>
-          <a href="#" class="flex justify-center items-center client-logo">
+          <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-left">
             <img src="./assets/images/IOCL.png" alt="" class="w-2/3">
           </a>
-          <a href="#" class="flex justify-center items-center client-logo">
+          <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-left">
             <img src="./assets/images/L&T.png" alt="" class="w-2/3">
           </a>
-          <a href="#" class="flex justify-center items-center client-logo">
+          <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-right">
             <img src="./assets/images//PGCI.png" alt="" class="w-2/3">
           </a>
-          <a href="#" class="flex justify-center items-center client-logo">
+          <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-right">
             <img src="./assets/images/SPLENDOR.png" alt="" class="w-2/3">
           </a>
-          <a href="#" class="flex justify-center items-center client-logo">
+          <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-right">
             <img src="./assets/images/NHAI.png" alt="" class="w-2/3">
           </a>
 
-          <a href="#" class="flex justify-center items-center client-logo">
+          <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-right">
             <img src="./assets/images/nosi.png" alt="" class="w-2/3">
           </a>
 
@@ -180,13 +181,13 @@
         <div class="mx-4 flex flex-wrap">
           <div class="w-full px-4">
             <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-              <span class="text-primary mb-2 block text-lg font-semibold">
+              <span class="text-primary mb-2 block text-lg font-semibold"  data-aos="fade-down">
                 Our Services
               </span>
-              <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
+              <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]" data-aos="fade-down">
                 What We Offer
               </h2>
-              <p class="text-body-color text-base">
+              <p class="text-body-color text-base"data-aos="fade-up">
                 There are many variations of passages of Lorem Ipsum available but
                 the majority have suffered alteration in some form.
               </p>
@@ -195,7 +196,7 @@
         </div>
 
         <div class="mx-4 flex flex-wrap ">
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3" data-aos="flip-right" data-aos-duration="1500">
             <div class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
               <div class="bg-primary mb-4 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <ion-icon name="aperture-outline"></ion-icon>
@@ -209,7 +210,7 @@
               </p>
             </div>
           </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3" data-aos="flip-left" data-aos-duration="1500">
             <div class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
               <div class="bg-primary mb-4 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <ion-icon name="aperture-outline"></ion-icon>
@@ -223,7 +224,7 @@
               </p>
             </div>
           </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3" data-aos="flip-right" data-aos-duration="1500">
             <div class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
               <div class="bg-primary mb-4 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <ion-icon name="aperture-outline"></ion-icon>
@@ -235,7 +236,7 @@
               </p>
             </div>
           </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3" data-aos="flip-left" data-aos-duration="1500">
             <div class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
               <div class="bg-primary mb-4 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <ion-icon name="aperture-outline"></ion-icon>
@@ -247,7 +248,7 @@
               </p>
             </div>
           </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3" data-aos="flip-right" data-aos-duration="1500">
             <div class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
               <div class="bg-primary mb-4 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <ion-icon name="aperture-outline"></ion-icon>
@@ -261,7 +262,7 @@
               </p>
             </div>
           </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3" data-aos="flip-left" data-aos-duration="1500">
             <div class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
               <div class="bg-primary mb-4 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <ion-icon name="aperture-outline"></ion-icon>
@@ -291,20 +292,20 @@
         <div class="mx-4 flex flex-wrap">
           <div class="w-full px-4">
             <div class="mx-auto mb-[60px] max-w-[510px] text-center">
-              <span class="text-primary mb-2 block text-lg font-semibold">
+              <span class="text-primary mb-2 block text-lg font-semibold" data-aos="fade-down">
                 Our Portfolio
               </span>
-              <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
+              <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]" data-aos="fade-down">
                 Our Recent Projects
               </h2>
-              <p class="text-body-color text-base">
+              <p class="text-body-color text-base" data-aos="fade-up">
                 There are many variations of passages of Lorem Ipsum available but
                 the majority have suffered alteration in some form.
               </p>
             </div>
           </div>
         </div>
-        <div class="mx-4 flex flex-wrap justify-center">
+        <div class="mx-4 flex flex-wrap justify-center" data-aos="zoom-in-right">
           <div class="w-full px-4">
             <ul class="mb-12 flex flex-wrap justify-center space-x-1">
               <li class="mb-1">
@@ -345,7 +346,7 @@
         </div>
         <div class="mx-4 flex flex-wrap">
           <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
             <a href="projects.html">
               <div class="relative m-12 bg-white rounded-xl">
                 <div class="overflow-hidden rounded-t-lg">
@@ -354,13 +355,13 @@
                 <div class="relative p-4 text-center">
                   <h4 class="text-xl font-semibold">
                     Web Development
-                  </h4>
+                  </h4> 
                 </div>
               </div>
             </a>
           </div>
           <div :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
             <a href="projects.html">
 
               <div class="relative m-12 bg-white rounded-xl">
@@ -376,7 +377,7 @@
             </a>
           </div>
           <div :class="showCards == 'all' || showCards == 'development' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
             <a href="projects.html">
 
               <div class="relative m-12 bg-white rounded-xl">
@@ -392,8 +393,9 @@
 
             </a>
           </div>
+          
           <div :class="showCards == 'all' || showCards == 'design' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
             <a href="projects.html">
               <div class="relative m-12 bg-white rounded-xl">
                 <div class="overflow-hidden rounded-t-lg">
@@ -408,7 +410,7 @@
             </a>
           </div>
           <div :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
             <a href="projects.html">
               <div class="relative m-12 bg-white rounded-xl">
                 <div class="overflow-hidden rounded-t-lg">
@@ -423,7 +425,7 @@
             </a>
           </div>
           <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
-            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer">
+            class="w-full px-4 md:w-1/2 xl:w-1/3 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
             <a href="projects.html">
               <div class="relative m-12 bg-white rounded-xl">
                 <div class="overflow-hidden rounded-t-lg">
@@ -447,8 +449,9 @@
 
 
     <!-- ====== Footer Section Start -->
-    <footer class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6 w-full border-t-[2px]">
-      <div class="container mx-auto border-b-[1px] border-gray-400">
+    <footer class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6 w-full border-t-[2px]" >
+      <div class="container mx-auto border-b-[1px] border-gray-400" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
         <div class="mx-4 flex flex-wrap">
           <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
             <div class="mb-10 w-full">
@@ -589,6 +592,17 @@
       e.name = e.name === 'menu' ? 'close' : 'menu'
       navLinks.classList.toggle('left-[0%]')
     }
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        offset: 300,
+        duration: 1000
+      }
+
+    );
   </script>
 
 </body>
