@@ -2,42 +2,51 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone-number");
+    window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    });
+  </script>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          },
-          plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
         }
-      </script>
-    <title>Tectonic Engineering</title>
+      },
+      plugins: [
+        // ...
+        require('@tailwindcss/forms'),
+      ],
+    }
+  </script>
+  <title>Tectonic Engineering</title>
 </head>
 
 <body class="font-[Poppins] bg-gradient-to-t from-[#ffffff] to-[#9cd3f1]">
@@ -54,15 +63,15 @@
   </div>
 
   <script>
-    document.onreadystatechange = function() {
+    document.onreadystatechange = function () {
       if (document.readyState !== "complete") {
-        $("#loader").css("display","flex");
-        $("main").css("display","none");
-    } else {
-      $("main").css("display","inline");
-      $("#loader").css("display","none");
-    }
-};
+        $("#loader").css("display", "flex");
+        $("main").css("display", "none");
+      } else {
+        $("main").css("display", "inline");
+        $("#loader").css("display", "none");
+      }
+    };
   </script>
   <main>
     <header class="bg-[#C1F6EC]">
@@ -74,7 +83,8 @@
           </div>
           <a href="./">
             <img class="w-12 cursor-pointer lg:me-0" src="./assets/images/Tectonic-logo.png" alt="Tectonic logo">
-            </a>        </div>
+          </a>
+        </div>
         <div
           class="nav-links duration-500 md:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto  w-full flex items-center px-5 bg-white lg:bg-transparent top-[9%] border-lg">
           <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
@@ -88,48 +98,89 @@
               <a class="hover:text-blue-500 font-medium" href="projects.html">Projects</a>
             </li>
             <a href="contact.html" class="lg:absolute right-10"><button
-                class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium"> Contact Us</button></a>
+                class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">
+                Contact Us</button></a>
           </ul>
 
         </div>
 
     </header>
 
-  
-  
-      <!-- ====== Contact Form Section Start -->
-  <div class=" bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
-        <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    <div class="flex justify-center py-6 text-green-700 bg-white ">
+
+      <div class="flex" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+          <li class="inline-flex items-center">
+            <a href="./"
+              class="inline-flex items-center text-sm font-medium hover:text-blue-600 dark:hover:text-white">
+              <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+              </svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg class="w-3 h-3 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <a href="#"
+                class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2 dark:hover:text-white">Contact Us</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+
+    </div>
+
+
+    <!-- ====== Contact Form Section Start -->
+    <div class=" bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+        aria-hidden="true">
+        <div
+          class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
       </div>
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
+        <p class="mt-2 text-lg leading-8 text-gray-600">Aute magna irure deserunt veniam aliqua magna enim voluptate.
+        </p>
       </div>
       <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
             <div class="mt-2.5">
-              <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:  sm:text-sm sm:leading-6">
+              <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:  sm:text-sm sm:leading-6">
             </div>
           </div>
           <div>
             <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
             <div class="mt-2.5">
-              <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:   sm:text-sm sm:leading-6">
+              <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:   sm:text-sm sm:leading-6">
             </div>
           </div>
           <div class="sm:col-span-2">
             <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
             <div class="mt-2.5">
-              <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:  sm:text-sm sm:leading-6">
+              <input type="text" name="company" id="company" autocomplete="organization"
+                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:  sm:text-sm sm:leading-6">
             </div>
           </div>
           <div class="sm:col-span-2">
             <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
             <div class="mt-2.5">
-              <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:  sm:text-sm sm:leading-6">
+              <input type="email" name="email" id="email" autocomplete="email"
+                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:  sm:text-sm sm:leading-6">
             </div>
           </div>
           <div class="sm:col-span-2">
@@ -137,46 +188,41 @@
             <div class="relative mt-2.5">
               <div class="absolute inset-y-0 left-0 flex items-center">
                 <label for="country" class="sr-only"></label>
-                <select id="country" name="country" class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pe-2 text-gray-400 focus:ring-2 sm:text-sm">
-                  <option selected>IN</option>
-                  <option >US</option>
+                <select id="country" name="country"
+                  class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pe-2 text-gray-400 focus:ring-2 sm:text-sm">
+                  <option selected>+91</option>
+                  <option>US</option>
                   <option>CA</option>
                   <option>EU</option>
                 </select>
               </div>
-              <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:  sm:text-sm sm:leading-6">
+              <input type="tel" name="phone-number" id="phone-number" autocomplete="tel"
+                class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:  sm:text-sm sm:leading-6">
             </div>
           </div>
           <div class="sm:col-span-2">
             <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
             <div class="mt-2.5">
-              <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:  sm:text-sm sm:leading-6"></textarea>
+              <textarea name="message" id="message" rows="4"
+                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus: focus:  sm:text-sm sm:leading-6"></textarea>
             </div>
-          </div>
-          <div class="flex gap-x-4 sm:col-span-2">
-            <div class="flex h-6 items-center ">
-              <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-              <input type="checkbox" name="" id="" class="">
-              <label class="text-sm leading-6 text-gray-600 lg:ms-1" id="switch-1-label">
-                Subscribe to our newsletter
-              </label>
-            </div>
-
           </div>
         </div>
         <div class="mt-10">
-          <button type="submit" class="block w-full rounded-md bg-[#C1F6EC] px-3.5 py-2.5 text-center duration-500 text-black shadow-sm hover:bg-indigo-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+          <button type="submit"
+            class="block w-full rounded-md bg-[#C1F6EC] px-3.5 py-2.5 text-center duration-500 text-black shadow-sm hover:bg-indigo-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's
+            talk</button>
         </div>
       </form>
     </div>
-      <!-- ====== Contact Form Section Ends -->
-  
-  
-  
+    <!-- ====== Contact Form Section Ends -->
+
+
+
     <!-- ====== Footer Section Start -->
-    <footer class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6 w-full border-t-[2px]" >
+    <footer class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6 w-full border-t-[2px]">
       <div class="container mx-auto border-b-[1px] border-gray-400" data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom">
+        data-aos-anchor-placement="center-bottom">
         <div class="mx-4 flex flex-wrap">
           <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
             <div class="mb-10 w-full">
@@ -249,25 +295,21 @@
                     Contact us
                   </a>
                 </li>
-                <li>
-                  <a href="privacy-policy.html"
-                    class="text-body-color hover:text-[#87acec] mb-1 inline-block text-base leading-loose">
-                    Privacy Policy
-                  </a>
-                </li>
+
               </ul>
             </div>
           </div>
           <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
             <div class="mb-10 w-full">
               <h4 class="text-dark mb-9 text-lg font-semibold">Reach to us</h4>
-              <div class="phone my-2 hover:text-[#9cd3f1]"><a href="tel:+"><i class="fa-solid fa-phone"></i>+91 8800683542</a></div>
+              <div class="phone my-2 hover:text-[#9cd3f1]"><a href="tel:+"><i class="fa-solid fa-phone"></i>+91
+                  8800683542</a></div>
               <a href="mailto:someone@example.com" class="my-2">
                 <div class="flex items-center	hover:text-[#9cd3f1] cursor-cursor-pointer"><i
                     class="fa-regular fa-envelope me-2 text-xl"></i>tectonicengineering@gmail.com</div>
               </a>
               <div class="address flex my-2">
-                <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>2nd Floor, 16/3672 Reghar Pura, Karol Bagh, New Delhi- 110005
+                <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>C17, Sector 3, Noida 301201
               </div>
             </div>
           </div>
@@ -303,7 +345,8 @@
           </svg>
         </span>
         <div class="text-center lg:pt-6">
-          <p class="overflow-x-hidden">&copy; Tectonic Engineering 2023 | All Rights Reserved </p>
+          <p class="overflow-x-hidden">&copy; Tectonic Engineering 2023 | All Rights Reserved | <a
+              href="./privacy-policy.html">Privacy Policy</a> </p>
         </div>
       </div>
 
