@@ -349,74 +349,6 @@
       }
     </script>
 
-    <script>
-      document.getElementById("contact-form").addEventListener("submit", (e) => {
-        e.preventDefault();
-
-          const formData = new FormData(this);
-
-        const firstName = document.getElementById("firstName").value;
-        const lastName = document.getElementById("lastName").value;
-
-        formData.append("fullName", firstName + " " + lastName);
-
-        fetch("https://script.google.com/macros/s/AKfycbzZ5rgM-joWW1rAMtPCpnQYUBQFT2ihtWTROgeVoAPxrsSPVYw-jlhbiM8iKowjWmpd8w/exec", {
-          method: "POST",
-          body: formData,
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.result === "success") {
-              alert(`Thank you ${firstName} for contacting us! We will get back to you shortly.`);
-            } else {
-              alert(`${data}`);
-            }
-          }).catch((error) => {
-            console.error("Error", error);
-            alert("error occured")
-          })
-
-      })
-    </script>
-    <script>
-
-      const input = document.querySelector("#phone-number");
-
-      const iti = window.intlTelInput(input, {
-        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-        initialCountry: "auto",
-        autoPlaceholder: "aggressive",
-        separateDialCode: true,
-        formatOnDisplay: true,
-        nationalMode: false,
-
-        geoIpLookup: function (callback) {
-          fetch("https://ipapi.co/json")
-            .then(function (res) { return res.json(); })
-            .then(function (data) { callback(data.country_code); })
-            .catch(function () { callback(); });
-        }
-      });
-
-      document.getElementById("contact-form").addEventListener("submit", (e) => {
-
-
-        e.preventDefault();
-        const number = iti.getNumber();
-        input.value = iti.getNumber();
-
-        console.log(input.value);
-      })
-    </script>
-    <style>
-      .iti__arrow {
-        /* border: none; */
-      }
-
-      .iti {
-        width: 100%;
-      }
-    </style>
     
     <script>
       document.getElementById("contact-form").addEventListener("submit", (e) => {
@@ -449,9 +381,9 @@
     </script>
     <script>
 
-      const input = document.querySelector("#phone-number");
+      const phone = document.querySelector("#phone-number");
 
-      const iti = window.intlTelInput(input, {
+      const iti = window.intlTelInput(phone, {
         utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
         initialCountry: "auto",
         autoPlaceholder: "aggressive",
@@ -472,7 +404,7 @@
 
         e.preventDefault();
         const number = iti.getNumber();
-        input.value = iti.getNumber();
+        phone.value = iti.getNumber();
 
         console.log(input.value);
       })
