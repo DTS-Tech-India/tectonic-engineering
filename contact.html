@@ -341,6 +341,77 @@
 
     </footer>
     <!-- ====== Footer Section End -->
+
+    <div class="loader-overlay" id="loader-overlay">
+      <div class="loader"></div>
+    </div>
+
+    <div class="success-overlay" id="success-overlay">
+      <div class="success-message">
+        <p>Form submitted successfully!</p>
+      </div>
+    </div>
+
+    <style>
+      /* CSS for loader and success message styling */
+      .loader-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .loader {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        /* Corrected animation property */
+      }
+
+      .success-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .success-message {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+      }
+
+      @keyframes spin {
+
+        /* Keyframes definition for loader animation */
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
     <script>
       const navLinks = document.querySelector('.nav-links')
       function onToggleMenu(e) {
@@ -349,17 +420,25 @@
       }
     </script>
 
-    
+
+    <!-- JavaScript for form submission and overlay handling -->
     <script>
+      // Hide both overlays initially
+      document.getElementById("loader-overlay").style.display = "none";
+      document.getElementById("success-overlay").style.display = "none";
+
       document.getElementById("contact-form").addEventListener("submit", function (e) {
         e.preventDefault();
 
-          const formData = new FormData(this);
+        const formData = new FormData(this);
 
         const firstName = document.getElementById("firstName").value;
         const lastName = document.getElementById("lastName").value;
 
         formData.append("fullName", firstName + " " + lastName);
+
+        // Show the loader overlay
+        document.getElementById("loader-overlay").style.display = "flex";
 
         fetch("https://script.google.com/macros/s/AKfycbzZ5rgM-joWW1rAMtPCpnQYUBQFT2ihtWTROgeVoAPxrsSPVYw-jlhbiM8iKowjWmpd8w/exec", {
           method: "POST",
@@ -367,18 +446,29 @@
         })
           .then((response) => response.json())
           .then((data) => {
-            if (data.result === "success") {
-              alert(`Thank you ${firstName} for contacting us! We will get back to you shortly.`);
-            } else {
-              alert(`${data}`);
-            }
-          }).catch((error) => {
-            console.error("Error", error);
-            alert("error occured")
-          })
+            // Hide the loader overlay
+            document.getElementById("loader-overlay").style.display = "none";
 
-      })
+            if (data.result === "success") {
+              // Show the success message
+              document.getElementById("success-overlay").style.display = "flex";
+
+              setTimeout(() => {
+                // Hide the success message after 3 seconds
+                document.getElementById("success-overlay").style.display = "none";
+              }, 3000);
+            } else {
+              alert("An error occurred");
+            }
+          })
+          .catch((error) => {
+            console.error("Error", error);
+            alert("An error occurred");
+          });
+      });
     </script>
+
+
     <script>
 
       const phone = document.querySelector("#phone-number");
