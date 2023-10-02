@@ -156,14 +156,14 @@
           <div>
             <label for="firstName" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
             <div class="mt-2.5">
-              <input type="text" name="firstName" id="firstName" autocomplete="given-name"
+              <input type="text" name="First Name" id="firstName" autocomplete="given-name"
                 class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2  sm:text-sm sm:leading-6">
             </div>
           </div>
           <div>
             <label for="lastName" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
             <div class="mt-2.5">
-              <input type="text" name="lastName" id="lastName" autocomplete="family-name"
+              <input type="text" name="Last Name" id="lastName" autocomplete="family-name"
                 class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2   sm:text-sm sm:leading-6">
             </div>
           </div>
@@ -432,15 +432,20 @@
 
         const formData = new FormData(this);
 
-        const firstName = document.getElementById("firstName").value;
-        const lastName = document.getElementById("lastName").value;
+    // Retrieve the values of the "First Name" and "Last Name" fields
+    const firstName = formData.get("First Name");
+    const lastName = formData.get("Last Name");
 
-        formData.append("fullName", firstName + " " + lastName);
+    // Concatenate the first name and last name to create "Full Name"
+    const fullName = firstName + " " + lastName;
+
+    // Append "Full Name" to the form data
+    formData.append("Full Name", fullName);
 
         // Show the loader overlay
         document.getElementById("loader-overlay").style.display = "flex";
 
-        fetch("https://script.google.com/macros/s/AKfycbzZ5rgM-joWW1rAMtPCpnQYUBQFT2ihtWTROgeVoAPxrsSPVYw-jlhbiM8iKowjWmpd8w/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbxsZRNJPDOZARMqICs4i5wuetmh_g1pDbgCItg3F_lBlx-ivQzg7G-d9Ugh9yVKwmtBfg/exec", {
           method: "POST",
           body: formData,
         })
