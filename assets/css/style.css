@@ -90,17 +90,10 @@ ion-icon {
 /* services */
 
 .service-icon img {
-  min-width: 100px;
-  min-height: 90px;
+  max-width: 100px;
+  max-height: 90px;
 }
 
-@media(max-width:768px) {
-  .service-icon img {
-    min-width: 80px;
-    min-height: 70px;
-  }
-  
-}
 
 /* Form loader */
 .loader-overlay {
@@ -159,4 +152,15 @@ ion-icon {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+.breadcrumb {
+  background-image: url('../images/engineer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(70%);
+  background-attachment: fixed;
+  background-position: center bottom;
+
 }
