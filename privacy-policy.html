@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Tectonic Engineering</title>
+</head>
+
+<body class="font-[Poppins]">
+    <div id="loader">
+        <div class="loader-container">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </div>
+    </div>
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                $("#loader").css("display", "flex");
+                $("main").css("display", "none");
+            } else {
+                $("main").css("display", "inline");
+                $("#loader").css("display", "none");
+            }
+        };
+    </script>
+
+
+    <main>
+        <header class="bg-[#C1F6EC]">
+            <nav class="flex justify-evenly items-center py-2 mx-8 sm:mx-4 lg:mx-0">
+                <div class="flex justify-between w-full lg:w-fit">
+                    <div class="flex items-center lg:hidden">
+                        <i class="fa-solid fa-bars text-3xl cursor-pointer z-10" onclick="onToggleMenu(this)"
+                            name="menu"></i>
+                    </div>
+                    <a href="./">
+                        <img class="w-12 cursor-pointer lg:me-0" src="./assets/images/Tectonic-logo.png"
+                            alt="Tectonic logo">
+                    </a>
+                </div>
+                <div
+                    class="nav-links duration-500 lg:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto  min-w-screen flex px-5 bg-white lg:bg-transparent top-[9%]">
+                    <ul class="flex lg:flex-row flex-col md:items-center md:gap-[4vw]">
+                        <li>
+                            <a class="hover:text-blue-500 font-medium" href="./">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-blue-500 font-medium" href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-blue-500 font-medium" href="projects.html">Projects</a>
+                        </li>
+                        <a href="contact.html">
+                            <button
+                                class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">
+                                Contact Us</button>
+                        </a>
+                    </ul>
+
+                </div>
+
+        </header>
+
+        <section class="lg:w-2/3 md:w-2/3 w-full lg:mx-auto md:mx-auto px-4 mt-10 mb-4">
+            <div class="bg-white p-4 rounded shadow-md">
+                <p class="mb-4">This Privacy Policy outlines how Tectonic Engineering ("we," "our," or "us") collects, uses, and protects the personal information provided by users ("you," "your") on our website, tectonicengineering.com. We are committed to safeguarding your privacy and ensuring the security of your personal information.</p>
+                
+                <h2 class="text-2xl font-semibold mb-2">Information We Collect</h2>
+                <p>We collect the following personal information from you through our contact form:</p>
+                <ul class="list-disc list-inside pl-4 mb-4">
+                    <li>Name</li>
+                    <li>Email</li>
+                    <li>Phone</li>
+                </ul>
+                
+                <h2 class="text-2xl font-semibold mb-2">Purpose of Data Collection</h2>
+                <p>We collect this information to respond to your inquiries and provide you with the information and assistance you request. We do not share this information with third parties. If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
+                
+                <h2 class="text-2xl font-semibold mb-2">Data Retention</h2>
+                <p>We retain your personal information for as long as you wish us to do so. You may request the deletion of your information by contacting us at tecengineering123@gmail.com.</p>
+            </div>
+        
+            <div class="bg-white p-4 rounded shadow-md mt-4">
+                <h2 class="text-2xl font-semibold mb-2">Links to Other Websites</h2>
+                <p class="mb-4">Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
+                <p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
+        
+                <h2 class="text-2xl font-semibold mb-2">Changes to this Privacy Policy</h2>
+                <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
+                <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.</p>
+                <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+            </div>
+        
+            <div class="bg-white p-4 rounded shadow-md mt-4">
+                <h2 class="text-2xl font-semibold mb-2">Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, You can contact us:</p>
+                <ul class="list-disc  pl-4 mt-2">
+                    <li>
+                        <p>By visiting this page on <a href="./contact.html" rel="internal nofollow noopener" target="_blank" class="text-blue-500">our website</a></p>
+                    </li>
+                    <li>
+                        <p>By phone number: <span class="text-blue-500">8800683542</span></p>
+                    </li>
+                </ul>
+            </div>  
+        </section>
+    </main>
+
+    <!-- ====== Footer Section Start -->
+    <footer class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6 w-full border-t-[2px]">
+        <div class="container mx-auto border-b-[1px] border-gray-400" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+            <div class="mx-4 flex flex-wrap">
+                <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
+                    <div class="mb-10 w-full">
+                        <a href="./" class="mb-6 inline-block">
+                            <img src="./assets/images/logo.svg" alt="Tectonic Logo" class="w-[200px]">
+
+                        </a>
+                        <p class="text-body-color mb-7 text-base">
+
+                        </p>
+                        <div class="mb-10 w-full">
+                            <!-- <h4 class="text-dark mb-9 text-lg font-semibold">Follow Us On</h4> -->
+                            <div class="mb-6 flex items-center">
+                                <a href="#"
+                                    class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                                    <svg width="8" height="16" viewBox="0 0 8 16" class="fill-current">
+                                        <path
+                                            d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z" />
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                                    <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                                        <path
+                                            d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z" />
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                                    <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                                        <path
+                                            d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z" />
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" class="fill-current">
+                                        <path
+                                            d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
+                    <div class="mb-10 w-full">
+                        <h4 class="text-dark mb-9 text-lg font-semibold">Explore</h4>
+                        <ul>
+                            <li>
+                                <a href="/"
+                                    class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"
+                                    class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="projects.html"
+                                    class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
+                                    Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
+                                    Contact us
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
+                    <div class="mb-10 w-full">
+                        <h4 class="text-dark mb-9 text-lg font-semibold">Reach to us</h4>
+                        <div class="phone my-2 hover:text-[#2E64FE]"><a href="tel:+918800683542"><i
+                                    class="fa-solid fa-phone me-2"></i>+91
+                                8800683542</a></div>
+                        <a href="mailto:someone@example.com" class="my-2">
+                            <div class="flex items-center	hover:text-[#2E64FE] cursor-cursor-pointer"><i
+                                    class="fa-regular fa-envelope me-2 text-xl"></i>tecengineering123@gmail.com </div>
+                        </a>
+                        <div class="address flex my-2">
+                            <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>C17, Sector 3,
+                            Noida, UP - 301201
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span class="absolute left-0 bottom-0 z-[-1]">
+                <svg width="217" height="229" viewBox="0 0 217 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z"
+                        fill="url(#paint0_linear_1179_5)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_1179_5" x1="76.5" y1="281" x2="76.5" y2="1.22829e-05"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#3056D3" stop-opacity="0.08" />
+                            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </span>
+            <span class="absolute top-10 right-10 z-[-1]">
+                <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
+                        fill="url(#paint0_linear_1179_4)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_1179_4" x1="-1.63917e-06" y1="37.5" x2="75" y2="37.5"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#13C296" stop-opacity="0.31" />
+                            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </span>
+            <div class="text-center lg:pt-6">
+                <p class="overflow-x-hidden">&copy; Tectonic Engineering 2023 | All Rights Reserved | <a
+                        class="hover:underline" href="./privacy-policy.html">Privacy Policy</a> </p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ====== Footer Section End -->
+</body>
+
+</html>
