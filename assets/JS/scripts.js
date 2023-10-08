@@ -27,9 +27,10 @@ const iti = window.intlTelInput(phone, {
 document.getElementById("loader-overlay").style.display = "none";
 document.getElementById("success-overlay").style.display = "none";
 
+
 document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault();
-  const isPossible = iti.isPossibleNumber();
+const isPossible = iti.isPossibleNumber();
   if (isPossible) {
     phone.value = iti.getNumber();
     const formData = new FormData(this);
@@ -46,7 +47,7 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
     document.getElementById("loader-overlay").style.display = "flex";
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbxsZRNJPDOZARMqICs4i5wuetmh_g1pDbgCItg3F_lBlx-ivQzg7G-d9Ugh9yVKwmtBfg/exec",
+      "https://script.google.com/macros/s/AKfycbzyLDQzwqluBRq2--G_QnMeajpwS5WltTvqQxxqJtvkpbLBajvf_WD9HCCZ6LAkwMjZ7w/exec",
       {
         method: "POST",
         body: formData,

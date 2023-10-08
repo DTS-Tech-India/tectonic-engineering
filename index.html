@@ -12,8 +12,10 @@
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;1,200;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;1,200;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -44,18 +46,18 @@
         $("#loader").css("display", "flex");
         $("main").css("display", "none");
       } else {
-        $("main").css("display", "inline");
+        $("main").css("display", "block");
         $("#loader").css("display", "none");
       }
     };
   </script>
 
 
-  <main>
+  <main class="mx-auto">
 
 
-    <header class="bg-[#C1F6EC]">
-      <nav class="flex justify-around items-center py-2 mx-8 sm:mx-4 lg:mx-0">
+    <header class="h-screen flex justify-center items-center">
+      <nav class="flex justify-around items-center fixed px-8 sm:mx-4 lg:mx-0 bg-[#C1F6EC] w-[100%] top-0 z-30">
         <div class="flex justify-between w-full lg:w-fit">
           <div class="flex items-center lg:hidden">
             <i class="fa-solid fa-bars text-3xl cursor-pointer z-10" onclick="onToggleMenu(this)" name="menu"></i>
@@ -76,7 +78,7 @@
             <li>
               <a class="hover:text-blue-500 font-medium" href="projects.html">Projects</a>
             </li>
-            <a href="contact.html">
+            <a href="./contact.html">
               <button
                 class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">
                 Contact Us</button>
@@ -84,92 +86,93 @@
           </ul>
 
         </div>
-
+      </nav>
+            <!-- Starts Hero section -->
+            <section class="">
+              <div
+                class="flex flex-col-reverse gap-[5vh] justify-center 	md:flex-row items-center lg:px-20 px-4 md:px-0">
+                <div class="mx-auto place-self-center hero-text" data-aos="fade-right" data-aos-duration="1000">
+                  <h1 class="max-w-2xl mb-4 md:text-7xl text-4xl	flex flex-col font-bold tracking-tight leading-none ">
+                    <span>
+                      Transforming Ideas Into
+                    </span>
+                    <span class="text-blue-400 w-max">Structural Realities</span>
+                  </h1>
+                  <p class="max-w-2xl lg:mb-8 md:text-lg lg:text-xl" style="font-family: 'DM Sans', sans-serif;">
+                    Transforming blueprints into reality, Tectonic Engineering shapes a sustainable tomorrow through
+                    innovative
+                    design and meticulous execution. </p>
+      
+                  <div class="flex lg:inline-block flex-col mt-6">
+                    <a href="/contact.html"
+                      class="inline-flex items-center justify-center px-10 py-3 text-base font-medium text-center text-gray-900 border hover:text-white hover:bg-[#449642] lg:border-gray-300 rounded-full duration-500">
+                      Get in Touch
+                      <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </a>
+                  </div>
+      
+                </div>
+                <div class="mb-4" data-aos="fade-left" data-aos-duration="1000">
+                  <img src="./assets/images/hero image.png" alt="mockup" class="drop-shadow-2xl shadow-black">
+                </div>
+              </div>
+            </section>
+            <!-- Ends hero section -->
     </header>
 
     <div class="max-w-[1440px] mx-auto">
-      
-      <!-- Starts Hero section -->
-      <section class="">
-        <div
-          class="flex flex-col-reverse gap-[5vh] justify-end	md:flex-row h-screen items-center lg:px-12 px-4 md:px-0">
-          <div class="mx-auto place-self-center lg:col-span-7 hero-text" data-aos="fade-right" data-aos-duration="1000">
-            <h1
-              class="max-w-2xl mb-4 md:text-7xl text-4xl	flex flex-col font-bold tracking-tight leading-none ">
-              <span>
-                Transforming Ideas Into 
-              </span>
-              <span class="text-blue-400 w-max">Structural Realities</span></h1>
-            <p class="max-w-2xl lg:mb-8 md:text-lg lg:text-xl" style="font-family: 'DM Sans', sans-serif;">
-              Transforming blueprints into reality, Tectonic Engineering shapes a sustainable tomorrow through
-              innovative
-              design and meticulous execution. </p>
 
-            <div class="flex lg:inline-block flex-col mt-6">
-              <a href="/contact.html"
-                class="inline-flex items-center justify-center px-10 py-3 text-base font-medium text-center text-gray-900 border hover:text-white hover:bg-[#449642] lg:border-gray-300 rounded-full duration-500">
-                Get in Touch
-                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg>
-              </a>
-            </div>
 
-          </div>
-          <div class="mb-4" data-aos="fade-left" data-aos-duration="1000">
-            <img src="./assets/images/hero image.png" alt="mockup" class="drop-shadow-2xl shadow-black">
-          </div>
-        </div>
-      </section>
-      <!-- Ends hero section -->
 
       <!-- Starts Clients section -->
       <section class="bg-gray-100 pt-12 pb-16 rounded-2xl shadow-lg mx-4 md:mx-0">
-          <div class="flex">
-            <div class="w-full">
-              <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-                <span class="text-primary mb-2 block text-lg font-medium" data-aos="fade-down">
-                  Our Clients
-                </span>
-                <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]" data-aos="fade-down">
-                  Who we worked with
-                </h2>
-              </div>
+        <div class="flex">
+          <div class="w-full">
+            <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+              <span class="text-primary mb-2 block text-lg font-medium" data-aos="fade-down">
+                Our Clients
+              </span>
+              <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]" data-aos="fade-down">
+                Who we worked with
+              </h2>
             </div>
           </div>
-            
-          <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4  lg:mx-20">
-            <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-right">
-              <img src="./assets/images/apollo.png" alt="" class="w-2/3 ">
-            </a>
-            <a href="" class="flex justify-center items-center client-logo" data-aos="fade-right">
-              <img src="./assets/images/BHEl.png" alt="" class="w-2/3 ">
-            </a>
-            </a>
-            <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-right">
-              <img src="./assets/images/IOCL.png" alt="" class="w-2/3 ">
-            </a>
-            <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-right">
-              <img src="./assets/images/L&T.png" alt="" class="w-2/3 ">
-            </a>
-            <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-right">
-              <img src="./assets/images//PGCI.png" alt="" class="w-2/3 ">
-            </a>
-            <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-right">
-              <img src="./assets/images/SPLENDOR.png" alt="" class="w-2/3 ">
-            </a>
-            <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-right">
-              <img src="./assets/images/NHAI.png" alt="" class="w-2/3 aspect-video">
-            </a>
+        </div>
 
-            <a href="#" class="flex justify-center items-center client-logo" data-aos="fade-right">
-              <img src="./assets/images/nosi.png" alt="" class="w-2/3 ">
-            </a>
-
+        <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4  lg:mx-20">
+          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
+            <img src="./assets/images/apollo.png" alt="" class="w-2/3 ">
           </div>
+          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
+            <img src="./assets/images/BHEl.png" alt="" class="w-2/3 ">
+          </div>
+          </a>
+          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
+            <img src="./assets/images/IOCL.png" alt="" class="w-2/3 ">
+          </div>
+          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
+            <img src="./assets/images/L&T.png" alt="" class="w-2/3 ">
+          </div>
+          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
+            <img src="./assets/images//PGCI.png" alt="" class="w-2/3 ">
+          </div>
+          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
+            <img src="./assets/images/SPLENDOR.png" alt="" class="w-2/3 ">
+          </div>
+          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
+            <img src="./assets/images/NHAI.png" alt="" class="w-2/3 aspect-video">
+          </div>
+
+          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
+            <img src="./assets/images/nosi.png" alt="" class="w-2/3 ">
+          </div>
+
+        </div>
       </section>
       <!-- Ends clients Section -->
 
@@ -439,7 +442,7 @@
                   </div>
                   <div class="relative p-4 text-center">
                     <h4 class="text-lg font-medium ">
-                      Radtech Buildcon 
+                      Radtech Buildcon
                       <div class="text-md font-normal ">Dummy Address</div>
 
                   </div>
@@ -670,9 +673,9 @@
                   <div class="flex items-center	hover:text-[#2E64FE] cursor-cursor-pointer"><i
                       class="fa-regular fa-envelope me-2 text-xl"></i>tectoniceng@outlook.com </div>
                 </a>
-                <div class="address flex my-2">
-                  <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>C17, Sector 3, Noida, UP -
-                  301201
+                <div class="address flex items-center my-2">
+                  <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>C-17, Sector-3 <br>
+                  Noida, Uttar Pradesh - 301201
                 </div>
               </div>
             </div>

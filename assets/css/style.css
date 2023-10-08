@@ -151,10 +151,13 @@ ion-icon {
 
 
 .breadcrumb {
-  background-image: url('../images/engineer.jpg');
+  background-image: linear-gradient(rgba(72, 75, 78, 0.8), rgba(37, 9, 9, 0.8)), url('../images/engineer.jpg');
+
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(70%);
+  /* filter: sepia(50%); */
+  background-blend-mode: multiply;
+
   background-attachment: fixed;
   background-position: center bottom;
 
