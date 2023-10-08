@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
-
 body {
   overflow-x: hidden;
 }
@@ -17,16 +16,12 @@ ion-icon {
     
   @media(max-width:1300px) {
     .hero-flex {
-      padding:40% 0; 
-
+      padding:0% 0; 
     }
   }
 
 
 
-.hero-image {
-  max-height: max-content;
-}
 
 /* loader */
 
@@ -78,7 +73,7 @@ ion-icon {
   
 
   section .hero-flex {
-    padding: 10% 5%;
+    padding: 0% 5%;
   }
 
 .loader-container span {
