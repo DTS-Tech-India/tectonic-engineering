@@ -23,6 +23,17 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    document.onreadystatechange = function () {
+      if (document.readyState !== "complete") {
+        $("#loader").css("display", "flex");
+        $("main").css("display", "none");
+      } else {
+        $("main").css("display", "inline");
+        $("#loader").css("display", "none");
+      }
+    };
+  </script>
   <title>Tectonic Engineering</title>
 </head>
 
@@ -40,17 +51,7 @@
     </div>
   </div>
 
-  <script>
-    document.onreadystatechange = function () {
-      if (document.readyState !== "complete") {
-        $("#loader").css("display", "flex");
-        $("main").css("display", "none");
-      } else {
-        $("main").css("display", "inline");
-        $("#loader").css("display", "none");
-      }
-    };
-  </script>
+
 
   <main>
     <header class="bg-[#C1F6EC]">

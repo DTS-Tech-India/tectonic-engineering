@@ -23,6 +23,18 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    document.onreadystatechange = function () {
+      if (document.readyState !== "complete") {
+        $("#loader").css("display", "flex");
+        $("main").css("display", "none");
+      } else {
+        $("main").css("display", "inline");
+        $("#loader").css("display", "none");
+      }
+    };
+  </script>
+
   <title>Tectonic Engineering</title>
 </head>
 
@@ -39,17 +51,6 @@
     </div>
   </div>
 
-  <script>
-    document.onreadystatechange = function () {
-      if (document.readyState !== "complete") {
-        $("#loader").css("display", "flex");
-        $("main").css("display", "none");
-      } else {
-        $("main").css("display", "inline");
-        $("#loader").css("display", "none");
-      }
-    };
-  </script>
 
 
   <main>
@@ -132,7 +133,7 @@
         <div class="mb-16 text-center">
           <div class="mt-16 lg:w-2/3 mb-12 text-white">
           </div>
-          <div class="flex justify-evenly flex-wrap">
+          <div class="flex justify-evenly flex-wrap max-w-[1400px] mx-auto">
             <div
               class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
               <div class="flex">
@@ -169,8 +170,6 @@
               </div>
             </div>
 
-
-
             <div
               class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
 
@@ -204,7 +203,7 @@
                   Assam Police head quarter, PEB structure (G+ 2+T)
                 </p>
                 <p class="text-right">
-                  
+
                 </p>
               </div>
             </div>
@@ -224,9 +223,9 @@
                   Multilevel Car Parking, PEB structure (G+ 2+T)
                 </p>
                 <p class="text-right">
-                  
+
                 </p>
-                
+
               </div>
             </div>
           </div>
@@ -245,63 +244,63 @@
         <div class="mb-16 text-center">
           <div class="mt-16 lg:w-1 mb-12 text-white">
           </div>
-          <div class="flex justify-evenly flex-wrap">
+          <div class="flex justify-evenly flex-wrap max-w-[1400px] mx-auto">
             <div
               class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
-                <div class="flex">
-                  <div
-                    class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-                    data-te-ripple-init data-te-ripple-color="light">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
-                  </div>
-                </div>
-                <div class="p-6">
-                  <h5 class="text-lg font-medium">Office Building, Radtech Buildcon</h5>
-                  <p class="my-2 text-left text-light">
-                    Office Building. RCC structure, - 36,000 sqft. (2B+G+6+T).
-                  </p>
-                  <p class="text-right">
-                    
-                  </p>
-                </div>
-            </div>
-            <div
-              class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
-                <div class="flex">
-                  <div
-                    class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-                    data-te-ripple-init data-te-ripple-color="light">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
-                  </div>
-                </div>
-                <div class="p-6">
-                  <h5 class="text-lg font-medium">Villa, Melage Studio</h5>
-                  <p class="my-2 text-left text-light">
-                    Narmada Nirvana Phase III, Villas </p>
-                  <p class="text-right">
-                    Indore, Madhya Pradesh
-                  </p>
-                </div>
-            </div>
-            <div
-              class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
-                <div class="flex">
-                  <div
-                    class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-                    data-te-ripple-init data-te-ripple-color="light">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
-                  </div>
-                </div>
-                <div class="p-6">
-                  <h5 class="text-lg font-medium">Luxury Apartments, Melage Studio</h5>
-                  <p class="my-2 text-left text-light">
-                    Platinum Greens, High End Luxury Apartments</p>
-                  <p class="text-right">
-                    Patna Bihar
-                  </p>
+              <div class="flex">
+                <div
+                  class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
                 </div>
               </div>
+              <div class="p-6">
+                <h5 class="text-lg font-medium">Office Building, Radtech Buildcon</h5>
+                <p class="my-2 text-left text-light">
+                  Office Building. RCC structure, - 36,000 sqft. (2B+G+6+T).
+                </p>
+                <p class="text-right">
+
+                </p>
+              </div>
             </div>
+            <div
+              class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
+              <div class="flex">
+                <div
+                  class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="text-lg font-medium">Villa, Melage Studio</h5>
+                <p class="my-2 text-left text-light">
+                  Narmada Nirvana Phase III, Villas </p>
+                <p class="text-right">
+                  Indore, Madhya Pradesh
+                </p>
+              </div>
+            </div>
+            <div
+              class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
+              <div class="flex">
+                <div
+                  class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="text-lg font-medium">Luxury Apartments, Melage Studio</h5>
+                <p class="my-2 text-left text-light">
+                  Platinum Greens, High End Luxury Apartments</p>
+                <p class="text-right">
+                  Patna Bihar
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -319,119 +318,121 @@
         <div class="mb-16 text-center">
           <div class="mt-16 lg:w-1 mb-12 text-white">
           </div>
-          <div class="flex justify-evenly flex-wrap">
+          <div class="flex justify-evenly flex-wrap max-w-[1400px] mx-auto">
             <div
               class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
-                <div class="flex">
-                  <div
-                    class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-                    data-te-ripple-init data-te-ripple-color="light">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
-                  </div>
+              <div class="flex">
+                <div
+                  class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
                 </div>
-                <div class="p-6">
-                  <h5 class="text-lg font-medium">PEB Shed, BHEL</h5>
-                  <p class="my-2 text-left text-light">
-                    Structural and connection design &Detailing of PEB shed (50m X 120m Span of 25m), construction
-                    store, Thermal power substation, Pipe & Cable Rack.</p>
-                  <p class="text-right">
-                  </p>
-                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="text-lg font-medium">PEB Shed, BHEL</h5>
+                <p class="my-2 text-left text-light">
+                  Structural and connection design &Detailing of PEB shed (50m X 120m Span of 25m), construction
+                  store, Thermal power substation, Pipe & Cable Rack.</p>
+                <p class="text-right">
+                </p>
+              </div>
             </div>
             <div
               class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
-                <div class="flex">
-                  <div
-                    class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-                    data-te-ripple-init data-te-ripple-color="light">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
-                  </div>
+              <div class="flex">
+                <div
+                  class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
                 </div>
-                <div class="p-6">
-                  <h5 class="text-lg font-medium">PEB Store , PGCIL</h5>
-                  <p class="my-2 text-left text-light">
-                    PEB Store Building of 16m X 41m at GIS</p>
-                  <p class="text-right">
-                    Jaipur, Rajasthan
-                  </p>
-                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="text-lg font-medium">PEB Store , PGCIL</h5>
+                <p class="my-2 text-left text-light">
+                  PEB Store Building of 16m X 41m at GIS</p>
+                <p class="text-right">
+                  Jaipur, Rajasthan
+                </p>
+              </div>
             </div>
             <div
               class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
-                <div class="flex">
-                  <div
-                    class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-                    data-te-ripple-init data-te-ripple-color="light">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
-                  </div>
-                </div>
-                <div class="p-6">
-                  <h5 class="text-lg font-medium">PEB Store , PGCIL</h5>
-                  <p class="my-2 text-left text-light">
-                    PEB Store Building of 33m X 13m at GIS</p>
-                  <p class="text-right">
-                    Koteshwar , Gujarat
-                  </p>
+              <div class="flex">
+                <div
+                  class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
                 </div>
               </div>
+              <div class="p-6">
+                <h5 class="text-lg font-medium">PEB Store , PGCIL</h5>
+                <p class="my-2 text-left text-light">
+                  PEB Store Building of 33m X 13m at GIS</p>
+                <p class="text-right">
+                  Koteshwar , Gujarat
+                </p>
+              </div>
+            </div>
             <div
               class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
-                <div class="flex">
-                  <div class="rounded-lg overflow-hidden mx-4 -mt-4 z-10" data-te-ripple-init
-                    data-te-ripple-color="light">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
-                  </div>
-                </div>
-                <div class="p-6">
-                  <h5 class="text-lg font-medium">Shed,N. F Railway</h5>
-                  <p class="my-2 text-left text-light">
-                    Standard Sick Line Shed (55m X 18m)
-                  </p>
-                  <p class="text-right">
-                    
-                  </p>
+              <div class="flex">
+                <div class="rounded-lg overflow-hidden mx-4 -mt-4 z-10" data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
                 </div>
               </div>
-            <div class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
-                <div class="flex">
-                  <div
-                    class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-                    data-te-ripple-init data-te-ripple-color="light">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
-                  </div>
-                </div>
-                <div class="p-6">
-                  <h5 class="text-lg font-medium">Store,L&T </h5>
-                  <p class="my-2 text-left text-light">
-                    -Construction Store (29m X 70m)<br>
-                    -Watch towers (7.5m height).
+              <div class="p-6">
+                <h5 class="text-lg font-medium">Shed,N. F Railway</h5>
+                <p class="my-2 text-left text-light">
+                  Standard Sick Line Shed (55m X 18m)
+                </p>
+                <p class="text-right">
 
-                  </p>
-                  <p class="text-right">
-                    
-                  </p>
-                </div>
+                </p>
+              </div>
             </div>
-            <div class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
-                <div class="flex">
-                  <div
-                    class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-                    data-te-ripple-init data-te-ripple-color="light">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
-                  </div>
-                </div>
-                <div class="p-6">
-                  <h5 class="text-lg font-medium">Factory shed ,ECR Building tech </h5>
-                  <p class="my-2 text-left text-light">
-                    Structural and connection design of Factory shed for INFINITY Glass factory, Palwal, PEB (32m X 120m
-                    Span of 24m).
-
-                  </p>
-                  <p class="text-right">
-                    
-                  </p>
+            <div
+              class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
+              <div class="flex">
+                <div
+                  class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
                 </div>
               </div>
+              <div class="p-6">
+                <h5 class="text-lg font-medium">Store,L&T </h5>
+                <p class="my-2 text-left text-light">
+                  -Construction Store (29m X 70m)<br>
+                  -Watch towers (7.5m height).
+
+                </p>
+                <p class="text-right">
+
+                </p>
+              </div>
+            </div>
+            <div
+              class="my-6 max-w-[300px] my-4 lg:mb-0 rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] projects">
+              <div class="flex">
+                <div
+                  class="rounded-lg overflow-hidden mx-4 -mt-4 z-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" class="w-full aspect-video" />
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="text-lg font-medium">Factory shed ,ECR Building tech </h5>
+                <p class="my-2 text-left text-light">
+                  Structural and connection design of Factory shed for INFINITY Glass factory, Palwal, PEB (32m X 120m
+                  Span of 24m).
+
+                </p>
+                <p class="text-right">
+
+                </p>
+              </div>
+            </div>
           </div>
         </div>
     </section>
@@ -448,7 +449,7 @@
         <div class="mb-16 text-center">
           <div class="mt-16 lg:w-1/2 mb-12 text-white">
           </div>
-          <div class="flex justify-evenly flex-wrap">
+          <div class="flex justify-evenly flex-wrap max-w-[1400px] mx-auto">
             <div class="mb-6 max-w-[320px] my-4 lg:mb-0">
               <div
                 class="relative block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] rounded-lg projects">
@@ -468,7 +469,7 @@
 
                   </p>
                   <p class="text-right">
-                    
+
                   </p>
                 </div>
               </div>
