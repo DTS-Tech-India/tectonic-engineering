@@ -100,8 +100,9 @@ ion-icon {
   min-height: 220px;
 }
 
-.project-img {
+img.project-img {
   min-height: 170px !important;
+  max-height: 170px !important;
 }
 
 /* projects page */
@@ -111,11 +112,11 @@ ion-icon {
   min-height: 18rem;
 }
 
-.projects p:last-child {
+/* .projects p:last-child {
   position: absolute;
-  right: 1rem;
+  left: 25%;
   bottom: 1rem;
-}
+} */
 
 /* about-grid */
 

@@ -88,7 +88,7 @@
         </div>
       </nav>
       <!-- Starts Hero section -->
-      <section class="">
+      <section class="lg:mt-20">
         <div class="flex flex-col-reverse gap-[5vh] justify-center 	md:flex-row items-center lg:p-28 px-4 md:px-0">
           <div class="mx-auto place-self-center hero-text" data-aos="fade-right" data-aos-duration="1000">
             <h1 class="max-w-2xl mb-4 md:text-7xl text-4xl	flex flex-col font-bold tracking-tight leading-none ">
@@ -131,7 +131,7 @@
       <!-- Starts Clients section -->
       <section class="bg-gray-100 pt-12 pb-16 rounded-2xl shadow-lg mx-4 md:mx-0">
         <div class="flex">
-          <div class="w-full">
+          <div  class="project-img w-full">
             <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
               <span class="text-primary mb-2 block text-lg font-medium" data-aos="fade-down">
                 Our Clients
@@ -179,7 +179,7 @@
       <section class="pt-20 pb-12 lg:pt-[120px]">
 
         <div class="flex flex-wrap">
-          <div class="w-full">
+          <div  class="project-img w-full">
             <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
               <span class="text-primary mb-2 block text-lg font-medium" data-aos="fade-down">
                 Our Services
@@ -311,11 +311,11 @@
 
           <div class="mx-0 lg:mx-4 flex flex-wrap">
             <div :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer " data-aos="zoom" data-aos-duration="2000">
+              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#commercial">
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card ">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card ">
                   <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park" class=" project-img" />
+                    <img src="./assets/images/technological park.jpg" alt="Technological Park"  class="project-img w-full" />
                   </div>
                   <div class="relative p-4 text-center">
                     <h4 class="text-lg font-semibold">
@@ -324,14 +324,13 @@
                   </div>
                 </div>
               </a>
-
             </div>
             <div :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#commercial">
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park" class=" project-img" />
+                    <img src="./assets/images/technological park.jpg" alt="Technological Park"  class="project-img w-full" />
                   </div>
                   <div class="relative p-4 text-center">
                     <h4 class="text-lg font-semibold">
@@ -345,9 +344,9 @@
             <div :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#commercial">
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park" class="w-full " />
+                    <img src="./assets/images/technological park.jpg" alt="Technological Park" class="w-full project-img " />
                   </div>
                   <div class="relative p-4 text-center">
                     <h4 class="text-lg font-semibold">
@@ -361,9 +360,9 @@
             <div :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#commercial">
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park" class=" project-img" />
+                    <img src="./assets/images/technological park.jpg" alt="Technological Park"  class="project-img w-full" />
                   </div>
                   <div class="relative p-4 text-center">
                     <h4 class="text-lg font-semibold">
@@ -377,9 +376,9 @@
             <div :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#commercial">
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park" class=" project-img" />
+                    <img src="./assets/images/technological park.jpg" alt="Technological Park" class=" project-img w-full" />
                   </div>
                   <div class="relative p-4 text-center">
                     <h4 class="text-lg font-semibold">
@@ -394,7 +393,7 @@
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#residential">
 
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg ">
                     <img src="./assets/images/NARMADA NIRVANA PHASE III, VILLAS- Indore, Madhya Pradesh.jpg"
                       alt="NARMADA NIRVANA PHASE III, Villas" class=" project-img" />
@@ -411,7 +410,7 @@
             <div :class="showCards == 'all' || showCards == 'Residential' ? 'block' : 'hidden' "
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#residential">
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg">
                     <img src="./assets/images/PLATINUM GREENS, HIGH END LUXURY APARTMENTS-Patna Bihar.jpg"
                       alt="PLATINUM GREENS, HIGH END LUXURY APARTMENTS" class=" project-img " />
@@ -428,7 +427,7 @@
             <div :class="showCards == 'all' || showCards == 'Residential' ? 'block' : 'hidden' "
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#residential">
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg ">
                     <img src="./assets/images/PLATINUM GREENS, HIGH END LUXURY APARTMENTS-Patna Bihar.jpg"
                       alt="PLATINUM GREENS, HIGH END LUXURY APARTMENTS" class=" project-img" />
@@ -446,7 +445,7 @@
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#industrial">
 
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg ">
                     <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
                       class="project-img" />
@@ -465,7 +464,7 @@
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#industrial">
 
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg ">
                     <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
                       class="project-img" />
@@ -484,7 +483,7 @@
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#industrial">
 
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg ">
                     <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
                       class="project-img" />
@@ -503,7 +502,7 @@
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#industrial">
 
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg ">
                     <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
                       class="project-img" />
@@ -521,7 +520,7 @@
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#industrial">
 
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg">
                     <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
                       class="project-img" />
@@ -540,7 +539,7 @@
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#industrial">
 
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg">
                     <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
                       class=" project-img" />
@@ -559,7 +558,7 @@
               class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
               <a href="projects.html#industrial">
 
-                <div class="relative m-12 bg-gray-100 rounded-xl projects-card">
+                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg">
                     <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
                       class=" project-img" />
@@ -667,8 +666,9 @@
                       class="fa-regular fa-envelope me-2 text-xl"></i>tectoniceng@outlook.com </div>
                 </a>
                 <div class="address flex items-center my-2">
-                  <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>C-17, Sector-3 <br>
-                  Noida, Uttar Pradesh - 301201
+                  <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>C17, Sector-3, Noida
+                  <br>
+                  Uttar Pradesh - 301201
                 </div>
               </div>
             </div>
