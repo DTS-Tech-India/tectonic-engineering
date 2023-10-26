@@ -55,7 +55,7 @@
 
   <main class="mx-auto">
     <header class="h-screen flex justify-center items-center">
-      <nav class="flex justify-around items-center fixed px-8 sm:mx-4 lg:mx-0 bg-[#C1F6EC] w-[100%] top-0 z-30">
+      <nav class="flex justify-around items-center fixed px-8 sm:mx-4 lg:mx-0 bg-[#C1F6EC] w-[100%] top-0 z-30 py-2">
         <div class="flex justify-between w-full lg:w-fit">
           <div class="flex items-center lg:hidden">
             <i class="fa-solid fa-bars text-3xl cursor-pointer z-10" onclick="onToggleMenu(this)" name="menu"></i>
@@ -65,8 +65,10 @@
           </a>
         </div>
         <div
-          class="nav-links duration-500 lg:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto  min-w-screen flex px-5 bg-white lg:bg-transparent top-[100%] z-30">
-          <ul class="flex lg:flex-row flex-col md:items-center md:gap-[4vw]">
+          class="nav-links duration-700 lg:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto  min-w-screen sm:flex px-5 bg-white lg:bg-transparent top-[69px] z-30 min-h-screen">
+
+          <ul
+            class="flex lg:flex-row text-center flex-col justify-between md:items-center md:gap-[4vw] max-[712px]:h-[400px]">
             <li>
               <a class="hover:text-blue-500 font-medium" href="./">Home</a>
             </li>
@@ -76,13 +78,15 @@
             <li>
               <a class="hover:text-blue-500 font-medium" href="projects.html">Projects</a>
             </li>
-            <a href="./contact.html">
-              <button
-                class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">
-                Contact Us</button>
-            </a>
+            <li>
+              <a href="contact.html">
+                <button
+                  class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">
+                  Contact Us
+                </button>
+              </a>
+            </li>
           </ul>
-
         </div>
       </nav>
       <!-- Starts Hero section -->

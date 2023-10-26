@@ -39,17 +39,17 @@
       },
     }
   </script>
-    <script>
-      document.onreadystatechange = function () {
-        if (document.readyState !== "complete") {
-          $("#loader").css("display", "flex");
-          $("main").css("display", "none");
-        } else {
-          $("main").css("display", "inline");
-          $("#loader").css("display", "none");
-        }
-      };
-    </script>
+  <script>
+    document.onreadystatechange = function () {
+      if (document.readyState !== "complete") {
+        $("#loader").css("display", "flex");
+        $("main").css("display", "none");
+      } else {
+        $("main").css("display", "inline");
+        $("#loader").css("display", "none");
+      }
+    };
+  </script>
   <title>Tectonic Engineering</title>
 </head>
 
@@ -79,8 +79,10 @@
           </a>
         </div>
         <div
-          class="nav-links duration-500 lg:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto  min-w-screen flex px-5 bg-white lg:bg-transparent top-[9%] z-30">
-          <ul class="flex lg:flex-row flex-col md:items-center md:gap-[4vw]">
+          class="nav-links duration-700 lg:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto  min-w-screen sm:flex px-5 bg-white lg:bg-transparent top-[69px] z-30 min-h-screen">
+
+          <ul
+            class="flex lg:flex-row text-center flex-col justify-between md:items-center md:gap-[4vw] max-[712px]:h-[400px]">
             <li>
               <a class="hover:text-blue-500 font-medium" href="./">Home</a>
             </li>
@@ -90,21 +92,22 @@
             <li>
               <a class="hover:text-blue-500 font-medium" href="projects.html">Projects</a>
             </li>
-            <a href="contact.html">
-              <button
-                class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">
-                Contact Us</button>
-            </a>
+            <li>
+              <a href="contact.html">
+                <button
+                  class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">
+                  Contact Us
+                </button>
+              </a>
+            </li>
           </ul>
-
         </div>
-</nav>
+      </nav>
     </header>
     <div class="flex justify-center items-center py-6 md:py-12 text-white flex-col breadcrumb min-h-[120px]">
       <!-- Breadcrumb -->
       <h1 class="md:text-6xl font-semibold text-center mb-3 text-3xl">Contact us</h1>
-      <nav class="flex px-5 py-3 rounded-lg lg:max-w-2/12"
-        aria-label="Breadcrumb">
+      <nav class="flex px-5 py-3 rounded-lg lg:max-w-2/12" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
           <li class="inline-flex items-center">
             <a href="./" class="inline-flex items-center text-sm font-medium hover:text-blue-400">
@@ -284,7 +287,8 @@
           <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
             <div class="mb-10 w-full">
               <h4 class="text-dark mb-9 text-lg font-semibold">Reach to us</h4>
-              <div class="phone my-2 hover:text-[#2E64FE]"><a href="tel:+918800683542"><i class="fa-solid fa-phone me-2"></i>+91
+              <div class="phone my-2 hover:text-[#2E64FE]"><a href="tel:+918800683542"><i
+                    class="fa-solid fa-phone me-2"></i>+91
                   8800683542</a></div>
               <a href="mailto:tectoniceng@outlook.com" class="my-2">
                 <div class="flex items-center	hover:text-[#2E64FE] cursor-cursor-pointer"><i
@@ -329,8 +333,8 @@
           </svg>
         </span>
         <div class="text-center lg:pt-6">
-          <p class="overflow-x-hidden">&copy; Tectonic Engineering 2023 | All Rights Reserved | <a class="hover:underline"
-              href="./privacy-policy.html">Privacy Policy</a> </p>
+          <p class="overflow-x-hidden">&copy; Tectonic Engineering 2023 | All Rights Reserved | <a
+              class="hover:underline" href="./privacy-policy.html">Privacy Policy</a> </p>
         </div>
       </div>
 
