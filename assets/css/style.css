@@ -110,6 +110,7 @@ img.project-img {
   background: #fff;
   position: relative;
   min-height: 18rem;
+  width: 25%;
 }
 
 /* .projects p:last-child {
