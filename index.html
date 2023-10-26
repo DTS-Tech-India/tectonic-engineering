@@ -40,6 +40,13 @@
       }
     };
   </script>
+  <script>
+    $(document).ready(function () {
+      $(".hamburger").click(function () {
+        $(this).toggleClass("is-active");
+      });
+    });
+  </script>
   <title>Tectonic Engineering</title>
 </head>
 
@@ -58,7 +65,12 @@
       <nav class="flex justify-around items-center fixed px-8 sm:mx-4 lg:mx-0 bg-[#C1F6EC] w-[100%] top-0 z-30 py-2">
         <div class="flex justify-between w-full lg:w-fit">
           <div class="flex items-center lg:hidden">
-            <i class="fa-solid fa-bars text-3xl cursor-pointer z-10" onclick="onToggleMenu(this)" name="menu"></i>
+
+            <div class="hamburger" id="hamburger-1" onclick="onToggleMenu(this)" name="menu">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
           </div>
           <a href="./">
             <img class="w-36 cursor-pointer lg:me-0" src="./assets/images/logo.svg" alt="Tectonic logo">
@@ -133,7 +145,7 @@
       <!-- Starts Clients section -->
       <section class="bg-gray-100 pt-12 pb-16 rounded-2xl shadow-lg mx-4 md:mx-0">
         <div class="flex">
-          <div  class="project-img w-full">
+          <div class="project-img w-full">
             <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
               <span class="text-primary mb-2 block text-lg font-medium" data-aos="fade-down">
                 Our Clients
@@ -181,7 +193,7 @@
       <section class="pt-20 pb-12 lg:pt-[120px]">
 
         <div class="flex flex-wrap">
-          <div  class="project-img w-full">
+          <div class="project-img w-full">
             <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
               <span class="text-primary mb-2 block text-lg font-medium" data-aos="fade-down">
                 Our Services
@@ -317,7 +329,8 @@
               <a href="projects.html#commercial">
                 <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card ">
                   <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park"  class="project-img w-full" />
+                    <img src="./assets/images/technological park.jpg" alt="Technological Park"
+                      class="project-img w-full" />
                   </div>
                   <div class="relative p-4 text-center">
                     <h4 class="text-lg font-semibold">
@@ -332,7 +345,8 @@
               <a href="projects.html#commercial">
                 <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park"  class="project-img w-full" />
+                    <img src="./assets/images/technological park.jpg" alt="Technological Park"
+                      class="project-img w-full" />
                   </div>
                   <div class="relative p-4 text-center">
                     <h4 class="text-lg font-semibold">
@@ -348,7 +362,8 @@
               <a href="projects.html#commercial">
                 <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park" class="w-full project-img " />
+                    <img src="./assets/images/technological park.jpg" alt="Technological Park"
+                      class="w-full project-img " />
                   </div>
                   <div class="relative p-4 text-center">
                     <h4 class="text-lg font-semibold">
@@ -364,7 +379,8 @@
               <a href="projects.html#commercial">
                 <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park"  class="project-img w-full" />
+                    <img src="./assets/images/technological park.jpg" alt="Technological Park"
+                      class="project-img w-full" />
                   </div>
                   <div class="relative p-4 text-center">
                     <h4 class="text-lg font-semibold">
@@ -380,7 +396,8 @@
               <a href="projects.html#commercial">
                 <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
                   <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park" class=" project-img w-full" />
+                    <img src="./assets/images/technological park.jpg" alt="Technological Park"
+                      class=" project-img w-full" />
                   </div>
                   <div class="relative p-4 text-center">
                     <h4 class="text-lg font-semibold">

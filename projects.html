@@ -34,7 +34,13 @@
       }
     };
   </script>
-
+  <script>
+    $(document).ready(function () {
+      $(".hamburger").click(function () {
+        $(this).toggleClass("is-active");
+      });
+    });
+  </script>
   <title>Tectonic Engineering</title>
 </head>
 
@@ -58,7 +64,11 @@
       <nav class="flex justify-around items-center py-2 mx-8 sm:mx-4 lg:mx-0">
         <div class="flex justify-between w-full lg:w-fit">
           <div class="flex items-center lg:hidden">
-            <i class="fa-solid fa-bars text-3xl cursor-pointer z-10" onclick="onToggleMenu(this)" name="menu"></i>
+            <div class="hamburger" id="hamburger-1" onclick="onToggleMenu(this)" name="menu">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
           </div>
           <a href="./">
             <img class="w-36 cursor-pointer lg:me-0" src="./assets/images/logo.svg" alt="Tectonic logo">
