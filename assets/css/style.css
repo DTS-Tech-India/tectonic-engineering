@@ -110,8 +110,20 @@ img.project-img {
   background: #fff;
   position: relative;
   min-height: 18rem;
-  width: 25%;
+  /* width: 25%; */
 }
+
+@media (min-width:768px){
+  .projects {
+    width: 25%;
+  }
+}
+
+#commercial, #residential,#industrial,#oilAndRefinery {
+  width: 80%;
+  margin: auto;
+}
+
 
 /* .projects p:last-child {
   position: absolute;
