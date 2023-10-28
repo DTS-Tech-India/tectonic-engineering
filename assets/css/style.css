@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/poppins.woff');
+}
 body {
   overflow-x: hidden;
 }

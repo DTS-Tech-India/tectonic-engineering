@@ -57,22 +57,20 @@
         },
       };
     </script>
-    <script>
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
-          $(this).toggleClass("is-active");
-        });
-      });
-      document.onreadystatechange = function () {
-        if (document.readyState !== "complete") {
-          $("#loader").css("display", "flex");
-          $("main").css("display", "none");
-        } else {
-          $("main").css("display", "inline");
-          $("#loader").css("display", "none");
-        }
-      };
-    </script>
+<script defer>
+  const loader = document.querySelector("#loader");
+  const main = document.querySelector("#main");
+
+  document.onreadystatechange = () => {
+    if (document.readyState !== "complete") {
+      loader.style.display = "flex";
+      main.style.display = "none";
+    } else {
+      main.style.display = "inline";
+      loader.style.display = "none";
+    }
+  };
+</script>
     <script>
       $(document).ready(function () {
         $(".hamburger").click(function () {
@@ -96,7 +94,7 @@
       </div>
     </div>
 
-    <main>
+    <main id="main">
       <header class="bg-[#C1F6EC]">
         <nav class="flex justify-around items-center py-2 mx-8 sm:mx-4 lg:mx-0">
           <div class="flex justify-between w-full lg:w-fit">
