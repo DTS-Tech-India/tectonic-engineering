@@ -48,20 +48,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script defer>
-      const loader = document.querySelector("#loader");
-      const main = document.querySelector("#main");
 
-      document.onreadystatechange = () => {
-        if (document.readyState !== "complete") {
-          loader.style.display = "flex";
-          main.style.display = "none";
-        } else {
-          main.style.display = "inline";
-          loader.style.display = "none";
-        }
-      };
-    </script>
     <script>
       $(document).ready(function () {
         $(".hamburger").click(function () {
@@ -73,10 +60,15 @@
   </head>
 
   <body class="font-[Poppins] font-light">
-    <div id="loader">
-      <div class="loader-container">
-        <span>L</span><span>O</span><span>A</span><span>D</span> <span>I</span
-        ><span>N</span><span>G</span>
+    <div id="loader" class="fixed inset-0 flex bg-white z-[1000]">
+      <div class="loader-container font-[Poppins]">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
       </div>
     </div>
 
@@ -1088,6 +1080,21 @@
         duration: 1000,
         once: true,
       });
+    </script>
+    <script src="./assets/JS/animateText.js"></script>
+    <script defer>
+      const loader = document.querySelector("#loader");
+      const main = document.querySelector("#main");
+
+      document.onreadystatechange = () => {
+        if (document.readyState !== "complete") {
+          loader.style.display = "flex";
+          main.style.display = "none";
+        } else {
+          main.style.display = "inline";
+          loader.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>

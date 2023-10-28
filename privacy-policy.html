@@ -27,21 +27,6 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <script defer>
-      const loader = document.querySelector("#loader");
-      const main = document.querySelector("#main");
-
-      document.onreadystatechange = () => {
-        if (document.readyState !== "complete") {
-          loader.style.display = "flex";
-          main.style.display = "none";
-        } else {
-          main.style.display = "inline";
-          loader.style.display = "none";
-        }
-      };
-    </script>
-
     <link rel="stylesheet" href="assets/css/style.css" />
     <script>
       $(document).ready(function () {
@@ -54,10 +39,15 @@
   </head>
 
   <body class="font-[Poppins]">
-    <div id="loader">
-      <div class="loader-container">
-        <span>L</span><span>O</span><span>A</span><span>D</span> <span>I</span
-        ><span>N</span><span>G</span>
+    <div id="loader" class="fixed inset-0 flex bg-white z-[1000]">
+      <div class="loader-container font-[Poppins]">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
       </div>
     </div>
 
@@ -493,6 +483,21 @@
         e.name = e.name === "menu" ? "close" : "menu";
         navLinks.classList.toggle("left-[0%]");
       }
+    </script>
+    <script src="./assets/JS/animateText.js"></script>
+    <script defer>
+      const loader = document.querySelector("#loader");
+      const main = document.querySelector("#main");
+
+      document.onreadystatechange = () => {
+        if (document.readyState !== "complete") {
+          loader.style.display = "flex";
+          main.style.display = "none";
+        } else {
+          main.style.display = "inline";
+          loader.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>
