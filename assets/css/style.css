@@ -91,7 +91,7 @@ ion-icon {
 
 .breadcrumb {
   background-image: linear-gradient(rgba(72, 75, 78, 0.8), rgba(37, 9, 9, 0.8)),
-    url("../images/engineer.jpg");
+    url("../images/engineer.webp");
 
   background-repeat: no-repeat;
   background-size: cover;
