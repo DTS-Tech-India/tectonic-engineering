@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
 }
 
+.main {
+  display: none;
+}
+
 .tagline {
   font-family: "Brush Script";
 }
@@ -15,7 +19,6 @@ ion-icon {
     padding: 0% 0;
   }
 }
-
 
 /* services */
 
@@ -88,11 +91,9 @@ ion-icon {
 
   background-repeat: no-repeat;
   background-size: cover;
-  /* filter: sepia(50%); */
   background-blend-mode: multiply;
-
-  background-attachment: fixed;
-  background-position: center bottom;
+  background-attachment: scroll;
+  background-position: center top;
 }
 
 .projects-card {
@@ -112,18 +113,25 @@ img.project-img {
   min-height: 18rem;
   /* width: 25%; */
 }
+@media (min-width: 768px) and (max-width: 1250px) {
+  .projects {
+    width: 45%;
+  }
+}
 
-@media (min-width:768px){
+@media (min-width: 1250px) {
   .projects {
     width: 25%;
   }
 }
 
-#commercial, #residential,#industrial,#oilAndRefinery {
+#commercial,
+#residential,
+#industrial,
+#oilAndRefinery {
   width: 80%;
   margin: auto;
 }
-
 
 /* .projects p:last-child {
   position: absolute;
@@ -151,8 +159,8 @@ p.desc::before {
   content: attr(data-first-word);
   font-weight: bold;
   float: left;
-  margin-right:0.5rem ;
-  font-size: 3rem; 
+  margin-right: 0.5rem;
+  font-size: 3rem;
   line-height: 1;
 }
 

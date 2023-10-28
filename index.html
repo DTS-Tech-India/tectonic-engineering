@@ -1,748 +1,1090 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Tectonic Engineering is a highly professional Engineering Consultancy firm."
+    />
+    <meta name="keywords" content="Engineering" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Tectonic Engineering is a highly professional Engineering Consultancy firm.">
-  <meta name="keywords" content="Engineering">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;1,200;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;1,200;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script>
-    document.onreadystatechange = function () {
-      if (document.readyState !== "complete") {
-        $("#loader").css("display", "flex");
-        $("main").css("display", "none");
-      } else {
-        $("main").css("display", "block");
-        $("#loader").css("display", "none");
-      }
-    };
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".hamburger").click(function () {
-        $(this).toggleClass("is-active");
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          $("#loader").css("display", "flex");
+          $("main").css("display", "none");
+        } else {
+          $("main").css("display", "block");
+          $("#loader").css("display", "none");
+        }
+      };
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(this).toggleClass("is-active");
+        });
       });
-    });
-  </script>
-  <title>Tectonic Engineering</title>
-</head>
+    </script>
+    <title>Tectonic Engineering</title>
+  </head>
 
-<body class="font-[Poppins] font-light">
-  <div id="loader">
-    <div class="loader-container">
-      <span>L</span><span>O</span><span>A</span><span>D</span> <span>I</span><span>N</span><span>G</span>
+  <body class="font-[Poppins] font-light">
+    <div id="loader">
+      <div class="loader-container">
+        <span>L</span><span>O</span><span>A</span><span>D</span> <span>I</span
+        ><span>N</span><span>G</span>
+      </div>
     </div>
-  </div>
 
-
-
-
-  <main class="mx-auto">
-    <header class="h-screen flex justify-center items-center">
-      <nav class="flex justify-around items-center fixed px-8 sm:mx-4 lg:mx-0 bg-[#C1F6EC] w-[100%] top-0 z-30 py-2">
-        <div class="flex justify-between w-full lg:w-fit">
-          <div class="flex items-center lg:hidden">
-
-            <div class="hamburger" id="hamburger-1" onclick="onToggleMenu(this)" name="menu">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-            </div>
-          </div>
-          <a href="./">
-            <img class="w-36 cursor-pointer lg:me-0" src="./assets/images/logo.svg" alt="Tectonic logo">
-          </a>
-        </div>
-        <div
-          class="nav-links duration-700 lg:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto  min-w-screen sm:flex px-5 bg-white lg:bg-transparent top-[69px] z-30 min-h-screen">
-
-          <ul
-            class="flex lg:flex-row text-center flex-col justify-between md:items-center md:gap-[4vw] max-[712px]:h-[400px]">
-            <li>
-              <a class="hover:text-blue-500 font-medium" href="./">Home</a>
-            </li>
-            <li>
-              <a class="hover:text-blue-500 font-medium" href="about.html">About Us</a>
-            </li>
-            <li>
-              <a class="hover:text-blue-500 font-medium" href="projects.html">Projects</a>
-            </li>
-            <li>
-              <a href="contact.html">
-                <button
-                  class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">
-                  Contact Us
-                </button>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Starts Hero section -->
-      <section class="mt-40 lg:mt-20">
-        <div class="flex flex-col-reverse gap-[5vh] justify-center 	md:flex-row items-center lg:p-28 px-4 md:px-0">
-          <div class="mx-auto place-self-center hero-text" data-aos="fade-right" data-aos-duration="1000">
-            <h1 class="max-w-2xl mb-4 md:text-7xl text-4xl	flex flex-col font-bold tracking-tight leading-none ">
-              <span>
-                Transforming Ideas Into
-              </span>
-              <span class="text-blue-400 w-max">Structural Realities</span>
-            </h1>
-            <p class="max-w-2xl lg:mb-8 md:text-lg lg:text-xl" style="font-family: 'DM Sans', sans-serif;">
-              Transforming blueprints into reality, Tectonic Engineering shapes a sustainable tomorrow through
-              innovative
-              design and meticulous execution. </p>
-
-            <div class="flex lg:inline-block flex-col mt-6">
-              <a href="/contact.html"
-                class="inline-flex items-center justify-center px-10 py-3 text-base font-medium text-center text-gray-900 border hover:text-white hover:bg-[#449642] lg:border-gray-300 rounded-full duration-500">
-                Get in Touch
-                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-                </svg>
-              </a>
-            </div>
-
-          </div>
-          <div class="mb-4" data-aos="fade-left" data-aos-duration="1000">
-            <img src="./assets/images/hero image.png" alt="mockup" class="drop-shadow-2xl shadow-black">
-          </div>
-        </div>
-      </section>
-      <!-- Ends hero section -->
-    </header>
-
-    <div class="max-w-[1440px] mx-auto">
-
-
-
-      <!-- Starts Clients section -->
-      <section class="bg-gray-100 pt-12 pb-16 rounded-2xl shadow-lg mx-4 md:mx-0">
-        <div class="flex">
-          <div class="project-img w-full">
-            <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-              <span class="text-primary mb-2 block text-lg font-medium" data-aos="fade-down">
-                Our Clients
-              </span>
-              <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]" data-aos="fade-down">
-                Who we worked with
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4  lg:mx-20">
-          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
-            <img src="./assets/images/apollo.png" alt="" class="w-2/3 ">
-          </div>
-          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
-            <img src="./assets/images/BHEl.png" alt="" class="w-2/3 ">
-          </div>
-          </a>
-          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
-            <img src="./assets/images/IOCL.png" alt="" class="w-2/3 ">
-          </div>
-          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
-            <img src="./assets/images/L&T.png" alt="" class="w-2/3 ">
-          </div>
-          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
-            <img src="./assets/images//PGCI.png" alt="" class="w-2/3 ">
-          </div>
-          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
-            <img src="./assets/images/SPLENDOR.png" alt="" class="w-2/3 ">
-          </div>
-          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
-            <img src="./assets/images/NHAI.png" alt="" class="w-2/3 aspect-video">
-          </div>
-
-          <div class="flex justify-center items-center client-logo" data-aos="fade-right">
-            <img src="./assets/images/nosi.png" alt="" class="w-2/3 ">
-          </div>
-
-        </div>
-      </section>
-      <!-- Ends clients Section -->
-
-      <!-- ====== Services Section Start -->
-      <section class="pt-20 pb-12 lg:pt-[120px]">
-
-        <div class="flex flex-wrap">
-          <div class="project-img w-full">
-            <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-              <span class="text-primary mb-2 block text-lg font-medium" data-aos="fade-down">
-                Our Services
-              </span>
-              <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]" data-aos="fade-down">
-                What We Offer
-              </h2>
-              <p class="text-body-color text-base" data-aos="fade-up">
-                There are many variations of passages of Lorem Ipsum available but
-                the majority have suffered alteration in some form.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap ">
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3" data-aos="flip-right" data-aos-duration="1500">
-            <div class="mb-8 rounded-[20px] bg-white p-10 shadow-md  hover:shadow-lg md:px-7 xl:px-10 lg:h-[270px]">
-              <div class="bg-primary flex min-[150px]:min-h-[70px] w-[70px] items-center justify-center rounded-2xl">
-
-                <div class="service-icon aspect-square">
-                  <img src="./assets/images/structure.png" alt="" srcset="" class="aspect-square">
-                </div>
+    <main class="mx-auto">
+      <header class="h-screen flex justify-center items-center">
+        <nav
+          class="flex justify-around items-center fixed px-8 sm:mx-4 lg:mx-0 bg-[#C1F6EC] w-[100%] top-0 z-30 py-2"
+        >
+          <div class="flex justify-between w-full lg:w-fit">
+            <div class="flex items-center lg:hidden">
+              <div
+                class="hamburger"
+                id="hamburger-1"
+                onclick="onToggleMenu(this)"
+                name="menu"
+              >
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
               </div>
-              <h4 class="text-dark mb-3 text-lg font-medium">
-                Structural Design & Detailing
-              </h4>
-              <p class="text-body-color">
-                where we provide specialized Structural Engineering Consultancy & Detailing services for wide range of
-                sector.
-              </p>
             </div>
+            <a href="./">
+              <img
+                class="w-36 cursor-pointer lg:me-0"
+                src="./assets/images/logo.svg"
+                alt="Tectonic logo"
+              />
+            </a>
           </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3" data-aos="flip-left" data-aos-duration="1500">
-            <div class="mb-8 rounded-[20px] bg-white p-10 shadow-md  hover:shadow-lg md:px-7 xl:px-10 lg:h-[270px]">
-              <div class="bg-primary mb-4 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
+          <div
+            class="nav-links duration-700 lg:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto min-w-screen sm:flex px-5 bg-white lg:bg-transparent top-[69px] z-30 min-h-screen"
+          >
+            <ul
+              class="flex lg:flex-row text-center flex-col justify-between md:items-center md:gap-[4vw] max-[712px]:h-[400px]"
+            >
+              <li>
+                <a class="hover:text-blue-500 font-medium" href="./">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-blue-500 font-medium" href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-blue-500 font-medium" href="projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="contact.html">
+                  <button
+                    class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium"
+                  >
+                    Contact Us
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Starts Hero section -->
+        <section class="mt-40 lg:mt-20">
+          <div
+            class="flex flex-col-reverse gap-[5vh] justify-center md:flex-row items-center lg:p-28 px-4 md:px-0"
+          >
+            <div
+              class="mx-auto place-self-center hero-text"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h1
+                class="max-w-2xl mb-4 md:text-7xl text-4xl flex flex-col font-bold tracking-tight leading-none"
+              >
+                <span> Transforming Ideas Into </span>
+                <span class="text-blue-400 w-max">Structural Realities</span>
+              </h1>
+              <p
+                class="max-w-2xl lg:mb-8 md:text-lg lg:text-xl"
+                style="font-family: 'DM Sans', sans-serif"
+              >
+                Transforming blueprints into reality, Tectonic Engineering
+                shapes a sustainable tomorrow through innovative design and
+                meticulous execution.
+              </p>
 
-                <div class="service-icon">
-                  <img src="./assets/images/estimation.png" alt="" srcset="" class="aspect-square">
-                </div>
-
+              <div class="flex lg:inline-block flex-col mt-6">
+                <a
+                  href="/contact.html"
+                  class="inline-flex items-center justify-center px-10 py-3 text-base font-medium text-center text-gray-900 border hover:text-white hover:bg-[#449642] lg:border-gray-300 rounded-full duration-500"
+                >
+                  Get in Touch
+                  <svg
+                    class="w-5 h-5 ml-2 -mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
               </div>
-              <h4 class="text-dark mb-3 text-lg font-medium">
-                Quantity Survey, Estimation & Costing
-              </h4>
-              <p class="text-body-color">
-                Cost Estimates for Detailed Projects Report, Analysis of Rates based on Standard Data Book
-              </p>
+            </div>
+            <div class="mb-4" data-aos="fade-left" data-aos-duration="1000">
+              <img
+                src="./assets/images/hero image.png"
+                alt="mockup"
+                class="drop-shadow-2xl shadow-black"
+              />
             </div>
           </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3 " data-aos="flip-right" data-aos-duration="1500">
-            <div class="mb-8 rounded-[20px] bg-white p-10 shadow-md  hover:shadow-lg md:px-7 xl:px-10 lg:h-[270px]">
-              <div class="bg-primary mb-4 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
+        </section>
+        <!-- Ends hero section -->
+      </header>
 
-
-                <div class="service-icon">
-                  <img src="./assets/images/BIM.png" alt="" srcset="" class="min-h-[120px] min-w-[90px]">
-
-                </div>
+      <div class="max-w-[1440px] mx-auto">
+        <!-- Starts Clients section -->
+        <section
+          class="bg-gray-100 pt-12 pb-16 rounded-2xl shadow-lg mx-4 md:mx-0"
+        >
+          <div class="flex">
+            <div class="project-img w-full">
+              <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+                <span
+                  class="text-primary mb-2 block text-lg font-medium"
+                  data-aos="fade-down"
+                >
+                  Our Clients
+                </span>
+                <h2
+                  class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+                  data-aos="fade-down"
+                >
+                  Who we worked with
+                </h2>
               </div>
-              <h4 class="text-dark mb-3 text-lg font-medium ">BIM application</h4>
-              <p class="text-body-color">
-                Transform design-build practice to focus only on BIM implementation.
-              </p>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- ====== Services Section End -->
 
-      <!-- ====== Portfolio Section Start -->
-      <section x-data="
+          <div
+            class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 lg:mx-20"
+          >
+            <div
+              class="flex justify-center items-center client-logo"
+              data-aos="fade-right"
+            >
+              <img src="./assets/images/apollo.png" alt="" class="w-2/3" />
+            </div>
+            <div
+              class="flex justify-center items-center client-logo"
+              data-aos="fade-right"
+            >
+              <img src="./assets/images/BHEl.png" alt="" class="w-2/3" />
+            </div>
+            <div
+              class="flex justify-center items-center client-logo"
+              data-aos="fade-right"
+            >
+              <img src="./assets/images/IOCL.png" alt="" class="w-2/3" />
+            </div>
+            <div
+              class="flex justify-center items-center client-logo"
+              data-aos="fade-right"
+            >
+              <img src="./assets/images/L&T.png" alt="" class="w-2/3" />
+            </div>
+            <div
+              class="flex justify-center items-center client-logo"
+              data-aos="fade-right"
+            >
+              <img src="./assets/images//PGCI.png" alt="" class="w-2/3" />
+            </div>
+            <div
+              class="flex justify-center items-center client-logo"
+              data-aos="fade-right"
+            >
+              <img src="./assets/images/SPLENDOR.png" alt="" class="w-2/3" />
+            </div>
+            <div
+              class="flex justify-center items-center client-logo"
+              data-aos="fade-right"
+            >
+              <img
+                src="./assets/images/NHAI.png"
+                alt=""
+                class="w-2/3 aspect-video"
+              />
+            </div>
+
+            <div
+              class="flex justify-center items-center client-logo"
+              data-aos="fade-right"
+            >
+              <img src="./assets/images/nosi.png" alt="" class="w-2/3" />
+            </div>
+          </div>
+        </section>
+        <!-- Ends clients Section -->
+
+        <!-- ====== Services Section Start -->
+        <section class="pt-20 pb-12 lg:pt-[120px]">
+          <div class="flex flex-wrap">
+            <div class="project-img w-full">
+              <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+                <span
+                  class="text-primary mb-2 block text-lg font-medium"
+                  data-aos="fade-down"
+                >
+                  Our Services
+                </span>
+                <h2
+                  class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+                  data-aos="fade-down"
+                >
+                  What We Offer
+                </h2>
+                <p class="text-body-color text-base" data-aos="fade-up">
+                  There are many variations of passages of Lorem Ipsum available
+                  but the majority have suffered alteration in some form.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap">
+            <div
+              class="w-full px-4 md:w-1/2 lg:w-1/3"
+              data-aos="flip-right"
+              data-aos-duration="1500"
+            >
+              <div
+                class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10 lg:h-[270px]"
+              >
+                <div
+                  class="bg-primary flex min-[150px]:min-h-[70px] w-[70px] items-center justify-center rounded-2xl"
+                >
+                  <div class="service-icon aspect-square">
+                    <img
+                      src="./assets/images/structure.png"
+                      alt=""
+                      srcset=""
+                      class="aspect-square"
+                    />
+                  </div>
+                </div>
+                <h4 class="text-dark mb-3 text-lg font-medium">
+                  Structural Design & Detailing
+                </h4>
+                <p class="text-body-color">
+                  where we provide specialized Structural Engineering
+                  Consultancy & Detailing services for wide range of sector.
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-full px-4 md:w-1/2 lg:w-1/3"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
+              <div
+                class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10 lg:h-[270px]"
+              >
+                <div
+                  class="bg-primary mb-4 flex h-[70px] w-[70px] items-center justify-center rounded-2xl"
+                >
+                  <div class="service-icon">
+                    <img
+                      src="./assets/images/estimation.png"
+                      alt=""
+                      srcset=""
+                      class="aspect-square"
+                    />
+                  </div>
+                </div>
+                <h4 class="text-dark mb-3 text-lg font-medium">
+                  Quantity Survey, Estimation & Costing
+                </h4>
+                <p class="text-body-color">
+                  Cost Estimates for Detailed Projects Report, Analysis of Rates
+                  based on Standard Data Book
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-full px-4 md:w-1/2 lg:w-1/3"
+              data-aos="flip-right"
+              data-aos-duration="1500"
+            >
+              <div
+                class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10 lg:h-[270px]"
+              >
+                <div
+                  class="bg-primary mb-4 flex h-[70px] w-[70px] items-center justify-center rounded-2xl"
+                >
+                  <div class="service-icon">
+                    <img
+                      src="./assets/images/BIM.png"
+                      alt=""
+                      srcset=""
+                      class="min-h-[120px] min-w-[90px]"
+                    />
+                  </div>
+                </div>
+                <h4 class="text-dark mb-3 text-lg font-medium">
+                  BIM application
+                </h4>
+                <p class="text-body-color">
+                  Transform design-build practice to focus only on BIM
+                  implementation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ====== Services Section End -->
+
+        <!-- ====== Portfolio Section Start -->
+        <section
+          x-data="
           {
             showCards: 'all',
             activeClasses: 'bg-primary text-[#449642]',
             inactiveClasses: 'text-body-color hover:bg-primary hover:text-green-500',
           }
-        " class="pt-2 lg:pt-[120px] lg:pb-[90px]">
-        <div class=" mx-auto">
-          <div class="mx-4 flex flex-wrap">
-            <div class="w-full px-4">
-              <div class="mx-auto mb-[60px] max-w-[510px] text-center">
-                <span class="text-primary mb-2 block text-lg font-medium" data-aos="fade-down">
-                  Our Portfolio
-                </span>
-                <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]" data-aos="fade-down">
-                  Our Recent Projects
-                </h2>
-                <p class="text-body-color text-base" data-aos="fade-up">
-                  There are many variations of passages of Lorem Ipsum available but
-                  the majority have suffered alteration in some form.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="mx-4 flex flex-wrap justify-center" data-aos="zoom-in-right">
-            <div class="w-full px-4">
-              <ul class="mb-12 flex flex-wrap justify-center space-x-1">
-                <li class="mb-1">
-                  <button @click="showCards = 'all' " :class="showCards == 'all' ? activeClasses : inactiveClasses "
-                    class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8">
-                    All Projects
-                  </button>
-                </li>
-                <li class="mb-1">
-                  <button @click="showCards = 'Commercial' "
-                    :class="showCards == 'Commercial' ? activeClasses : inactiveClasses "
-                    class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8">
-                    Commercial
-                  </button>
-                </li>
-                <li class="mb-1">
-                  <button @click="showCards = 'Residential' "
-                    :class="showCards == 'Residential' ? activeClasses : inactiveClasses "
-                    class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8">
-                    Residential
-                  </button>
-                </li>
-                <li class="mb-1">
-                  <button @click="showCards = 'Industrial ' "
-                    :class="showCards == 'Industrial ' ? activeClasses : inactiveClasses "
-                    class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8">
-                    Industrial
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="mx-0 lg:mx-4 flex flex-wrap">
-            <div :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#commercial">
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card ">
-                  <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park"
-                      class="project-img w-full" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      Technological Park
-                      <div class="text-md font-light"> Cape Verde, Africa</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#commercial">
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park"
-                      class="project-img w-full" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      Medical Office Building
-                      <div class="text-md font-light">Bordentown, NJ</div>
-                  </div>
-                </div>
-              </a>
-
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#commercial">
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park"
-                      class="w-full project-img " />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      Apollo Tyres Office
-                      <div class="text-md font-light"> Dwarka, New Delhi</div>
-                  </div>
-                </div>
-              </a>
-
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#commercial">
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park"
-                      class="project-img w-full" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      Assam Police Headquarter
-                      <div class="text-md font-light"> Assam</div>
-                  </div>
-                </div>
-              </a>
-
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#commercial">
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/technological park.jpg" alt="Technological Park"
-                      class=" project-img w-full" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      Multilevel Car Parking
-                      <div class="text-md font-light"> Assam</div>
-                  </div>
-                </div>
-              </a>
-
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Residential' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#residential">
-
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/NARMADA NIRVANA PHASE III, VILLAS- Indore, Madhya Pradesh.jpg"
-                      alt="NARMADA NIRVANA PHASE III, Villas" class=" project-img" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      Narmada Nirvana Phase
-                      <div class="text-md font-light">Indore, Madhya Pradesh</div>
-
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Residential' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#residential">
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/PLATINUM GREENS, HIGH END LUXURY APARTMENTS-Patna Bihar.jpg"
-                      alt="PLATINUM GREENS, HIGH END LUXURY APARTMENTS" class=" project-img " />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      Platinum Green
-                      <div class="text-md font-light">Patna, Bihar</div>
-
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Residential' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#residential">
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/PLATINUM GREENS, HIGH END LUXURY APARTMENTS-Patna Bihar.jpg"
-                      alt="PLATINUM GREENS, HIGH END LUXURY APARTMENTS" class=" project-img" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      Radtech Buildcon
-                      <div class="text-md font-light"></div>
-
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#industrial">
-
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
-                      class="project-img" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      Leora Industrial
-                      <div class="text-md font-light">Palwal, Haryana</div>
-
-                  </div>
-                </div>
-
-              </a>
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#industrial">
-
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
-                      class="project-img" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      PEB Store Building
-                      <div class="text-md font-light">Jaipur, Rajasthan</div>
-
-                  </div>
-                </div>
-
-              </a>
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#industrial">
-
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
-                      class="project-img" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      PEB Store Building
-                      <div class="text-md font-light">Koteshwar,Gujarat</div>
-
-                  </div>
-                </div>
-
-              </a>
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#industrial">
-
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg ">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
-                      class="project-img" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      Standard Sick Line Shed
-                      <div class="text-md font-light"></div>
-                  </div>
-                </div>
-
-              </a>
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#industrial">
-
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
-                      class="project-img" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      L&T Construction Store and Watch Tower
-                      <div class="text-md font-light"></div>
-
-                  </div>
-                </div>
-
-              </a>
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#industrial">
-
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
-                      class=" project-img" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      INFINITY Glass factory
-                      <div class="text-md font-light">Palwal, Haryana</div>
-
-                  </div>
-                </div>
-
-              </a>
-            </div>
-            <div :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
-              class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer" data-aos="zoom" data-aos-duration="2000">
-              <a href="projects.html#industrial">
-
-                <div class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card">
-                  <div class="overflow-hidden rounded-t-lg">
-                    <img src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg" alt="Leora Warehouse"
-                      class=" project-img" />
-                  </div>
-                  <div class="relative p-4 text-center">
-                    <h4 class="text-lg font-semibold">
-                      Construction store, PEB Shed
-                      <div class="text-md font-light"></div>
-
-                  </div>
-                </div>
-
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ====== Portfolio Section End -->
-
-      <!-- ====== Footer Section Start -->
-      <footer class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6 w-full border-t-[2px]">
-        <div class=" mx-auto border-b-[1px] border-gray-400 ">
-          <div class="mx-4 flex flex-wrap">
-            <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
-              <div class="mb-10 w-full">
-                <a href="#" class="mb-6 inline-block">
-                  <img src="./assets/images/logo-tagline.svg" alt="Tectonic Logo" class="w-[200px]">
-
-                </a>
-                <p class="text-body-color mb-7 text-base">
-
-                </p>
-                <div class="mb-10 w-full">
-                  <!-- <h4 class="text-dark mb-9 text-lg font-medium">Follow Us On</h4> -->
-                  <div class="mb-6 flex items-center">
-                    <a href="#"
-                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                      <svg width="8" height="16" viewBox="0 0 8 16" class="fill-current">
-                        <path
-                          d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z" />
-                      </svg>
-                    </a>
-                    <a href="#"
-                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                      <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
-                        <path
-                          d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z" />
-                      </svg>
-                    </a>
-                    <a href="#"
-                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                      <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
-                        <path
-                          d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z" />
-                      </svg>
-                    </a>
-                    <a href="#"
-                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                      <svg width="14" height="14" viewBox="0 0 14 14" class="fill-current">
-                        <path
-                          d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" />
-                      </svg>
-                    </a>
-                  </div>
+        "
+          class="pt-2 lg:pt-[120px] lg:pb-[90px]"
+        >
+          <div class="mx-auto">
+            <div class="mx-4 flex flex-wrap">
+              <div class="w-full px-4">
+                <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+                  <span
+                    class="text-primary mb-2 block text-lg font-medium"
+                    data-aos="fade-down"
+                  >
+                    Our Portfolio
+                  </span>
+                  <h2
+                    class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+                    data-aos="fade-down"
+                  >
+                    Our Recent Projects
+                  </h2>
+                  <p class="text-body-color text-base" data-aos="fade-up">
+                    There are many variations of passages of Lorem Ipsum
+                    available but the majority have suffered alteration in some
+                    form.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
-              <div class="mb-10 w-full">
-                <h4 class="text-dark mb-9 text-lg font-medium">Explore</h4>
-                <ul>
-                  <li>
-                    <a href="/" class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
-                      Home
-                    </a>
+            <div
+              class="mx-4 flex flex-wrap justify-center"
+              data-aos="zoom-in-right"
+            >
+              <div class="w-full px-4">
+                <ul class="mb-12 flex flex-wrap justify-center space-x-1">
+                  <li class="mb-1">
+                    <button
+                      @click="showCards = 'all' "
+                      :class="showCards == 'all' ? activeClasses : inactiveClasses "
+                      class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8"
+                    >
+                      All Projects
+                    </button>
                   </li>
-                  <li>
-                    <a href="about.html"
-                      class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
-                      About Us
-                    </a>
+                  <li class="mb-1">
+                    <button
+                      @click="showCards = 'Commercial' "
+                      :class="showCards == 'Commercial' ? activeClasses : inactiveClasses "
+                      class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8"
+                    >
+                      Commercial
+                    </button>
                   </li>
-                  <li>
-                    <a href="projects.html"
-                      class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
-                      Projects
-                    </a>
+                  <li class="mb-1">
+                    <button
+                      @click="showCards = 'Residential' "
+                      :class="showCards == 'Residential' ? activeClasses : inactiveClasses "
+                      class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8"
+                    >
+                      Residential
+                    </button>
                   </li>
-                  <li>
-                    <a href="contact.html"
-                      class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
-                      Contact us
-                    </a>
+                  <li class="mb-1">
+                    <button
+                      @click="showCards = 'Industrial ' "
+                      :class="showCards == 'Industrial ' ? activeClasses : inactiveClasses "
+                      class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8"
+                    >
+                      Industrial
+                    </button>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
-              <div class="mb-10 w-full">
-                <h4 class="text-dark mb-9 text-lg font-medium">Reach to us</h4>
-                <div class="phone my-2"><i class="fa-solid fa-phone me-2"></i><a href="tel:+918800683542"
-                    class="hover:text-[#2E64FE]">+91 8800683542</a></div>
-                    <div class="phone my-2"><i
-                      class="fa-regular fa-envelope me-2 text-xl"></i><a href="mailto:tectoniceng@outlook.com"
-                      class="hover:text-[#2E64FE]">tectoniceng@outlook.com </a></div>
-                <div class="my-2">
-                  <a   class="flex items-center cursor-cursor-pointer"></a>
+
+            <div class="mx-0 lg:mx-4 flex flex-wrap">
+              <div
+                :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#commercial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/technological park.jpg"
+                        alt="Technological Park"
+                        class="project-img w-full"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        Technological Park
+                        <div class="text-md font-light">Cape Verde, Africa</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#commercial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/technological park.jpg"
+                        alt="Technological Park"
+                        class="project-img w-full"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        Medical Office Building
+                        <div class="text-md font-light">Bordentown, NJ</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#commercial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/technological park.jpg"
+                        alt="Technological Park"
+                        class="w-full project-img"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        Apollo Tyres Office
+                        <div class="text-md font-light">Dwarka, New Delhi</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#commercial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/technological park.jpg"
+                        alt="Technological Park"
+                        class="project-img w-full"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        Assam Police Headquarter
+                        <div class="text-md font-light">Assam</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Commercial' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#commercial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/technological park.jpg"
+                        alt="Technological Park"
+                        class="project-img w-full"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        Multilevel Car Parking
+                        <div class="text-md font-light">Assam</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Residential' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#residential">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/NARMADA NIRVANA PHASE III, VILLAS- Indore, Madhya Pradesh.jpg"
+                        alt="NARMADA NIRVANA PHASE III, Villas"
+                        class="project-img"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        Narmada Nirvana Phase
+                        <div class="text-md font-light">
+                          Indore, Madhya Pradesh
+                        </div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Residential' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#residential">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/PLATINUM GREENS, HIGH END LUXURY APARTMENTS-Patna Bihar.jpg"
+                        alt="PLATINUM GREENS, HIGH END LUXURY APARTMENTS"
+                        class="project-img"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        Platinum Green
+                        <div class="text-md font-light">Patna, Bihar</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Residential' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#residential">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/PLATINUM GREENS, HIGH END LUXURY APARTMENTS-Patna Bihar.jpg"
+                        alt="PLATINUM GREENS, HIGH END LUXURY APARTMENTS"
+                        class="project-img"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        Radtech Buildcon
+                        <div class="text-md font-light">India</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#industrial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg"
+                        alt="Leora Warehouse"
+                        class="project-img"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        Leora Industrial
+                        <div class="text-md font-light">Palwal, Haryana</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#industrial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg"
+                        alt="Leora Warehouse"
+                        class="project-img"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        PEB Store Building
+                        <div class="text-md font-light">Jaipur, Rajasthan</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#industrial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg"
+                        alt="Leora Warehouse"
+                        class="project-img"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        PEB Store Building
+                        <div class="text-md font-light">Koteshwar, Gujarat</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#industrial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg"
+                        alt="Leora Warehouse"
+                        class="project-img"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        Standard Sick Line Shed
+                        <div class="text-md font-light">India</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#industrial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg"
+                        alt="Leora Warehouse"
+                        class="project-img"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        L&T Watch Tower
+                        <div class="text-md font-light">India</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#industrial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg"
+                        alt="Leora Warehouse"
+                        class="project-img"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        INFINITY Glass factory
+                        <div class="text-md font-light">Palwal, Haryana</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                :class="showCards == 'all' || showCards == 'Industrial ' ? 'block' : 'hidden' "
+                class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer"
+                data-aos="zoom"
+                data-aos-duration="2000"
+              >
+                <a href="projects.html#industrial">
+                  <div
+                    class="relative m-12 bg-gray-100 rounded-xl shadow-lg projects-card"
+                  >
+                    <div class="overflow-hidden rounded-t-lg">
+                      <img
+                        src="./assets/images/Leora Warehouse- Palwal, Haryana.jpg"
+                        alt="Leora Warehouse"
+                        class="project-img"
+                      />
+                    </div>
+                    <div class="relative p-4 text-center">
+                      <h4 class="text-lg font-semibold">
+                        Construction store
+                        <div class="text-md font-light">India</div>
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ====== Portfolio Section End -->
+
+        <!-- ====== Footer Section Start -->
+        <footer
+          class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6 w-full border-t-[2px]"
+        >
+          <div class="mx-auto border-b-[1px] border-gray-400">
+            <div class="mx-4 flex flex-wrap">
+              <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
+                <div class="mb-10 w-full">
+                  <a href="#" class="mb-6 inline-block">
+                    <img
+                      src="./assets/images/logo-tagline.svg"
+                      alt="Tectonic Logo"
+                      class="w-[200px]"
+                    />
+                  </a>
+                  <p class="text-body-color mb-7 text-base"></p>
+                  <div class="mb-10 w-full">
+                    <!-- <h4 class="text-dark mb-9 text-lg font-medium">Follow Us On</h4> -->
+                    <div class="mb-6 flex items-center">
+                      <a
+                        href="#"
+                        class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                      >
+                        <svg
+                          width="8"
+                          height="16"
+                          viewBox="0 0 8 16"
+                          class="fill-current"
+                        >
+                          <path
+                            d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                      >
+                        <svg
+                          width="16"
+                          height="12"
+                          viewBox="0 0 16 12"
+                          class="fill-current"
+                        >
+                          <path
+                            d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                      >
+                        <svg
+                          width="16"
+                          height="12"
+                          viewBox="0 0 16 12"
+                          class="fill-current"
+                        >
+                          <path
+                            d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                      >
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          class="fill-current"
+                        >
+                          <path
+                            d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="address flex items-center my-2">
-                  <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>C17, Sector-3, Noida
-                  <br>
-                  Uttar Pradesh - 301201
+              </div>
+              <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
+                <div class="mb-10 w-full">
+                  <h4 class="text-dark mb-9 text-lg font-medium">Explore</h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="/"
+                        class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="about.html"
+                        class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose"
+                      >
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="projects.html"
+                        class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose"
+                      >
+                        Projects
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="contact.html"
+                        class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose"
+                      >
+                        Contact us
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
+                <div class="mb-10 w-full">
+                  <h4 class="text-dark mb-9 text-lg font-medium">
+                    Reach to us
+                  </h4>
+                  <div class="phone my-2">
+                    <i class="fa-solid fa-phone me-2"></i
+                    ><a href="tel:+918800683542" class="hover:text-[#2E64FE]"
+                      >+91 8800683542</a
+                    >
+                  </div>
+                  <div class="phone my-2">
+                    <i class="fa-regular fa-envelope me-2 text-xl"></i
+                    ><a
+                      href="mailto:tectoniceng@outlook.com"
+                      class="hover:text-[#2E64FE]"
+                      >tectoniceng@outlook.com
+                    </a>
+                  </div>
+                  <div class="my-2">
+                    <a class="flex items-center cursor-cursor-pointer"></a>
+                  </div>
+                  <div class="address flex items-center my-2">
+                    <i
+                      class="fa-solid fa-location-arrow me-2"
+                      style="font-size: 1.4rem"
+                    ></i
+                    >C17, Sector-3, Noida
+                    <br />
+                    Uttar Pradesh - 301201
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <span class="absolute top-10 right-10 z-[-1]">
-            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
-                fill="url(#paint0_linear_1179_4)" />
-              <defs>
-                <linearGradient id="paint0_linear_1179_4" x1="-1.63917e-06" y1="37.5" x2="75" y2="37.5"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#13C296" stop-opacity="0.31" />
-                  <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
-          <div class="text-center lg:pt-6">
-            <p class="overflow-x-hidden">&copy; Tectonic Engineering 2023 | All Rights Reserved | <a
-                href="./privacy-policy.html" class="hover:underline">Privacy Policy</a> </p>
+          <div>
+            <span class="absolute top-10 right-10 z-[-1]">
+              <svg
+                width="75"
+                height="75"
+                viewBox="0 0 75 75"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
+                  fill="url(#paint0_linear_1179_4)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1179_4"
+                    x1="-1.63917e-06"
+                    y1="37.5"
+                    x2="75"
+                    y2="37.5"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#13C296" stop-opacity="0.31" />
+                    <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <div class="text-center lg:pt-6">
+              <p class="overflow-x-hidden">
+                &copy; Tectonic Engineering 2023 | All Rights Reserved |
+                <a href="./privacy-policy.html" class="hover:underline"
+                  >Privacy Policy</a
+                >
+              </p>
+            </div>
           </div>
-        </div>
+        </footer>
+        <!-- ====== Footer Section End -->
+      </div>
+    </main>
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("left-[0%]");
+      }
+    </script>
 
-      </footer>
-      <!-- ====== Footer Section End -->
-    </div>
-
-
-
-  </main>
-  <script>
-    const navLinks = document.querySelector('.nav-links')
-    function onToggleMenu(e) {
-      e.name = e.name === 'menu' ? 'close' : 'menu'
-      navLinks.classList.toggle('left-[0%]')
-    }
-  </script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init(
-      {
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
         offset: 0,
         duration: 1000,
-        once: true
-      }
-
-    );
-  </script>
-
-</body>
-
+        once: true,
+      });
+    </script>
+  </body>
 </html>

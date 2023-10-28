@@ -1,60 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- intl tel input -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
 
-  <!-- intl tel input -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
-  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
-
-
-
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      },
-    }
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".hamburger").click(function () {
-        $(this).toggleClass("is-active");
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(this).toggleClass("is-active");
+        });
       });
-    });
-    document.onreadystatechange = function () {
-      if (document.readyState !== "complete") {
-        $("#loader").css("display", "flex");
-        $("main").css("display", "none");
-      } else {
-        $("main").css("display", "inline");
-        $("#loader").css("display", "none");
-      }
-    };
-  </script>
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          $("#loader").css("display", "flex");
+          $("main").css("display", "none");
+        } else {
+          $("main").css("display", "inline");
+          $("#loader").css("display", "none");
+        }
+      };
+    </script>
     <script>
       $(document).ready(function () {
         $(".hamburger").click(function () {
@@ -62,204 +80,362 @@
         });
       });
     </script>
-  <title>Tectonic Engineering</title>
-</head>
+    <title>Tectonic Engineering</title>
+  </head>
 
-<body class="font-[Poppins]">
-  <div id="loader">
-    <div class="loader-container">
-      <span>L</span>
-      <span>O</span>
-      <span>A</span>
-      <span>D</span>
-      <span>I</span>
-      <span>N</span>
-      <span>G</span>
+  <body class="font-[Poppins]">
+    <div id="loader">
+      <div class="loader-container">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+      </div>
     </div>
-  </div>
 
-  <main>
-    <header class="bg-[#C1F6EC]">
-      <nav class="flex justify-around items-center py-2 mx-8 sm:mx-4 lg:mx-0">
-        <div class="flex justify-between w-full lg:w-fit">
-          <div class="flex items-center lg:hidden">
-            <div class="hamburger" id="hamburger-1" onclick="onToggleMenu(this)" name="menu">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
+    <main>
+      <header class="bg-[#C1F6EC]">
+        <nav class="flex justify-around items-center py-2 mx-8 sm:mx-4 lg:mx-0">
+          <div class="flex justify-between w-full lg:w-fit">
+            <div class="flex items-center lg:hidden">
+              <div
+                class="hamburger"
+                id="hamburger-1"
+                onclick="onToggleMenu(this)"
+                name="menu"
+              >
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
             </div>
+            <a href="./">
+              <img
+                class="w-36 cursor-pointer lg:me-0"
+                src="./assets/images/logo.svg"
+                alt="Tectonic logo"
+              />
+            </a>
           </div>
-          <a href="./">
-            <img class="w-36 cursor-pointer lg:me-0" src="./assets/images/logo.svg" alt="Tectonic logo">
-          </a>
-        </div>
-        <div
-          class="nav-links duration-700 lg:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto  min-w-screen sm:flex px-5 bg-white lg:bg-transparent top-[69px] z-30 min-h-screen">
-
-          <ul
-            class="flex lg:flex-row text-center flex-col justify-between md:items-center md:gap-[4vw] max-[712px]:h-[400px]">
-            <li>
-              <a class="hover:text-blue-500 font-medium" href="./">Home</a>
-            </li>
-            <li>
-              <a class="hover:text-blue-500 font-medium" href="about.html">About Us</a>
-            </li>
-            <li>
-              <a class="hover:text-blue-500 font-medium" href="projects.html">Projects</a>
-            </li>
-            <li>
-              <a href="contact.html">
-                <button
-                  class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium">
-                  Contact Us
-                </button>
+          <div
+            class="nav-links duration-700 lg:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto min-w-screen sm:flex px-5 bg-white lg:bg-transparent top-[69px] z-30 min-h-screen"
+          >
+            <ul
+              class="flex lg:flex-row text-center flex-col justify-between md:items-center md:gap-[4vw] max-[712px]:h-[400px]"
+            >
+              <li>
+                <a class="hover:text-blue-500 font-medium" href="./">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-blue-500 font-medium" href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-blue-500 font-medium" href="projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="contact.html">
+                  <button
+                    class="lg:bg-[#1D8348] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 lg:rounded-full hover:bg-[#449642] w-full font-medium"
+                  >
+                    Contact Us
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div
+        class="flex justify-center items-center py-6 md:py-12 text-white flex-col breadcrumb min-h-[120px]"
+      >
+        <!-- Breadcrumb -->
+        <h1 class="md:text-6xl font-semibold text-center mb-3 text-3xl">
+          Contact us
+        </h1>
+        <nav
+          class="flex px-5 py-3 rounded-lg lg:max-w-2/12"
+          aria-label="Breadcrumb"
+        >
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a
+                href="./"
+                class="inline-flex items-center text-sm font-medium hover:text-blue-400"
+              >
+                <svg
+                  class="w-3 h-3 mr-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+                  />
+                </svg>
+                Home
               </a>
             </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <div class="flex justify-center items-center py-6 md:py-12 text-white flex-col breadcrumb min-h-[120px]">
-      <!-- Breadcrumb -->
-      <h1 class="md:text-6xl font-semibold text-center mb-3 text-3xl">Contact us</h1>
-      <nav class="flex px-5 py-3 rounded-lg lg:max-w-2/12" aria-label="Breadcrumb">
-        <ol class="inline-flex items-center space-x-1 md:space-x-3">
-          <li class="inline-flex items-center">
-            <a href="./" class="inline-flex items-center text-sm font-medium hover:text-blue-400">
-              <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                viewBox="0 0 20 20">
-                <path
-                  d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
-              </svg>
-              Home
-            </a>
-          </li>
-          <li>
-            <div class="flex items-center">
-              <svg class="w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m1 9 4-4-4-4" />
-              </svg>
-              <a href="./contact.html" class="ml-1 text-sm font-medium hover:text-blue-400 md:ml-2">Contact Us</a>
-            </div>
-          </li>
-        </ol>
-      </nav>
-
-
-
-    </div>
-    <!-- ====== Contact Form Section Start -->
-    <div class="px-6 lg:px-8 pb-6">
-      <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-        aria-hidden="true">
+            <li>
+              <div class="flex items-center">
+                <svg
+                  class="w-3 h-3 mx-1 text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"
+                  />
+                </svg>
+                <a
+                  href="./contact.html"
+                  class="ml-1 text-sm font-medium hover:text-blue-400 md:ml-2"
+                  >Contact Us</a
+                >
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <!-- ====== Contact Form Section Start -->
+      <div class="px-6 lg:px-8 pb-6">
         <div
-          class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+          class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+          aria-hidden="true"
+        >
+          <div
+            class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
         </div>
+        <div class="mx-auto max-w-2xl text-center">
+          <!-- <p class="mt-2 text-lg leading-8 text-gray-600">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p> -->
+        </div>
+        <form
+          action="/contact.html"
+          method="GET"
+          class="mx-auto mt-16 max-w-xl sm:mt-20"
+          id="contact-form"
+        >
+          <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+            <div>
+              <label
+                for="firstName"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >First name</label
+              >
+              <div class="mt-2.5">
+                <input
+                  type="text"
+                  name="First Name"
+                  id="firstName"
+                  autocomplete="given-name"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                for="lastName"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >Last name</label
+              >
+              <div class="mt-2.5">
+                <input
+                  type="text"
+                  name="Last Name"
+                  id="lastName"
+                  autocomplete="family-name"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="company"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >Company</label
+              >
+              <div class="mt-2.5">
+                <input
+                  type="text"
+                  name="Company"
+                  id="company"
+                  autocomplete="organization"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="email"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >Email</label
+              >
+              <div class="mt-2.5">
+                <input
+                  type="email"
+                  name="Email"
+                  id="email"
+                  autocomplete="email"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="phone-number"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >Phone number</label
+              >
+              <div class="relative mt-2.5">
+                <input
+                  type="tel"
+                  name="Phone"
+                  id="phone-number"
+                  autocomplete="tel"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="message"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >Message</label
+              >
+              <div class="mt-2.5">
+                <textarea
+                  name="Message"
+                  id="message"
+                  rows="4"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10">
+            <button
+              type="submit"
+              class="block w-full rounded-md bg-[#C1F6EC] px-3.5 py-2.5 text-center duration-500 text-black shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              id="button"
+            >
+              Let's talk
+            </button>
+          </div>
+        </form>
       </div>
-      <div class="mx-auto max-w-2xl text-center">
-        <!-- <p class="mt-2 text-lg leading-8 text-gray-600">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p> -->
-      </div>
-      <form action="/contact.html" method="GET" class="mx-auto mt-16 max-w-xl sm:mt-20" id="contact-form">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <div>
-            <label for="firstName" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
-            <div class="mt-2.5">
-              <input type="text" name="First Name" id="firstName" autocomplete="given-name"
-                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2  sm:text-sm sm:leading-6">
-            </div>
-          </div>
-          <div>
-            <label for="lastName" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
-            <div class="mt-2.5">
-              <input type="text" name="Last Name" id="lastName" autocomplete="family-name"
-                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2   sm:text-sm sm:leading-6">
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
-            <div class="mt-2.5">
-              <input type="text" name="Company" id="company" autocomplete="organization"
-                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2  sm:text-sm sm:leading-6">
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
-            <div class="mt-2.5">
-              <input type="email" name="Email" id="email" autocomplete="email"
-                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2  sm:text-sm sm:leading-6">
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
-            <div class="relative mt-2.5">
-              <input type="tel" name="Phone" id="phone-number" autocomplete="tel"
-                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2  sm:text-sm sm:leading-6">
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
-            <div class="mt-2.5">
-              <textarea name="Message" id="message" rows="4"
-                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2  sm:text-sm sm:leading-6"></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="mt-10">
-          <button type="submit"
-            class="block w-full rounded-md bg-[#C1F6EC] px-3.5 py-2.5 text-center duration-500 text-black shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            id="button">Let's
-            talk</button>
-        </div>
-      </form>
-    </div>
-    <!-- ====== Contact Form Section Ends -->
-
+      <!-- ====== Contact Form Section Ends -->
 
       <!-- ====== Footer Section Start -->
-      <footer class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6 w-full border-t-[2px]">
-        <div class=" mx-auto border-b-[1px] border-gray-400 ">
+      <footer
+        class="relative z-10 bg-white pt-20 pb-10 lg:px-52 lg:pt-[120px] lg:pb-6 w-full border-t-[2px]"
+      >
+        <div class="mx-auto border-b-[1px] border-gray-400">
           <div class="mx-4 flex flex-wrap">
             <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
               <div class="mb-10 w-full">
                 <a href="#" class="mb-6 inline-block">
-                  <img src="./assets/images/logo-tagline.svg" alt="Tectonic Logo" class="w-[200px]">
-
+                  <img
+                    src="./assets/images/logo-tagline.svg"
+                    alt="Tectonic Logo"
+                    class="w-[200px]"
+                  />
                 </a>
-                <p class="text-body-color mb-7 text-base">
-
-                </p>
+                <p class="text-body-color mb-7 text-base"></p>
                 <div class="mb-10 w-full">
                   <!-- <h4 class="text-dark mb-9 text-lg font-medium">Follow Us On</h4> -->
                   <div class="mb-6 flex items-center">
-                    <a href="#"
-                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                      <svg width="8" height="16" viewBox="0 0 8 16" class="fill-current">
+                    <a
+                      href="#"
+                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    >
+                      <svg
+                        width="8"
+                        height="16"
+                        viewBox="0 0 8 16"
+                        class="fill-current"
+                      >
                         <path
-                          d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z" />
+                          d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z"
+                        />
                       </svg>
                     </a>
-                    <a href="#"
-                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                      <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                    <a
+                      href="#"
+                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    >
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        class="fill-current"
+                      >
                         <path
-                          d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z" />
+                          d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z"
+                        />
                       </svg>
                     </a>
-                    <a href="#"
-                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                      <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                    <a
+                      href="#"
+                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    >
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        class="fill-current"
+                      >
                         <path
-                          d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z" />
+                          d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z"
+                        />
                       </svg>
                     </a>
-                    <a href="#"
-                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                      <svg width="14" height="14" viewBox="0 0 14 14" class="fill-current">
+                    <a
+                      href="#"
+                      class="text-dark hover:bg-[#2E64FE] duration-250 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    >
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        class="fill-current"
+                      >
                         <path
-                          d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" />
+                          d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z"
+                        />
                       </svg>
                     </a>
                   </div>
@@ -271,25 +447,34 @@
                 <h4 class="text-dark mb-9 text-lg font-medium">Explore</h4>
                 <ul>
                   <li>
-                    <a href="/" class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
+                    <a
+                      href="/"
+                      class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose"
+                    >
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="about.html"
-                      class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
+                    <a
+                      href="about.html"
+                      class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose"
+                    >
                       About Us
                     </a>
                   </li>
                   <li>
-                    <a href="projects.html"
-                      class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
+                    <a
+                      href="projects.html"
+                      class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose"
+                    >
                       Projects
                     </a>
                   </li>
                   <li>
-                    <a href="contact.html"
-                      class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose">
+                    <a
+                      href="contact.html"
+                      class="text-body-color hover:text-[#2E64FE] mb-1 inline-block text-base leading-loose"
+                    >
                       Contact us
                     </a>
                   </li>
@@ -299,17 +484,30 @@
             <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
               <div class="mb-10 w-full">
                 <h4 class="text-dark mb-9 text-lg font-medium">Reach to us</h4>
-                <div class="phone my-2"><i class="fa-solid fa-phone me-2"></i><a href="tel:+918800683542"
-                    class="hover:text-[#2E64FE]">+91 8800683542</a></div>
-                    <div class="phone my-2"><i
-                      class="fa-regular fa-envelope me-2 text-xl"></i><a href="mailto:tectoniceng@outlook.com"
-                      class="hover:text-[#2E64FE]">tectoniceng@outlook.com </a></div>
+                <div class="phone my-2">
+                  <i class="fa-solid fa-phone me-2"></i
+                  ><a href="tel:+918800683542" class="hover:text-[#2E64FE]"
+                    >+91 8800683542</a
+                  >
+                </div>
+                <div class="phone my-2">
+                  <i class="fa-regular fa-envelope me-2 text-xl"></i
+                  ><a
+                    href="mailto:tectoniceng@outlook.com"
+                    class="hover:text-[#2E64FE]"
+                    >tectoniceng@outlook.com
+                  </a>
+                </div>
                 <div class="my-2">
-                  <a   class="flex items-center cursor-cursor-pointer"></a>
+                  <a class="flex items-center cursor-cursor-pointer"></a>
                 </div>
                 <div class="address flex items-center my-2">
-                  <i class="fa-solid fa-location-arrow me-2" style="font-size: 1.4rem;"></i>C17, Sector-3, Noida
-                  <br>
+                  <i
+                    class="fa-solid fa-location-arrow me-2"
+                    style="font-size: 1.4rem"
+                  ></i
+                  >C17, Sector-3, Noida
+                  <br />
                   Uttar Pradesh - 301201
                 </div>
               </div>
@@ -318,13 +516,26 @@
         </div>
         <div>
           <span class="absolute top-10 right-10 z-[-1]">
-            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="75"
+              height="75"
+              viewBox="0 0 75 75"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
-                fill="url(#paint0_linear_1179_4)" />
+                fill="url(#paint0_linear_1179_4)"
+              />
               <defs>
-                <linearGradient id="paint0_linear_1179_4" x1="-1.63917e-06" y1="37.5" x2="75" y2="37.5"
-                  gradientUnits="userSpaceOnUse">
+                <linearGradient
+                  id="paint0_linear_1179_4"
+                  x1="-1.63917e-06"
+                  y1="37.5"
+                  x2="75"
+                  y2="37.5"
+                  gradientUnits="userSpaceOnUse"
+                >
                   <stop stop-color="#13C296" stop-opacity="0.31" />
                   <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
                 </linearGradient>
@@ -332,44 +543,44 @@
             </svg>
           </span>
           <div class="text-center lg:pt-6">
-            <p class="overflow-x-hidden">&copy; Tectonic Engineering 2023 | All Rights Reserved | <a
-                href="./privacy-policy.html" class="hover:underline">Privacy Policy</a> </p>
+            <p class="overflow-x-hidden">
+              &copy; Tectonic Engineering 2023 | All Rights Reserved |
+              <a href="./privacy-policy.html" class="hover:underline"
+                >Privacy Policy</a
+              >
+            </p>
           </div>
         </div>
-
       </footer>
       <!-- ====== Footer Section End -->
 
-    <div class="loader-overlay" id="loader-overlay">
-      <div class="loader"></div>
-    </div>
-
-    <div class="success-overlay" id="success-overlay">
-      <div class="success-message">
-        <p>Form submitted successfully!</p>
+      <div class="loader-overlay" id="loader-overlay">
+        <div class="loader"></div>
       </div>
-    </div>
 
+      <div class="success-overlay" id="success-overlay">
+        <div class="success-message">
+          <p>Form submitted successfully!</p>
+        </div>
+      </div>
 
-    <script>
-      const navLinks = document.querySelector('.nav-links')
-      function onToggleMenu(e) {
-        e.name = e.name === 'menu' ? 'close' : 'menu'
-        navLinks.classList.toggle('left-[0%]')
-      }
-    </script>
-    <style>
-      .iti__arrow {
-        /* border: none; */
-      }
+      <script>
+        const navLinks = document.querySelector(".nav-links");
+        function onToggleMenu(e) {
+          e.name = e.name === "menu" ? "close" : "menu";
+          navLinks.classList.toggle("left-[0%]");
+        }
+      </script>
+      <style>
+        .iti__arrow {
+          /* border: none; */
+        }
 
-      .iti {
-        width: 100%;
-      }
-    </style>
-  </main>
-  <script src="./assets/JS/scripts.js"></script>
-
-</body>
-
+        .iti {
+          width: 100%;
+        }
+      </style>
+    </main>
+    <script src="./assets/JS/scripts.js"></script>
+  </body>
 </html>
