@@ -61,6 +61,7 @@ const isPossible = iti.isPossibleNumber();
         if (data.result === "success") {
           // Show the success message
           document.getElementById("success-overlay").style.display = "flex";
+          document.getElementById("success-message").style.display = "flex";
 
           setTimeout(() => {
             // Hide the success message after 3 seconds
