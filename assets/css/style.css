@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
 }
 
+.main{
+  display: none;
+}
+
 .tagline {
   font-family: "Brush Script";
 }
@@ -88,11 +92,9 @@ ion-icon {
 
   background-repeat: no-repeat;
   background-size: cover;
-  /* filter: sepia(50%); */
   background-blend-mode: multiply;
-
-  background-attachment: fixed;
-  background-position: center bottom;
+  background-attachment: scroll;
+  background-position: center top;
 }
 
 .projects-card {
@@ -112,8 +114,13 @@ img.project-img {
   min-height: 18rem;
   /* width: 25%; */
 }
+@media (min-width:768px) and (max-width:1250px) {
+  .projects {
+    width: 45%;
+  }
+}
 
-@media (min-width:768px){
+@media (min-width:1250px){
   .projects {
     width: 25%;
   }
