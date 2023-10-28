@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with us today. Our contact page provides you with the means to connect with our team. Whether you have inquiries, feedback, or collaboration opportunities, we're here to assist you."
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,11 +35,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
 
     <!-- intl tel input -->
     <link
@@ -59,9 +58,11 @@
     </script>
 
     <script>
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
-          $(this).toggleClass("is-active");
+      document.addEventListener("DOMContentLoaded", function () {
+        var hamburger = document.querySelector(".hamburger");
+
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("is-active");
         });
       });
     </script>
@@ -346,9 +347,11 @@
       <!-- ====== Contact Form Section Ends -->
 
       <!-- ====== Footer Section Start -->
-      <footer class="relative z-10 bg-white pt-20 pb-10  lg:pt-[120px] lg:pb-6 w-full border-t-[2px] " >
+      <footer
+        class="relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-6 w-full border-t-[2px]"
+      >
         <div class="lg:px-52 border-b-[2px]">
-          <div class="mx-auto  border-gray-400">
+          <div class="mx-auto border-gray-400">
             <div class="mx-4 flex flex-wrap">
               <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
                 <div class="mb-10 w-full">
@@ -455,7 +458,7 @@
                         About Us
                       </a>
                     </li>
-  
+
                     <li>
                       <a
                         href="contact.html"
@@ -469,7 +472,9 @@
               </div>
               <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
                 <div class="mb-10 w-full">
-                  <h4 class="text-dark mb-9 text-lg font-medium">Reach to us</h4>
+                  <h4 class="text-dark mb-9 text-lg font-medium">
+                    Reach to us
+                  </h4>
                   <div class="phone my-2 flex items-center">
                     <i class="fa-solid fa-phone me-2"></i
                     ><a href="tel:+918800683542" class="hover:text-[#2E64FE]"
@@ -530,15 +535,32 @@
             </span>
           </div>
         </div>
-        <div class="text-center lg:mt-4 flex flex-col md:flex-row justify-around">
+        <div
+          class="text-center lg:mt-4 flex flex-col md:flex-row justify-around"
+        >
           <div class="overflow-x-hidden">
             &copy; Tectonic Engineering 2023 | All Rights Reserved |
-            <a href="./privacy-policy.html" class="hover:underline text-[#2E64FE]"
+            <a
+              href="./privacy-policy.html"
+              class="hover:underline text-[#2E64FE]"
               >Privacy Policy</a
             >
           </div>
           <div class="p-2 md:p-0">
-            <p>Developed with ❤️️ by <a href="https://dtstechindia.com" class="hover:underline text-[#2E64FE]">DTS Tech India</a> | Powered by <a href="https://socialyard.in" class="hover:underline text-[#2E64FE]">Social Yard</a></p>
+            <p>
+              Developed with ❤️️ by
+              <a
+                href="https://dtstechindia.com"
+                class="hover:underline text-[#2E64FE]"
+                >DTS Tech India</a
+              >
+              | Powered by
+              <a
+                href="https://socialyard.in"
+                class="hover:underline text-[#2E64FE]"
+                >Social Yard</a
+              >
+            </p>
           </div>
         </div>
       </footer>

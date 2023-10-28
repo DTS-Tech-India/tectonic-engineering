@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    name="description"
+    content=" Explore our diverse portfolio of projects, from residential developments to commercial ventures. Discover our commitment to quality and innovation in every endeavor."
+  />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,20 +35,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <script>
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
-          $(this).toggleClass("is-active");
+      document.addEventListener("DOMContentLoaded", function () {
+        var hamburger = document.querySelector(".hamburger");
+
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("is-active");
         });
       });
     </script>
@@ -484,7 +486,7 @@
                 <div
                   class="absolute bottom-0 block text-sm font-medium flex justify-center w-full bg-blue-300 p-2 rounded-b-lg"
                 >
-                  Patna Bihar
+                  Patna, Bihar
                 </div>
               </div>
             </div>
@@ -614,7 +616,7 @@
                 <div
                   class="absolute bottom-0 block text-sm font-medium flex justify-center w-full bg-blue-300 p-2 rounded-b-lg"
                 >
-                  Koteshwar , Gujarat
+                  Koteshwar, Gujarat
                 </div>
               </div>
               <div
@@ -918,7 +920,6 @@
                     </a>
                   </div>
                   <div class="my-2">
-                    <a class="flex items-center cursor-cursor-pointer"></a>
                   </div>
                   <div class="address flex items-center my-2">
                     <i

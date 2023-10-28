@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    name="description"
+    content="Understand our commitment to safeguarding your data and privacy. Our privacy policy page outlines how we collect, use, and protect your information. Your trust and security matter to us."
+  />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,19 +23,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <script>
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
-          $(this).toggleClass("is-active");
+      document.addEventListener("DOMContentLoaded", function () {
+        var hamburger = document.querySelector(".hamburger");
+
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("is-active");
         });
       });
     </script>
