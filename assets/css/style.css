@@ -147,6 +147,15 @@ img.project-img {
   }
 }
 
+p.desc::before {
+  content: attr(data-first-word);
+  font-weight: bold;
+  float: left;
+  margin-right:0.5rem ;
+  font-size: 3rem; 
+  line-height: 1;
+}
+
 /* loader */
 
 #loader {
