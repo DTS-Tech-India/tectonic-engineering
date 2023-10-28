@@ -94,6 +94,8 @@ ion-icon {
   background-blend-mode: multiply;
   background-attachment: scroll;
   background-position: center top;
+  background-attachment: scroll;
+  background-position: center top;
 }
 
 .projects-card {
