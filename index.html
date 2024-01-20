@@ -82,54 +82,78 @@
     <main class="mx-auto" id="main">
       <header class="h-screen flex justify-center items-center">
         <nav
-          class="flex justify-around items-center fixed px-8 sm:mx-4 lg:mx-0 bg-gradient-to-r from-[#AED6F1] to-[#85C1E9] w-[100%] top-0 z-30 py-2"
-        >
-          <div class="flex justify-between w-full lg:w-fit">
-            <div class="flex items-center lg:hidden">
-              <div
-                class="hamburger"
-                id="hamburger-1"
-                onclick="onToggleMenu(this)"
-                name="menu"
-              >
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
+        class="flex justify-around items-center fixed px-8 sm:mx-4 lg:mx-0 bg-gradient-to-r from-[#AED6F1] to-[#85C1E9] w-[100%] top-0 z-30 py-2"
+      >
+        <div class="flex justify-between w-full lg:w-fit">
+          <div class="flex items-center lg:hidden">
+            <div
+              class="hamburger"
+              id="hamburger-1"
+              onclick="onToggleMenu(this)"
+              name="menu"
+            >
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
             </div>
-            <a href="./">
-              <img
-                class="w-72 cursor-pointer lg:me-0"
-                src="./assets/images/logo.png"
-                alt="Tectonic logo"
-              />
-            </a>
           </div>
+          <a href="./">
+            <img
+              class="w-72 cursor-pointer lg:me-0"
+              src="./assets/images/logo.png"
+              alt="Tectonic logo"
+            />
+          </a>
+        </div>
+        <div class="">
           <div
             class="nav-links duration-700 lg:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto min-w-screen sm:flex px-5 bg-white lg:bg-transparent top-[69px] z-30 min-h-screen"
           >
             <ul
-              class="flex lg:flex-row text-center flex-col justify-between md:items-center md:gap-[4vw] max-[712px]:h-[400px]"
+              class="flex lg:flex-row text-center flex-col justify-between md:items-center md:gap-[4vw] max-[712px]:h-[400px navigation hide"
             >
               <li>
                 <a class="hover:text-blue-500 font-medium" href="./">Home</a>
               </li>
               <li>
-                <a class="hover:text-blue-500 font-medium" href="projects.html"
+                <a
+                  class="hover:text-blue-500 font-medium"
+                  href="projects.html"
                   >Projects</a
                 >
               </li>
-              <li>
-                <a class="hover:text-blue-500 font-medium" href="services.html"
-                  >Services</a
-                >
+              <li class="font-medium">
+                <button>
+                  Services
+                  <svg
+                    aria-hidden="true"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    width="16"
+                  >
+                    <path
+                      d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="dropdown__wrapper">
+                    <ul class="dropdown font-normal">
+                      <li><a href="/steel-detailing.html"> Steel Detailing</a></li>
+                      <li><a href="/rebar-detailing.html"> Rebar Detailing</a></li>
+                      <li><a href="/value-engineering.html"> Value Engineering</a></li>
+                      <li><a href="/structural-design.html"> Structural Design</a></li>
+                      <li><a href="/structural-drafting.html"> Structural Drafting</a></li>
+                      <li><a href="/cost-optimization-service.html"> Cost Optimization Services</a></li>
+                    </ul>
+                </div>
               </li>
               <li>
                 <a class="hover:text-blue-500 font-medium" href="about.html"
                   >About Us</a
                 >
               </li>
-
+  
               <li>
                 <a href="contact.html">
                   <button
@@ -141,7 +165,8 @@
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
         <!-- Starts Hero section -->
         <section class="mt-40 lg:mt-20">
           <div
