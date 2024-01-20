@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content=" Learn about our company's journey, values, and mission. Discover the people behind our success and our dedication to delivering excellence in every project." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var hamburger = document.querySelector(".hamburger");
+
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+      });
+    });
+  </script>
+  <title>Tectonic Engineering</title>
+</head>
+
+<body class="font-[Poppins]">
+  <div id="loader" class="fixed inset-0 flex bg-white z-[1000]">
+    <div class="loader-container font-[Poppins]">
+      <span>L</span>
+      <span>O</span>
+      <span>A</span>
+      <span>D</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+    </div>
+  </div>
+
+  <main id="main" class="mx-auto max-w-[1440px]">
+    <header class="bg-[#C1F6EC]">
+      <nav class="flex justify-around items-center fixed px-8 sm:mx-4 lg:mx-0 bg-gradient-to-r from-[#AED6F1] to-[#85C1E9] w-[100%] top-0 z-30 py-2">
+        <div class="flex justify-between w-full lg:w-fit">
+          <div class="flex items-center lg:hidden">
+            <div class="hamburger" id="hamburger-1" onclick="onToggleMenu(this)" name="menu">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <a href="./">
+            <img class="w-72 cursor-pointer lg:me-0" src="./assets/images/logo.png" alt="Tectonic logo" />
+          </a>
+        </div>
+        <div
+          class="nav-links duration-700 lg:static absolute md:min-h-fit left-[-100%] py-4 md:w-auto min-w-screen sm:flex px-5 bg-white lg:bg-transparent top-[69px] z-30 min-h-screen">
+          <ul
+            class="flex lg:flex-row text-center flex-col justify-between md:items-center md:gap-[4vw] max-[712px]:h-[400px]">
+            <li>
+              <a class="hover:text-blue-500 font-medium" href="./">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-blue-500 font-medium" href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a class="hover:text-blue-500 font-medium" href="services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-blue-500 font-medium" href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                <button
+                  class="lg:bg-[#325c93] bg-[#86C4f9] text-white lg:px-5 lg:py-2 px-28 py-2 duration-300 lg:rounded-full hover:bg-blue-400 w-full font-medium">
+                  Contact Us
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    
+
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("left-[0%]");
+      }
+    </script>
+    <script src="./assets/JS/animateText.js"></script>
+
+    <script defer>
+      const loader = document.querySelector("#loader");
+      const main = document.querySelector("#main");
+
+      document.onreadystatechange = () => {
+        if (document.readyState !== "complete") {
+          loader.style.display = "flex";
+          main.style.display = "none";
+        } else {
+          main.style.display = "inline";
+          loader.style.display = "none";
+        }
+      };
+    </script>
+  </main>
+</body>
+
+</html>
